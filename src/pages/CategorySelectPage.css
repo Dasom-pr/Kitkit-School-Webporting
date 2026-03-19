@@ -90,7 +90,7 @@
 }
 
 .cat-coop:hover {
-  filter: brightness(1.15) drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+  filter: brightness(1.12) drop-shadow(0 6px 16px rgba(0,0,0,0.4));
   transform: translate(-50%, 50%) scale(1.06);
 }
 
@@ -98,18 +98,18 @@
   transform: translate(-50%, 50%) scale(0.97);
 }
 
-/* Literacy 건물: 원본 X=60.51%, Y=53.78% from bottom */
+/* Literacy 건물: 화면 좌측 중앙 배치 */
 .cat-coop-literacy {
-  left: 60.51%;
-  bottom: 53.78%;
-  width: 16%;
+  left: 30%;
+  bottom: 46%;
+  width: 26%;
 }
 
-/* Math 건물: 원본 X=81.95%, Y=53.78% from bottom */
+/* Math 건물: 화면 우측 중앙 배치 */
 .cat-coop-math {
-  left: 81.95%;
-  bottom: 53.78%;
-  width: 16%;
+  left: 70%;
+  bottom: 46%;
+  width: 26%;
 }
 
 .cat-coop-img {
@@ -119,21 +119,33 @@
   display: block;
 }
 
-/* 나무판 레이블 이미지 */
-.cat-coop-label {
-  width: 90%;
-  height: auto;
-  margin-top: 4px;
-  object-fit: contain;
+/* ── 팻말 (나무판 이미지 + 텍스트 오버레이) ── */
+.cat-coop-label-wrap {
+  position: relative;
+  width: 88%;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* 이미지 없을 때 텍스트 fallback */
+.cat-coop-label {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .cat-coop-label-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
   font-family: 'TodoMainCurly', sans-serif;
-  font-size: clamp(12px, 1.5vw, 22px);
-  color: #fff;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-  margin-top: 6px;
+  font-size: clamp(13px, 1.6vw, 24px);
+  color: #FFFCEC;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.55);
+  pointer-events: none;
+  letter-spacing: 0.02em;
 }
 
 /* ── 나뭇잎 장식 ── */
@@ -157,21 +169,22 @@
   height: auto;
 }
 
-/* ── 뒤로가기(quit) 버튼: 원본 X=21.09%, Y=52.78% ── */
+/* ── 뒤로가기 버튼: 왼쪽 상단 ── */
 .cat-quit {
   position: absolute;
-  left: 21.09%;
-  bottom: 52.78%;
-  transform: translate(-50%, 50%);
-  z-index: 6;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
   cursor: pointer;
-  width: 9%;
+  width: 4%;
+  min-width: 36px;
+  max-width: 54px;
   transition: filter 0.15s, transform 0.15s;
 }
 
 .cat-quit:hover {
-  filter: brightness(1.15);
-  transform: translate(-50%, 50%) scale(1.06);
+  filter: brightness(1.2);
+  transform: scale(1.1);
 }
 
 .cat-quit-img {

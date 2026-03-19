@@ -51,18 +51,15 @@ export default function CategorySelectPage() {
           className="cat-coop-img"
           onError={(e) => { e.currentTarget.style.background = '#4a90d9' }}
         />
-        <img
-          src={assetUrl('/assets/coopscene/coop_woodpanel_title_literacy.png')}
-          alt="Literacy"
-          className="cat-coop-label"
-          onError={(e) => {
-            e.currentTarget.style.display = 'none'
-            const span = document.createElement('span')
-            span.textContent = 'Literacy'
-            span.className = 'cat-coop-label-text'
-            e.currentTarget.parentElement?.appendChild(span)
-          }}
-        />
+        <div className="cat-coop-label-wrap">
+          <img
+            src={assetUrl('/assets/coopscene/coop_woodpanel_title_literacy.png')}
+            alt=""
+            className="cat-coop-label"
+            onError={(e) => { e.currentTarget.style.opacity = '0' }}
+          />
+          <span className="cat-coop-label-text">Literacy</span>
+        </div>
       </div>
 
       {/* ── 6. Math 건물 버튼 (원본 X:81.95%, Y:53.78%) ── */}
@@ -76,18 +73,15 @@ export default function CategorySelectPage() {
           className="cat-coop-img"
           onError={(e) => { e.currentTarget.style.background = '#e8a020' }}
         />
-        <img
-          src={assetUrl('/assets/coopscene/coop_woodpanel_title_math.png')}
-          alt="Math"
-          className="cat-coop-label"
-          onError={(e) => {
-            e.currentTarget.style.display = 'none'
-            const span = document.createElement('span')
-            span.textContent = 'Math'
-            span.className = 'cat-coop-label-text'
-            e.currentTarget.parentElement?.appendChild(span)
-          }}
-        />
+        <div className="cat-coop-label-wrap">
+          <img
+            src={assetUrl('/assets/coopscene/coop_woodpanel_title_math.png')}
+            alt=""
+            className="cat-coop-label"
+            onError={(e) => { e.currentTarget.style.opacity = '0' }}
+          />
+          <span className="cat-coop-label-text">Math</span>
+        </div>
       </div>
 
       {/* ── 7. 왼쪽 나뭇잎 장식 ── */}
