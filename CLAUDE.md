@@ -156,9 +156,44 @@ const { level: shellLevel } = useShellParams()  // 오류! level 없음
 
 ---
 
+## 테스트 (TDD)
+
+Vitest 기반 테스트 환경 구축 완료 (2026-03-19).
+
+```bash
+npm run test        # watch 모드
+npm run test:run    # 1회 실행 (80개 전부 통과)
+npm run test:coverage
+```
+
+| 파일 | 테스트 수 | 내용 |
+|------|---------|------|
+| `src/test/gameRouteMap.test.ts` | 22개 | 라우트 매핑 정확성 |
+| `src/test/jsonData.test.ts` | 27개 | JSON 구조 + 곱셈 검증 + answer 범위 |
+| `src/test/useShellParams.test.ts` | 21개 | 셸 URL 파싱 |
+| `src/test/assetPath.test.ts` | 10개 | 에셋 경로 유틸 |
+
+---
+
+## 문서 파일 위치
+
+`docs/` 폴더에 5개 MD 문서 저장됨:
+- `01-프로젝트-개요.md`
+- `02-아키텍처.md`
+- `03-버그수정-이력.md`
+- `04-게임목록.md`
+- `05-테스트-가이드.md`
+
+---
+
 ## 다음 작업
 
 현재 알려진 미해결 항목 없음. 모든 포팅 게임 정상 동작 중.
+
+내일 작업 재개 시 확인할 것:
+- `npm run test:run` 으로 80개 테스트 통과 확인
+- `npm run dev` 로 개발 서버 실행 (http://localhost:5174)
+- 추가 버그 발견 시 `docs/03-버그수정-이력.md` 업데이트
 
 ---
 
@@ -173,3 +208,4 @@ const { level: shellLevel } = useShellParams()  // 오류! level 없음
 | 2026-03-19 | NumberTrain, PlaceValue, QuickFacts, WordWindow, ThirtyPuzzle, MultiplicationBoard, NumberTracingExt 포팅 완료 — 커리큘럼 전체 포팅 100% 달성 |
 | 2026-03-19 | 버그 수정: WordWindow answer 오류, MultiplicationBoard 이미지, 7개 게임 셸 통합, ReadingBird 이미지+사운드+오디오 로직 전면 수정 |
 | 2026-03-19 | 2차 버그 수정: WordNote 사운드 55개 복사(9개 원본 없음), BirdPhonics onerror 핸들러 추가, 전체 51개 Page 셸통합 검수 완료, TypeScript 오류 0개 확인 |
+| 2026-03-19 | TDD 환경 구축: Vitest 설치, 테스트 4개 파일 작성 (80개 전부 통과), docs/ 폴더 문서 5개 작성, GitHub push 완료 |
