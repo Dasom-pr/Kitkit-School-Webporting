@@ -170,6 +170,60 @@
   margin-top: 3px;
 }
 
+/* ─── Page navigation arrows ─── */
+.coop-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  width: clamp(36px, 4vw, 60px);
+  height: clamp(36px, 4vw, 60px);
+  font-size: clamp(20px, 2.5vw, 40px);
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.coop-nav-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.coop-nav-btn--left  { left:  1%; }
+.coop-nav-btn--right { right: 1%; }
+
+/* ─── Page indicator dots ─── */
+.coop-page-dots {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  gap: 10px;
+}
+
+.coop-page-dot {
+  width: clamp(8px, 1vw, 14px);
+  height: clamp(8px, 1vw, 14px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.coop-page-dot--active {
+  background: #FFD700;
+  transform: scale(1.3);
+}
+
 /* ─── Locked state ─── */
 .coop-slot--locked .coop-bird-img,
 .coop-slot--locked .coop-egg,

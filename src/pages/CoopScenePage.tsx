@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { assetUrl } from '../utils/assetPath'
 import { useCurriculum } from '../context/CurriculumContext'
@@ -28,12 +29,15 @@ import './CoopScenePage.css'
 export default function CoopScenePage() {
   const navigate = useNavigate()
   const { getLevels, isLevelOpen, ratioDayCleared, loading } = useCurriculum()
+  const [page, setPage] = useState(0)
 
   if (loading) {
     return <div className="coop-loading">Loading...</div>
   }
 
-  const levels = getLevels('en-US')
+  const allLevels = getLevels('en-US')
+  const totalPages = 2
+  const levels = allLevels.filter(l => Math.floor(l.categoryLevel / 6) === page)
 
   return (
     <div className="coop-root">
@@ -44,10 +48,33 @@ export default function CoopScenePage() {
           ← Back
         </button>
 
+        {/* 페이지 이동 화살표 */}
+        {page > 0 && (
+          <button className="coop-nav-btn coop-nav-btn--left" onClick={() => setPage(p => p - 1)}>
+            ‹
+          </button>
+        )}
+        {page < totalPages - 1 && (
+          <button className="coop-nav-btn coop-nav-btn--right" onClick={() => setPage(p => p + 1)}>
+            ›
+          </button>
+        )}
+
+        {/* 페이지 표시 점 */}
+        <div className="coop-page-dots">
+          {Array.from({ length: totalPages }).map((_, i) => (
+            <span
+              key={i}
+              className={`coop-page-dot ${i === page ? 'coop-page-dot--active' : ''}`}
+              onClick={() => setPage(i)}
+            />
+          ))}
+        </div>
+
         {levels.map(level => {
           if (level.numDays === 0) return null
 
-          const lv = level.categoryLevel
+          const lv = level.categoryLevel % 6
           const isL = level.category === 'L'
           const gridX = isL ? 1 - (lv % 2) : 2 + (lv % 2)
           const gridY = 2 - Math.floor(lv / 2)
