@@ -1,158 +1,124 @@
 import { useNavigate } from 'react-router-dom'
 import { assetUrl } from '../utils/assetPath'
+import './CategorySelectPage.css'
 
 export default function CategorySelectPage() {
   const navigate = useNavigate()
 
   return (
-    <div style={{
-      width: '100vw',
-      height: '100vh',
-      backgroundImage: `url(${assetUrl('/assets/mainscene/main_bg_sky.jpg')})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundColor: '#87CEEB',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      overflow: 'hidden',
-    }}>
+    <div className="cat-root">
 
-      {/* 뒤로가기 버튼 */}
-      <button
-        onClick={() => navigate('/')}
-        style={{
-          position: 'absolute',
-          top: 16,
-          left: 16,
-          background: 'rgba(0,0,0,0.4)',
-          color: '#fff',
-          border: 'none',
-          borderRadius: 8,
-          padding: '8px 16px',
-          fontSize: 16,
-          cursor: 'pointer',
-          fontFamily: 'TodoMainCurly, sans-serif',
-          zIndex: 10,
-        }}
+      {/* ── 1. 하늘 배경 ── */}
+      <img
+        src={assetUrl('/assets/mainscene/main_bg_sky.png')}
+        alt=""
+        className="cat-sky"
+        onError={(e) => { e.currentTarget.style.display = 'none' }}
+      />
+
+      {/* ── 2. 구름 애니메이션 ── */}
+      <img src={assetUrl('/assets/mainscene/cloud_day_1.png')} alt="" className="cat-cloud cat-cloud-1"
+        onError={(e) => { e.currentTarget.style.display = 'none' }} />
+      <img src={assetUrl('/assets/mainscene/cloud_day_2.png')} alt="" className="cat-cloud cat-cloud-2"
+        onError={(e) => { e.currentTarget.style.display = 'none' }} />
+      <img src={assetUrl('/assets/mainscene/cloud_day_3.png')} alt="" className="cat-cloud cat-cloud-3"
+        onError={(e) => { e.currentTarget.style.display = 'none' }} />
+
+      {/* ── 3. 오른쪽 산 ── */}
+      <img
+        src={assetUrl('/assets/mainscene/right_mountain.png')}
+        alt=""
+        className="cat-mountain"
+        onError={(e) => { e.currentTarget.style.display = 'none' }}
+      />
+
+      {/* ── 4. 잔디 바닥 ── */}
+      <img
+        src={assetUrl('/assets/mainscene/day_grass_ground.png')}
+        alt=""
+        className="cat-ground"
+        onError={(e) => { e.currentTarget.style.display = 'none' }}
+      />
+
+      {/* ── 5. Literacy 건물 버튼 (원본 X:60.51%, Y:53.78%) ── */}
+      <div
+        className="cat-coop cat-coop-literacy"
+        onClick={() => navigate('/coop?cat=L')}
       >
-        ← Back
-      </button>
-
-      {/* 타이틀 */}
-      <div style={{
-        marginBottom: 40,
-        textAlign: 'center',
-      }}>
         <img
-          src={assetUrl('/assets/launcher/launcher_kitkitschool_logo.png')}
-          alt="Kitkit School"
-          style={{ maxHeight: 80, objectFit: 'contain' }}
+          src={assetUrl('/assets/mainscene/main_coop_literacy.png')}
+          alt="Literacy"
+          className="cat-coop-img"
+          onError={(e) => { e.currentTarget.style.background = '#4a90d9' }}
+        />
+        <img
+          src={assetUrl('/assets/coopscene/coop_woodpanel_title_literacy.png')}
+          alt="Literacy"
+          className="cat-coop-label"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none'
+            const span = document.createElement('span')
+            span.textContent = 'Literacy'
+            span.className = 'cat-coop-label-text'
+            e.currentTarget.parentElement?.appendChild(span)
+          }}
+        />
+      </div>
+
+      {/* ── 6. Math 건물 버튼 (원본 X:81.95%, Y:53.78%) ── */}
+      <div
+        className="cat-coop cat-coop-math"
+        onClick={() => navigate('/coop?cat=M')}
+      >
+        <img
+          src={assetUrl('/assets/mainscene/main_coop_math.png')}
+          alt="Math"
+          className="cat-coop-img"
+          onError={(e) => { e.currentTarget.style.background = '#e8a020' }}
+        />
+        <img
+          src={assetUrl('/assets/coopscene/coop_woodpanel_title_math.png')}
+          alt="Math"
+          className="cat-coop-label"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none'
+            const span = document.createElement('span')
+            span.textContent = 'Math'
+            span.className = 'cat-coop-label-text'
+            e.currentTarget.parentElement?.appendChild(span)
+          }}
+        />
+      </div>
+
+      {/* ── 7. 왼쪽 나뭇잎 장식 ── */}
+      <img
+        src={assetUrl('/assets/mainscene/main_leaves_left.png')}
+        alt=""
+        className="cat-leaves cat-leaves-left"
+        onError={(e) => { e.currentTarget.style.display = 'none' }}
+      />
+
+      {/* ── 8. 오른쪽 나뭇잎 장식 ── */}
+      <img
+        src={assetUrl('/assets/mainscene/main_leaves_right.png')}
+        alt=""
+        className="cat-leaves cat-leaves-right"
+        onError={(e) => { e.currentTarget.style.display = 'none' }}
+      />
+
+      {/* ── 9. 뒤로가기 버튼 (원본 quit 버튼 위치) ── */}
+      <div
+        className="cat-quit"
+        onClick={() => navigate('/')}
+      >
+        <img
+          src={assetUrl('/assets/mainscene/mainscreen_exitbutton_normal.png')}
+          alt="Back"
+          className="cat-quit-img"
           onError={(e) => { e.currentTarget.style.display = 'none' }}
         />
       </div>
 
-      {/* 선택 버튼 2개 */}
-      <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        gap: 60,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}>
-
-        {/* Literacy 버튼 */}
-        <div
-          onClick={() => navigate('/coop?cat=L')}
-          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', cursor: 'pointer' }}
-        >
-          <div style={{
-            width: 220,
-            height: 220,
-            borderRadius: '50%',
-            overflow: 'hidden',
-            border: '6px solid rgba(255,255,255,0.8)',
-            boxShadow: '0 8px 24px rgba(0,0,0,0.3)',
-            transition: 'transform 0.15s, box-shadow 0.15s',
-            background: '#4a90d9',
-          }}
-            onMouseEnter={e => {
-              (e.currentTarget as HTMLDivElement).style.transform = 'scale(1.08)'
-              ;(e.currentTarget as HTMLDivElement).style.boxShadow = '0 12px 32px rgba(0,0,0,0.4)'
-            }}
-            onMouseLeave={e => {
-              (e.currentTarget as HTMLDivElement).style.transform = 'scale(1)'
-              ;(e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 24px rgba(0,0,0,0.3)'
-            }}
-          >
-            <img
-              src={assetUrl('/assets/mainscene/main_coop_literacy.png')}
-              alt="Literacy"
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-              }}
-            />
-          </div>
-          <span style={{
-            marginTop: 16,
-            fontSize: 28,
-            fontFamily: 'TodoMainCurly, sans-serif',
-            color: '#fff',
-            textShadow: '2px 2px 6px rgba(0,0,0,0.5)',
-            fontWeight: 'bold',
-          }}>
-            Literacy
-          </span>
-        </div>
-
-        {/* Math 버튼 */}
-        <div
-          onClick={() => navigate('/coop?cat=M')}
-          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', cursor: 'pointer' }}
-        >
-          <div style={{
-            width: 220,
-            height: 220,
-            borderRadius: '50%',
-            overflow: 'hidden',
-            border: '6px solid rgba(255,255,255,0.8)',
-            boxShadow: '0 8px 24px rgba(0,0,0,0.3)',
-            transition: 'transform 0.15s, box-shadow 0.15s',
-            background: '#e8a020',
-          }}
-            onMouseEnter={e => {
-              (e.currentTarget as HTMLDivElement).style.transform = 'scale(1.08)'
-              ;(e.currentTarget as HTMLDivElement).style.boxShadow = '0 12px 32px rgba(0,0,0,0.4)'
-            }}
-            onMouseLeave={e => {
-              (e.currentTarget as HTMLDivElement).style.transform = 'scale(1)'
-              ;(e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 24px rgba(0,0,0,0.3)'
-            }}
-          >
-            <img
-              src={assetUrl('/assets/mainscene/main_coop_math.png')}
-              alt="Math"
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-              }}
-            />
-          </div>
-          <span style={{
-            marginTop: 16,
-            fontSize: 28,
-            fontFamily: 'TodoMainCurly, sans-serif',
-            color: '#fff',
-            textShadow: '2px 2px 6px rgba(0,0,0,0.5)',
-            fontWeight: 'bold',
-          }}>
-            Math
-          </span>
-        </div>
-
-      </div>
     </div>
   )
 }
