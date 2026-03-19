@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { assetUrl } from '../utils/assetPath'
 import { useCurriculum } from '../context/CurriculumContext'
 import { getBirdIdleSrc, getEggSrc } from '../data/birdMap'
@@ -28,6 +28,8 @@ import './CoopScenePage.css'
  */
 export default function CoopScenePage() {
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
+  const catFilter = searchParams.get('cat') // 'L' | 'M' | null
   const { getLevels, isLevelOpen, ratioDayCleared, loading } = useCurriculum()
   const [page, setPage] = useState(0)
 
@@ -36,15 +38,18 @@ export default function CoopScenePage() {
   }
 
   const allLevels = getLevels('en-US')
+  const filteredByCategory = catFilter
+    ? allLevels.filter(l => l.category === catFilter)
+    : allLevels
   const totalPages = 2
-  const levels = allLevels.filter(l => Math.floor(l.categoryLevel / 6) === page)
+  const levels = filteredByCategory.filter(l => Math.floor(l.categoryLevel / 6) === page)
 
   return (
     <div className="coop-root">
       <div className="coop-container">
         <img src={assetUrl('/assets/coopscene/coop_bg.jpg')} alt="" className="coop-bg" draggable={false} />
 
-        <button className="coop-back" onClick={() => navigate('/')}>
+        <button className="coop-back" onClick={() => navigate(catFilter ? '/category' : '/')}>
           ← Back
         </button>
 

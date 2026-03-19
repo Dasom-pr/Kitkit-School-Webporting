@@ -8,6 +8,7 @@ import BookViewerPage from './pages/BookViewerPage'
 import VideoPlayerPage from './pages/VideoPlayerPage'
 
 // Shell (launcher) pages
+const CategorySelectPage = lazy(() => import('./pages/CategorySelectPage'))
 const CoopScenePage = lazy(() => import('./pages/CoopScenePage'))
 const DaySelectPage = lazy(() => import('./pages/DaySelectPage'))
 const MainScenePage = lazy(() => import('./pages/MainScenePage'))
@@ -66,6 +67,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LauncherPage />} />
         <Route path="/admin" element={<AdminPage />} />
+        <Route path="/category" element={<CategorySelectPage />} />
         <Route path="/coop" element={<CoopScenePage />} />
         <Route path="/coop/:levelID" element={<DaySelectPage />} />
         <Route path="/coop/:levelID/day/:day" element={<MainScenePage />} />

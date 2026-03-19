@@ -62,7 +62,7 @@ export default function LauncherPage() {
       }}>
         {/* Left: Game Button - 780dp width proportional (~62% of content) */}
         <div
-          onClick={() => navigate('/coop')}
+          onClick={() => navigate('/category')}
           style={{
             position: 'relative',
             flex: '0 0 62%',
