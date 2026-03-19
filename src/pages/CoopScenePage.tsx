@@ -41,8 +41,16 @@ export default function CoopScenePage() {
   const filteredByCategory = catFilter
     ? allLevels.filter(l => l.category === catFilter)
     : allLevels
-  const totalPages = 2
-  const levels = filteredByCategory.filter(l => Math.floor(l.categoryLevel / 6) === page)
+
+  // 카테고리 선택 시: 전체 12개 한 화면 / 미선택 시: 페이지 나누기
+  const singleCat = !!catFilter
+  const totalPages = singleCat ? 1 : 2
+  const levels = singleCat
+    ? filteredByCategory
+    : filteredByCategory.filter(l => Math.floor(l.categoryLevel / 6) === page)
+
+  // 단일 카테고리 모드 사이즈 축소 비율 (4열로 넓게 배치)
+  const scale = singleCat ? 0.72 : 1.0
 
   return (
     <div className="coop-root">
@@ -53,45 +61,56 @@ export default function CoopScenePage() {
           ← Back
         </button>
 
-        {/* 페이지 이동 화살표 */}
-        {page > 0 && (
+        {/* 페이지 이동 화살표 — 단일 카테고리 모드에서는 숨김 */}
+        {!singleCat && page > 0 && (
           <button className="coop-nav-btn coop-nav-btn--left" onClick={() => setPage(p => p - 1)}>
             ‹
           </button>
         )}
-        {page < totalPages - 1 && (
+        {!singleCat && page < totalPages - 1 && (
           <button className="coop-nav-btn coop-nav-btn--right" onClick={() => setPage(p => p + 1)}>
             ›
           </button>
         )}
 
-        {/* 페이지 표시 점 */}
-        <div className="coop-page-dots">
-          {Array.from({ length: totalPages }).map((_, i) => (
-            <span
-              key={i}
-              className={`coop-page-dot ${i === page ? 'coop-page-dot--active' : ''}`}
-              onClick={() => setPage(i)}
-            />
-          ))}
-        </div>
+        {/* 페이지 점 — 단일 카테고리 모드에서는 숨김 */}
+        {!singleCat && (
+          <div className="coop-page-dots">
+            {Array.from({ length: totalPages }).map((_, i) => (
+              <span
+                key={i}
+                className={`coop-page-dot ${i === page ? 'coop-page-dot--active' : ''}`}
+                onClick={() => setPage(i)}
+              />
+            ))}
+          </div>
+        )}
 
         {levels.map(level => {
           if (level.numDays === 0) return null
 
-          const lv = level.categoryLevel % 6
+          const lv = level.categoryLevel
           const isL = level.category === 'L'
-          const gridX = isL ? 1 - (lv % 2) : 2 + (lv % 2)
-          const gridY = 2 - Math.floor(lv / 2)
 
-          // C++ pixel coords (2560×1800, Y from bottom)
-          const cx = COOP_DESIGN.width / 8 * (1 + 2 * gridX)
-          const cy = 545 * gridY
+          // 단일 카테고리: 4열×3행 / 혼합: 기존 2열×3행
+          let cx: number, cy: number
+          if (singleCat) {
+            const col = lv % 4               // 0,1,2,3
+            const row = Math.floor(lv / 4)   // 0,1,2
+            cx = COOP_DESIGN.width / 8 * (1 + 2 * col)  // 320, 960, 1600, 2240
+            cy = 1200 - row * 500            // 1200, 700, 200
+          } else {
+            const lvMod = lv % 6
+            const gridX = isL ? 1 - (lvMod % 2) : 2 + (lvMod % 2)
+            const gridY = 2 - Math.floor(lvMod / 2)
+            cx = COOP_DESIGN.width / 8 * (1 + 2 * gridX)
+            cy = 545 * gridY
+          }
 
           // CSS percentages (position)
-          const leftPct  = (cx / COOP_DESIGN.width) * 100
+          const leftPct     = (cx / COOP_DESIGN.width) * 100
           const panelBotPct = (cy / COOP_DESIGN.height) * 100
-          const nestBotPct  = ((cy + 20) / COOP_DESIGN.height) * 100
+          const nestBotPct  = ((cy + 20)  / COOP_DESIGN.height) * 100
           const birdBotPct  = ((cy + 120) / COOP_DESIGN.height) * 100
 
           const open = isLevelOpen(level.levelID)
@@ -101,9 +120,9 @@ export default function CoopScenePage() {
           if (lv === 0) panelImg = 'coop_woodpanel_prek.png'
           const nestImg = isL ? 'coop_english_nest.png' : 'coop_math_nest.png'
 
-          // Per-bird sizing and anchor
-          const birdSize = birdSizePct(level.category, lv)
-          const birdXform = birdTransform(level.category, lv)
+          // Per-bird sizing and anchor (실제 categoryLevel 기준)
+          const birdSize = birdSizePct(level.category, level.categoryLevel)
+          const birdXform = birdTransform(level.category, level.categoryLevel)
 
           return (
             <div
@@ -114,13 +133,13 @@ export default function CoopScenePage() {
               {/* Bird or Egg at panelPos+(0,120) */}
               {open ? (
                 <img
-                  src={getBirdIdleSrc(level.category, lv)}
+                  src={getBirdIdleSrc(level.category, level.categoryLevel)}
                   alt={level.levelTitle}
                   className="coop-bird-img"
                   style={{
                     left: `${leftPct}%`,
                     bottom: `${birdBotPct}%`,
-                    width: `${birdSize.widthPct}%`,
+                    width: `${birdSize.widthPct * scale}%`,
                     transform: birdXform,
                   }}
                   draggable={false}
@@ -128,13 +147,13 @@ export default function CoopScenePage() {
                 />
               ) : (
                 <img
-                  src={getEggSrc(level.category, lv)}
+                  src={getEggSrc(level.category, level.categoryLevel)}
                   alt="egg"
                   className="coop-egg"
                   style={{
                     left: `${leftPct}%`,
                     bottom: `${birdBotPct}%`,
-                    width: `${EGG_WIDTH_PCT}%`,
+                    width: `${EGG_WIDTH_PCT * scale}%`,
                     // Egg anchor: (0.5, 0.05) → translate(-50%, 5%)
                     transform: 'translate(-50%, 5%)',
                   }}
@@ -150,8 +169,8 @@ export default function CoopScenePage() {
                   style={{
                     left: `${leftPct}%`,
                     bottom: `${birdBotPct}%`,
-                    width: `${Math.max(birdSize.widthPct, 4)}%`,
-                    height: `${Math.max(birdSize.heightPct, 5)}%`,
+                    width: `${Math.max(birdSize.widthPct * scale, 4)}%`,
+                    height: `${Math.max(birdSize.heightPct * scale, 5)}%`,
                   }}
                 >
                   <svg viewBox="0 0 36 36" className="coop-ring-svg">
@@ -172,7 +191,7 @@ export default function CoopScenePage() {
                 style={{
                   left: `${leftPct}%`,
                   bottom: `${nestBotPct}%`,
-                  width: `${NEST_WIDTH_PCT}%`,
+                  width: `${NEST_WIDTH_PCT * scale}%`,
                 }}
                 draggable={false}
               />
@@ -183,7 +202,7 @@ export default function CoopScenePage() {
                 style={{
                   left: `${leftPct}%`,
                   bottom: `${panelBotPct}%`,
-                  width: `${PANEL_WIDTH_PCT}%`,
+                  width: `${PANEL_WIDTH_PCT * scale}%`,
                 }}
               >
                 <img
