@@ -1,0 +1,14 @@
+{
+  "levels": {
+    "1": {"type":"addition","digits1":2,"digits2":1,"maxNum":30},
+    "2": {"type":"addition","digits1":2,"digits2":1,"maxNum":50},
+    "3": {"type":"subtraction","digits1":2,"digits2":1,"maxNum":50},
+    "4": {"type":"addition","digits1":2,"digits2":2,"maxNum":99},
+    "5": {"type":"subtraction","digits1":2,"digits2":2,"maxNum":99},
+    "6": {"type":"mixed","digits1":2,"digits2":2,"maxNum":99},
+    "7": {"type":"addition","digits1":3,"digits2":2,"maxNum":500},
+    "8": {"type":"subtraction","digits1":3,"digits2":2,"maxNum":500},
+    "9": {"type":"addition","digits1":3,"digits2":3,"maxNum":999},
+    "10": {"type":"mixed","digits1":3,"digits2":3,"maxNum":999}
+  }
+}

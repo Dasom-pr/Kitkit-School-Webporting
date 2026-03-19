@@ -1,0 +1,96 @@
+{
+  "game": "equationmaker",
+  "language": "en-US",
+  "levels": [
+    {
+      "level": 1,
+      "type": "A",
+      "mathSign": "P",
+      "minNumber": 1,
+      "maxNumber": 5,
+      "blankCount": 0,
+      "panelCount": 4
+    },
+    {
+      "level": 2,
+      "type": "A",
+      "mathSign": "M",
+      "minNumber": 1,
+      "maxNumber": 5,
+      "blankCount": 0,
+      "panelCount": 4
+    },
+    {
+      "level": 3,
+      "type": "A",
+      "mathSign": "P",
+      "minNumber": 1,
+      "maxNumber": 10,
+      "blankCount": 2,
+      "panelCount": 5
+    },
+    {
+      "level": 4,
+      "type": "A",
+      "mathSign": "M",
+      "minNumber": 1,
+      "maxNumber": 10,
+      "blankCount": 2,
+      "panelCount": 5
+    },
+    {
+      "level": 5,
+      "type": "B",
+      "mathSign": "P",
+      "minNumber": 1,
+      "maxNumber": 10,
+      "blankCount": 0,
+      "panelCount": 5
+    },
+    {
+      "level": 6,
+      "type": "B",
+      "mathSign": "M",
+      "minNumber": 1,
+      "maxNumber": 10,
+      "blankCount": 0,
+      "panelCount": 5
+    },
+    {
+      "level": 7,
+      "type": "B",
+      "mathSign": "P",
+      "minNumber": 10,
+      "maxNumber": 20,
+      "blankCount": 0,
+      "panelCount": 5
+    },
+    {
+      "level": 8,
+      "type": "B",
+      "mathSign": "M",
+      "minNumber": 10,
+      "maxNumber": 20,
+      "blankCount": 0,
+      "panelCount": 5
+    },
+    {
+      "level": 9,
+      "type": "B",
+      "mathSign": "R",
+      "minNumber": 10,
+      "maxNumber": 20,
+      "blankCount": 0,
+      "panelCount": 5
+    },
+    {
+      "level": 10,
+      "type": "C",
+      "mathSign": "P",
+      "minNumber": 1,
+      "maxNumber": 5,
+      "blankCount": 0,
+      "panelCount": 2
+    }
+  ]
+}

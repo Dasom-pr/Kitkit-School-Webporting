@@ -1,0 +1,55 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "pairs": [
+        { "id": 0, "imageA": "triangle_blue.png",  "imageB": "triangle_orange.png", "label": "Triangle" },
+        { "id": 1, "imageA": "square_blue.png",    "imageB": "square_orange.png",   "label": "Square" },
+        { "id": 2, "imageA": "heart_blue.png",     "imageB": "heart_purple.png",    "label": "Heart" }
+      ]
+    },
+    {
+      "level": 2,
+      "pairs": [
+        { "id": 0, "imageA": "triangle_blue.png",  "imageB": "triangle_orange.png", "label": "Triangle" },
+        { "id": 1, "imageA": "square_blue.png",    "imageB": "square_orange.png",   "label": "Square" },
+        { "id": 2, "imageA": "heart_blue.png",     "imageB": "heart_purple.png",    "label": "Heart" },
+        { "id": 3, "imageA": "star_blue.png",      "imageB": "star_purple.png",     "label": "Star" }
+      ]
+    },
+    {
+      "level": 4,
+      "pairs": [
+        { "id": 0, "imageA": "pentagon_blue.png",   "imageB": "pentagon_orange.png",  "label": "Pentagon" },
+        { "id": 1, "imageA": "hexagon_blue.png",    "imageB": "hexagon_orange.png",   "label": "Hexagon" },
+        { "id": 2, "imageA": "arrow_blue.png",      "imageB": "arrow_purple.png",     "label": "Arrow" },
+        { "id": 3, "imageA": "butterfly_blue.png",  "imageB": "butterfly_purple.png", "label": "Butterfly" },
+        { "id": 4, "imageA": "snowman_blue.png",    "imageB": "snowman_purple.png",   "label": "Snowman" }
+      ]
+    },
+    {
+      "level": 5,
+      "pairs": [
+        { "id": 0, "imageA": "triangle_blue.png",   "imageB": "triangle_orange.png",  "label": "Triangle" },
+        { "id": 1, "imageA": "pentagon_blue.png",   "imageB": "pentagon_orange.png",  "label": "Pentagon" },
+        { "id": 2, "imageA": "heart_blue.png",      "imageB": "heart_purple.png",     "label": "Heart" },
+        { "id": 3, "imageA": "star_blue.png",       "imageB": "star_purple.png",      "label": "Star" },
+        { "id": 4, "imageA": "arrow_blue.png",      "imageB": "arrow_purple.png",     "label": "Arrow" },
+        { "id": 5, "imageA": "addition_blue.png",   "imageB": "addition_purple.png",  "label": "Cross" }
+      ]
+    },
+    {
+      "level": 9,
+      "pairs": [
+        { "id": 0, "imageA": "triangle_blue.png",   "imageB": "triangle_orange.png",  "label": "Triangle" },
+        { "id": 1, "imageA": "square_blue.png",     "imageB": "square_orange.png",    "label": "Square" },
+        { "id": 2, "imageA": "pentagon_blue.png",   "imageB": "pentagon_orange.png",  "label": "Pentagon" },
+        { "id": 3, "imageA": "hexagon_blue.png",    "imageB": "hexagon_orange.png",   "label": "Hexagon" },
+        { "id": 4, "imageA": "heart_blue.png",      "imageB": "heart_purple.png",     "label": "Heart" },
+        { "id": 5, "imageA": "star_blue.png",       "imageB": "star_purple.png",      "label": "Star" },
+        { "id": 6, "imageA": "butterfly_blue.png",  "imageB": "butterfly_purple.png", "label": "Butterfly" },
+        { "id": 7, "imageA": "snowman_blue.png",    "imageB": "snowman_purple.png",   "label": "Snowman" }
+      ]
+    }
+  ]
+}

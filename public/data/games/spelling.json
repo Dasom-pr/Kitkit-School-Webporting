@@ -1,0 +1,14 @@
+{
+  "levels": {
+    "1": {"words":["cat","dog","sun","hat","pig"]},
+    "2": {"words":["red","big","cup","map","bed"]},
+    "3": {"words":["fish","bird","tree","frog","star"]},
+    "4": {"words":["moon","cake","book","rain","snow"]},
+    "5": {"words":["play","jump","swim","sing","read"]},
+    "6": {"words":["apple","house","water","cloud","grass"]},
+    "7": {"words":["happy","green","smile","dance","light"]},
+    "8": {"words":["school","friend","garden","family","animal"]},
+    "9": {"words":["mother","father","sister","brother","cousin"]},
+    "10": {"words":["rainbow","dolphin","penguin","giraffe","elephant"]}
+  }
+}
