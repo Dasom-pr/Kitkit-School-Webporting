@@ -1,0 +1,916 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "problems": [
+        {
+          "letter": "m",
+          "endings": [
+            "ad",
+            "an"
+          ]
+        },
+        {
+          "letter": "c",
+          "endings": [
+            "at",
+            "an"
+          ]
+        },
+        {
+          "letter": "h",
+          "endings": [
+            "am",
+            "at"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "problems": [
+        {
+          "letter": "p",
+          "endings": [
+            "en",
+            "et"
+          ]
+        },
+        {
+          "letter": "b",
+          "endings": [
+            "eg",
+            "ed"
+          ]
+        },
+        {
+          "letter": "l",
+          "endings": [
+            "et",
+            "eg"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        {
+          "letter": "k",
+          "endings": [
+            "id",
+            "it"
+          ]
+        },
+        {
+          "letter": "p",
+          "endings": [
+            "in",
+            "ig"
+          ]
+        },
+        {
+          "letter": "h",
+          "endings": [
+            "it",
+            "ip"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "problems": [
+        {
+          "letter": "f",
+          "endings": [
+            "og",
+            "ox"
+          ]
+        },
+        {
+          "letter": "h",
+          "endings": [
+            "op",
+            "ot"
+          ]
+        },
+        {
+          "letter": "d",
+          "endings": [
+            "ot",
+            "og"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "problems": [
+        {
+          "letter": "b",
+          "endings": [
+            "un",
+            "us"
+          ]
+        },
+        {
+          "letter": "h",
+          "endings": [
+            "ug",
+            "ut"
+          ]
+        },
+        {
+          "letter": "r",
+          "endings": [
+            "un",
+            "ut"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        {
+          "letter": "s",
+          "endings": [
+            "ip",
+            "ad",
+            "un"
+          ]
+        },
+        {
+          "letter": "m",
+          "endings": [
+            "ud",
+            "et",
+            "om"
+          ]
+        },
+        {
+          "letter": "b",
+          "endings": [
+            "ed",
+            "ug",
+            "at"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        {
+          "letter": "l",
+          "endings": [
+            "og",
+            "ap",
+            "it"
+          ]
+        },
+        {
+          "letter": "j",
+          "endings": [
+            "et",
+            "am",
+            "ug"
+          ]
+        },
+        {
+          "letter": "h",
+          "endings": [
+            "am",
+            "ot",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        {
+          "letter": "t",
+          "endings": [
+            "ub",
+            "ap",
+            "in"
+          ]
+        },
+        {
+          "letter": "n",
+          "endings": [
+            "ot",
+            "ag",
+            "ut"
+          ]
+        },
+        {
+          "letter": "p",
+          "endings": [
+            "an",
+            "eg",
+            "op"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "problems": [
+        {
+          "letter": "m,h",
+          "endings": [
+            "en",
+            "ug"
+          ]
+        },
+        {
+          "letter": "b,w",
+          "endings": [
+            "in",
+            "et"
+          ]
+        },
+        {
+          "letter": "s,b",
+          "endings": [
+            "ad",
+            "un"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "problems": [
+        {
+          "letter": "t,m",
+          "endings": [
+            "en",
+            "ap"
+          ]
+        },
+        {
+          "letter": "f,r",
+          "endings": [
+            "an",
+            "un"
+          ]
+        },
+        {
+          "letter": "c,n",
+          "endings": [
+            "ut",
+            "ap"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "problems": [
+        {
+          "letter": "h,r",
+          "endings": [
+            "am",
+            "at"
+          ]
+        },
+        {
+          "letter": "l,d",
+          "endings": [
+            "ip",
+            "og"
+          ]
+        },
+        {
+          "letter": "t,p",
+          "endings": [
+            "ot",
+            "in"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "problems": [
+        {
+          "letter": "p,w",
+          "endings": [
+            "ig",
+            "et"
+          ]
+        },
+        {
+          "letter": "r,t",
+          "endings": [
+            "ug",
+            "ot"
+          ]
+        },
+        {
+          "letter": "h,w",
+          "endings": [
+            "it",
+            "ay"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "problems": [
+        {
+          "letter": "m,d,s",
+          "endings": [
+            "ad",
+            "ug"
+          ]
+        },
+        {
+          "letter": "w,n,b",
+          "endings": [
+            "et",
+            "in"
+          ]
+        },
+        {
+          "letter": "t,b,g",
+          "endings": [
+            "ig",
+            "ap"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "problems": [
+        {
+          "letter": "l,h,t",
+          "endings": [
+            "ut",
+            "op",
+            "ip"
+          ]
+        },
+        {
+          "letter": "f,d,j",
+          "endings": [
+            "og",
+            "am",
+            "ug"
+          ]
+        },
+        {
+          "letter": "d,r,m",
+          "endings": [
+            "id",
+            "ot",
+            "an"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "problems": [
+        {
+          "letter": "ch",
+          "endings": [
+            "ain",
+            "air",
+            "art"
+          ]
+        },
+        {
+          "letter": "sh",
+          "endings": [
+            "irt",
+            "ine",
+            "ort"
+          ]
+        },
+        {
+          "letter": "th",
+          "endings": [
+            "ick",
+            "in",
+            "ing"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "problems": [
+        {
+          "letter": "c",
+          "endings": [
+            "ake",
+            "ane",
+            "ave"
+          ]
+        },
+        {
+          "letter": "r",
+          "endings": [
+            "ice",
+            "ide",
+            "ipe"
+          ]
+        },
+        {
+          "letter": "h",
+          "endings": [
+            "ope",
+            "ose",
+            "ole"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "problems": [
+        {
+          "letter": "m",
+          "endings": [
+            "ule",
+            "ice",
+            "ade"
+          ]
+        },
+        {
+          "letter": "f",
+          "endings": [
+            "ace",
+            "ive",
+            "ume"
+          ]
+        },
+        {
+          "letter": "l",
+          "endings": [
+            "ike",
+            "ate",
+            "ute"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "problems": [
+        {
+          "letter": "t,f",
+          "endings": [
+            "ake",
+            "ire"
+          ]
+        },
+        {
+          "letter": "h,r",
+          "endings": [
+            "ope",
+            "ide"
+          ]
+        },
+        {
+          "letter": "m,p",
+          "endings": [
+            "ale",
+            "ile"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "problems": [
+        {
+          "letter": "p",
+          "endings": [
+            "an",
+            "ig",
+            "ot",
+            "age"
+          ]
+        },
+        {
+          "letter": "m",
+          "endings": [
+            "ap",
+            "om",
+            "ud",
+            "ake"
+          ]
+        },
+        {
+          "letter": "f",
+          "endings": [
+            "og",
+            "ix",
+            "un",
+            "ace"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "problems": [
+        {
+          "letter": "h",
+          "endings": [
+            "ug",
+            "en",
+            "ome",
+            "ate"
+          ]
+        },
+        {
+          "letter": "b",
+          "endings": [
+            "ig",
+            "us",
+            "ake",
+            "one"
+          ]
+        },
+        {
+          "letter": "w",
+          "endings": [
+            "in",
+            "et",
+            "ave",
+            "ide"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "problems": [
+        {
+          "letter": "v,f,m",
+          "endings": [
+            "ase",
+            "ike"
+          ]
+        },
+        {
+          "letter": "c,t,l",
+          "endings": [
+            "ute",
+            "ake"
+          ]
+        },
+        {
+          "letter": "h,s,k",
+          "endings": [
+            "ole",
+            "ale"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "problems": [
+        {
+          "letter": "t,m,g",
+          "endings": [
+            "ap",
+            "ape"
+          ]
+        },
+        {
+          "letter": "w,b,f",
+          "endings": [
+            "in",
+            "ine"
+          ]
+        },
+        {
+          "letter": "h,l,t",
+          "endings": [
+            "op",
+            "ope"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "problems": [
+        {
+          "letter": "c,p,d",
+          "endings": [
+            "an",
+            "ane"
+          ]
+        },
+        {
+          "letter": "t,r,j",
+          "endings": [
+            "ub",
+            "ube"
+          ]
+        },
+        {
+          "letter": "k,s,w",
+          "endings": [
+            "it",
+            "ite"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "problems": [
+        {
+          "letter": "w,r",
+          "endings": [
+            "ink",
+            "ing"
+          ]
+        },
+        {
+          "letter": "pr,pl",
+          "endings": [
+            "ay",
+            "um"
+          ]
+        },
+        {
+          "letter": "sp,st",
+          "endings": [
+            "ill",
+            "are"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "problems": [
+        {
+          "letter": "d,l",
+          "endings": [
+            "ot",
+            "amp",
+            "ean"
+          ]
+        },
+        {
+          "letter": "bl,sl",
+          "endings": [
+            "ow",
+            "ip",
+            "ot"
+          ]
+        },
+        {
+          "letter": "p,t",
+          "endings": [
+            "ie",
+            "ile",
+            "ool"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "problems": [
+        {
+          "letter": "t,d",
+          "endings": [
+            "own",
+            "ank",
+            "ip"
+          ]
+        },
+        {
+          "letter": "m,r",
+          "endings": [
+            "ail",
+            "ake",
+            "ime"
+          ]
+        },
+        {
+          "letter": "ch,g",
+          "endings": [
+            "ap",
+            "ain",
+            "eese"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "problems": [
+        {
+          "letter": "j,m",
+          "endings": [
+            "ean",
+            "ug",
+            "ust"
+          ]
+        },
+        {
+          "letter": "h,bl",
+          "endings": [
+            "ouse",
+            "ack",
+            "ot"
+          ]
+        },
+        {
+          "letter": "d,b",
+          "endings": [
+            "ark",
+            "ug",
+            "oom"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "problems": [
+        {
+          "letter": "ch,sh,h",
+          "endings": [
+            "ip",
+            "ut",
+            "op"
+          ]
+        },
+        {
+          "letter": "m,h,t",
+          "endings": [
+            "int",
+            "eat",
+            "all"
+          ]
+        },
+        {
+          "letter": "s,t,d",
+          "endings": [
+            "ip",
+            "ank",
+            "uck"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "problems": [
+        {
+          "letter": "t,m,l,g",
+          "endings": [
+            "ap",
+            "ape"
+          ]
+        },
+        {
+          "letter": "w,b,f,p",
+          "endings": [
+            "in",
+            "ine"
+          ]
+        },
+        {
+          "letter": "h,r,t,m",
+          "endings": [
+            "op",
+            "ope"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "problems": [
+        {
+          "letter": "c,p,d,f",
+          "endings": [
+            "an",
+            "ane"
+          ]
+        },
+        {
+          "letter": "t,r,j,n",
+          "endings": [
+            "ub",
+            "ube"
+          ]
+        },
+        {
+          "letter": "k,s,w,b",
+          "endings": [
+            "it",
+            "ite"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "problems": [
+        {
+          "letter": "m,d,ch",
+          "endings": [
+            "ad",
+            "ug",
+            "op"
+          ]
+        },
+        {
+          "letter": "w,n,sh",
+          "endings": [
+            "et",
+            "in",
+            "ake"
+          ]
+        },
+        {
+          "letter": "t,b,g",
+          "endings": [
+            "ig",
+            "ap",
+            "ank"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "problems": [
+        {
+          "letter": "t,s,p",
+          "endings": [
+            "ea",
+            "ide",
+            "an"
+          ]
+        },
+        {
+          "letter": "c,l,b",
+          "endings": [
+            "ute",
+            "ake",
+            "orn"
+          ]
+        },
+        {
+          "letter": "h,s,b",
+          "endings": [
+            "ole",
+            "ite",
+            "oil"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "problems": [
+        {
+          "letter": "p,n,j",
+          "endings": [
+            "um",
+            "ip",
+            "ate"
+          ]
+        },
+        {
+          "letter": "sh,ch,f",
+          "endings": [
+            "et",
+            "id",
+            "ank"
+          ]
+        },
+        {
+          "letter": "b,m,l",
+          "endings": [
+            "ice",
+            "ax",
+            "ue"
+          ]
+        }
+      ]
+    }
+  ]
+}

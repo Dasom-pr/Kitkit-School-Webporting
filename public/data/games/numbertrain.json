@@ -1,0 +1,1204 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "problems": [
+        {
+          "numbers": [
+            9,
+            1,
+            5,
+            8,
+            10
+          ],
+          "targetType": "smallest",
+          "answer": 1
+        },
+        {
+          "numbers": [
+            9,
+            3,
+            2,
+            7,
+            10
+          ],
+          "targetType": "largest",
+          "answer": 10
+        },
+        {
+          "numbers": [
+            10,
+            7,
+            2,
+            8,
+            5
+          ],
+          "targetType": "smallest",
+          "answer": 2
+        },
+        {
+          "numbers": [
+            1,
+            8,
+            3,
+            7,
+            4
+          ],
+          "targetType": "largest",
+          "answer": 8
+        },
+        {
+          "numbers": [
+            10,
+            2,
+            8,
+            1,
+            3
+          ],
+          "targetType": "smallest",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "problems": [
+        {
+          "numbers": [
+            6,
+            7,
+            10,
+            5,
+            4
+          ],
+          "targetType": "smallest",
+          "answer": 4
+        },
+        {
+          "numbers": [
+            4,
+            5,
+            6,
+            1,
+            8
+          ],
+          "targetType": "largest",
+          "answer": 8
+        },
+        {
+          "numbers": [
+            9,
+            8,
+            10,
+            1,
+            2
+          ],
+          "targetType": "smallest",
+          "answer": 1
+        },
+        {
+          "numbers": [
+            4,
+            3,
+            9,
+            1,
+            10
+          ],
+          "targetType": "largest",
+          "answer": 10
+        },
+        {
+          "numbers": [
+            10,
+            3,
+            2,
+            9,
+            7
+          ],
+          "targetType": "smallest",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        {
+          "numbers": [
+            9,
+            14,
+            1,
+            7,
+            11
+          ],
+          "targetType": "smallest",
+          "answer": 1
+        },
+        {
+          "numbers": [
+            10,
+            5,
+            3,
+            6,
+            13
+          ],
+          "targetType": "largest",
+          "answer": 13
+        },
+        {
+          "numbers": [
+            6,
+            4,
+            3,
+            12,
+            8
+          ],
+          "targetType": "smallest",
+          "answer": 3
+        },
+        {
+          "numbers": [
+            1,
+            8,
+            4,
+            5,
+            7
+          ],
+          "targetType": "largest",
+          "answer": 8
+        },
+        {
+          "numbers": [
+            5,
+            15,
+            7,
+            9,
+            13
+          ],
+          "targetType": "smallest",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "problems": [
+        {
+          "numbers": [
+            1,
+            13,
+            11,
+            3,
+            6
+          ],
+          "targetType": "smallest",
+          "answer": 1
+        },
+        {
+          "numbers": [
+            7,
+            3,
+            10,
+            14,
+            12
+          ],
+          "targetType": "largest",
+          "answer": 14
+        },
+        {
+          "numbers": [
+            15,
+            9,
+            3,
+            10,
+            11
+          ],
+          "targetType": "smallest",
+          "answer": 3
+        },
+        {
+          "numbers": [
+            5,
+            14,
+            1,
+            10,
+            9
+          ],
+          "targetType": "largest",
+          "answer": 14
+        },
+        {
+          "numbers": [
+            12,
+            15,
+            6,
+            8,
+            9
+          ],
+          "targetType": "smallest",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "problems": [
+        {
+          "numbers": [
+            17,
+            8,
+            18,
+            13,
+            15
+          ],
+          "targetType": "smallest",
+          "answer": 8
+        },
+        {
+          "numbers": [
+            9,
+            7,
+            6,
+            11,
+            5
+          ],
+          "targetType": "largest",
+          "answer": 11
+        },
+        {
+          "numbers": [
+            15,
+            19,
+            14,
+            20,
+            10
+          ],
+          "targetType": "smallest",
+          "answer": 10
+        },
+        {
+          "numbers": [
+            10,
+            7,
+            9,
+            8,
+            4
+          ],
+          "targetType": "largest",
+          "answer": 10
+        },
+        {
+          "numbers": [
+            17,
+            19,
+            13,
+            14,
+            9
+          ],
+          "targetType": "smallest",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        {
+          "numbers": [
+            21,
+            12,
+            24,
+            18,
+            27
+          ],
+          "targetType": "smallest",
+          "answer": 12
+        },
+        {
+          "numbers": [
+            26,
+            22,
+            19,
+            5,
+            13
+          ],
+          "targetType": "largest",
+          "answer": 26
+        },
+        {
+          "numbers": [
+            11,
+            14,
+            10,
+            8,
+            17
+          ],
+          "targetType": "smallest",
+          "answer": 8
+        },
+        {
+          "numbers": [
+            6,
+            8,
+            10,
+            25,
+            21
+          ],
+          "targetType": "largest",
+          "answer": 25
+        },
+        {
+          "numbers": [
+            12,
+            18,
+            25,
+            8,
+            30
+          ],
+          "targetType": "smallest",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        {
+          "numbers": [
+            16,
+            14,
+            10,
+            19,
+            9
+          ],
+          "targetType": "smallest",
+          "answer": 9
+        },
+        {
+          "numbers": [
+            29,
+            26,
+            20,
+            14,
+            19
+          ],
+          "targetType": "largest",
+          "answer": 29
+        },
+        {
+          "numbers": [
+            8,
+            6,
+            29,
+            5,
+            23
+          ],
+          "targetType": "smallest",
+          "answer": 5
+        },
+        {
+          "numbers": [
+            7,
+            11,
+            15,
+            6,
+            22
+          ],
+          "targetType": "largest",
+          "answer": 22
+        },
+        {
+          "numbers": [
+            29,
+            26,
+            18,
+            9,
+            6
+          ],
+          "targetType": "smallest",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        {
+          "numbers": [
+            27,
+            10,
+            12,
+            33,
+            14
+          ],
+          "targetType": "smallest",
+          "answer": 10
+        },
+        {
+          "numbers": [
+            14,
+            16,
+            17,
+            31,
+            37
+          ],
+          "targetType": "largest",
+          "answer": 37
+        },
+        {
+          "numbers": [
+            36,
+            15,
+            28,
+            16,
+            30
+          ],
+          "targetType": "smallest",
+          "answer": 15
+        },
+        {
+          "numbers": [
+            13,
+            31,
+            39,
+            23,
+            35
+          ],
+          "targetType": "largest",
+          "answer": 39
+        },
+        {
+          "numbers": [
+            30,
+            11,
+            24,
+            21,
+            35
+          ],
+          "targetType": "smallest",
+          "answer": 11
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "problems": [
+        {
+          "numbers": [
+            13,
+            15,
+            22,
+            31,
+            30
+          ],
+          "targetType": "smallest",
+          "answer": 13
+        },
+        {
+          "numbers": [
+            30,
+            24,
+            15,
+            10,
+            11
+          ],
+          "targetType": "largest",
+          "answer": 30
+        },
+        {
+          "numbers": [
+            24,
+            13,
+            33,
+            39,
+            21
+          ],
+          "targetType": "smallest",
+          "answer": 13
+        },
+        {
+          "numbers": [
+            39,
+            14,
+            25,
+            31,
+            37
+          ],
+          "targetType": "largest",
+          "answer": 39
+        },
+        {
+          "numbers": [
+            25,
+            14,
+            30,
+            28,
+            36
+          ],
+          "targetType": "smallest",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "problems": [
+        {
+          "numbers": [
+            24,
+            36,
+            39,
+            49,
+            37
+          ],
+          "targetType": "smallest",
+          "answer": 24
+        },
+        {
+          "numbers": [
+            38,
+            28,
+            35,
+            20,
+            44
+          ],
+          "targetType": "largest",
+          "answer": 44
+        },
+        {
+          "numbers": [
+            45,
+            30,
+            21,
+            36,
+            46
+          ],
+          "targetType": "smallest",
+          "answer": 21
+        },
+        {
+          "numbers": [
+            17,
+            36,
+            49,
+            43,
+            50
+          ],
+          "targetType": "largest",
+          "answer": 50
+        },
+        {
+          "numbers": [
+            33,
+            41,
+            27,
+            25,
+            31
+          ],
+          "targetType": "smallest",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "problems": [
+        {
+          "numbers": [
+            12,
+            15,
+            59,
+            56,
+            31
+          ],
+          "targetType": "smallest",
+          "answer": 12
+        },
+        {
+          "numbers": [
+            23,
+            57,
+            16,
+            54,
+            58
+          ],
+          "targetType": "largest",
+          "answer": 58
+        },
+        {
+          "numbers": [
+            43,
+            13,
+            40,
+            39,
+            52
+          ],
+          "targetType": "smallest",
+          "answer": 13
+        },
+        {
+          "numbers": [
+            56,
+            45,
+            16,
+            13,
+            51
+          ],
+          "targetType": "largest",
+          "answer": 56
+        },
+        {
+          "numbers": [
+            26,
+            36,
+            39,
+            56,
+            32
+          ],
+          "targetType": "smallest",
+          "answer": 26
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "problems": [
+        {
+          "numbers": [
+            31,
+            36,
+            29,
+            25,
+            59
+          ],
+          "targetType": "smallest",
+          "answer": 25
+        },
+        {
+          "numbers": [
+            43,
+            36,
+            34,
+            49,
+            27
+          ],
+          "targetType": "largest",
+          "answer": 49
+        },
+        {
+          "numbers": [
+            13,
+            16,
+            57,
+            39,
+            25
+          ],
+          "targetType": "smallest",
+          "answer": 13
+        },
+        {
+          "numbers": [
+            15,
+            59,
+            32,
+            26,
+            57
+          ],
+          "targetType": "largest",
+          "answer": 59
+        },
+        {
+          "numbers": [
+            37,
+            13,
+            28,
+            47,
+            44
+          ],
+          "targetType": "smallest",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "problems": [
+        {
+          "numbers": [
+            53,
+            43,
+            79,
+            66,
+            34
+          ],
+          "targetType": "smallest",
+          "answer": 34
+        },
+        {
+          "numbers": [
+            79,
+            45,
+            43,
+            72,
+            57
+          ],
+          "targetType": "largest",
+          "answer": 79
+        },
+        {
+          "numbers": [
+            28,
+            27,
+            71,
+            59,
+            64
+          ],
+          "targetType": "smallest",
+          "answer": 27
+        },
+        {
+          "numbers": [
+            24,
+            50,
+            31,
+            55,
+            80
+          ],
+          "targetType": "largest",
+          "answer": 80
+        },
+        {
+          "numbers": [
+            79,
+            66,
+            70,
+            45,
+            56
+          ],
+          "targetType": "smallest",
+          "answer": 45
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "problems": [
+        {
+          "numbers": [
+            25,
+            50,
+            71,
+            30,
+            58
+          ],
+          "targetType": "smallest",
+          "answer": 25
+        },
+        {
+          "numbers": [
+            60,
+            40,
+            65,
+            75,
+            41
+          ],
+          "targetType": "largest",
+          "answer": 75
+        },
+        {
+          "numbers": [
+            65,
+            28,
+            60,
+            30,
+            29
+          ],
+          "targetType": "smallest",
+          "answer": 28
+        },
+        {
+          "numbers": [
+            52,
+            44,
+            56,
+            37,
+            74
+          ],
+          "targetType": "largest",
+          "answer": 74
+        },
+        {
+          "numbers": [
+            25,
+            49,
+            20,
+            62,
+            80
+          ],
+          "targetType": "smallest",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "problems": [
+        {
+          "numbers": [
+            69,
+            63,
+            44,
+            87,
+            82
+          ],
+          "targetType": "smallest",
+          "answer": 44
+        },
+        {
+          "numbers": [
+            82,
+            63,
+            31,
+            78,
+            85
+          ],
+          "targetType": "largest",
+          "answer": 85
+        },
+        {
+          "numbers": [
+            45,
+            81,
+            42,
+            69,
+            85
+          ],
+          "targetType": "smallest",
+          "answer": 42
+        },
+        {
+          "numbers": [
+            31,
+            48,
+            93,
+            50,
+            43
+          ],
+          "targetType": "largest",
+          "answer": 93
+        },
+        {
+          "numbers": [
+            82,
+            89,
+            80,
+            66,
+            65
+          ],
+          "targetType": "smallest",
+          "answer": 65
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "problems": [
+        {
+          "numbers": [
+            90,
+            51,
+            75,
+            115,
+            60
+          ],
+          "targetType": "smallest",
+          "answer": 51
+        },
+        {
+          "numbers": [
+            65,
+            58,
+            88,
+            62,
+            98
+          ],
+          "targetType": "largest",
+          "answer": 98
+        },
+        {
+          "numbers": [
+            78,
+            115,
+            50,
+            74,
+            108
+          ],
+          "targetType": "smallest",
+          "answer": 50
+        },
+        {
+          "numbers": [
+            81,
+            115,
+            72,
+            76,
+            80
+          ],
+          "targetType": "largest",
+          "answer": 115
+        },
+        {
+          "numbers": [
+            82,
+            86,
+            50,
+            57,
+            116
+          ],
+          "targetType": "smallest",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "problems": [
+        {
+          "numbers": [
+            85,
+            78,
+            66,
+            50,
+            83
+          ],
+          "targetType": "smallest",
+          "answer": 50
+        },
+        {
+          "numbers": [
+            115,
+            80,
+            95,
+            50,
+            61
+          ],
+          "targetType": "largest",
+          "answer": 115
+        },
+        {
+          "numbers": [
+            57,
+            63,
+            94,
+            77,
+            53
+          ],
+          "targetType": "smallest",
+          "answer": 53
+        },
+        {
+          "numbers": [
+            91,
+            135,
+            55,
+            59,
+            125
+          ],
+          "targetType": "largest",
+          "answer": 135
+        },
+        {
+          "numbers": [
+            60,
+            141,
+            88,
+            72,
+            86
+          ],
+          "targetType": "smallest",
+          "answer": 60
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "problems": [
+        {
+          "numbers": [
+            155,
+            159,
+            97,
+            156,
+            122
+          ],
+          "targetType": "smallest",
+          "answer": 97
+        },
+        {
+          "numbers": [
+            150,
+            128,
+            152,
+            91,
+            112
+          ],
+          "targetType": "largest",
+          "answer": 152
+        },
+        {
+          "numbers": [
+            134,
+            138,
+            132,
+            90,
+            87
+          ],
+          "targetType": "smallest",
+          "answer": 87
+        },
+        {
+          "numbers": [
+            146,
+            160,
+            115,
+            81,
+            151
+          ],
+          "targetType": "largest",
+          "answer": 160
+        },
+        {
+          "numbers": [
+            160,
+            116,
+            141,
+            82,
+            89
+          ],
+          "targetType": "smallest",
+          "answer": 82
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "problems": [
+        {
+          "numbers": [
+            132,
+            128,
+            190,
+            180,
+            135
+          ],
+          "targetType": "smallest",
+          "answer": 128
+        },
+        {
+          "numbers": [
+            111,
+            100,
+            189,
+            159,
+            106
+          ],
+          "targetType": "largest",
+          "answer": 189
+        },
+        {
+          "numbers": [
+            134,
+            166,
+            171,
+            164,
+            174
+          ],
+          "targetType": "smallest",
+          "answer": 134
+        },
+        {
+          "numbers": [
+            114,
+            165,
+            138,
+            112,
+            181
+          ],
+          "targetType": "largest",
+          "answer": 181
+        },
+        {
+          "numbers": [
+            131,
+            134,
+            175,
+            143,
+            182
+          ],
+          "targetType": "smallest",
+          "answer": 131
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "problems": [
+        {
+          "numbers": [
+            109,
+            149,
+            157,
+            123,
+            198
+          ],
+          "targetType": "smallest",
+          "answer": 109
+        },
+        {
+          "numbers": [
+            151,
+            136,
+            113,
+            192,
+            159
+          ],
+          "targetType": "largest",
+          "answer": 192
+        },
+        {
+          "numbers": [
+            133,
+            100,
+            167,
+            141,
+            160
+          ],
+          "targetType": "smallest",
+          "answer": 100
+        },
+        {
+          "numbers": [
+            101,
+            125,
+            158,
+            167,
+            156
+          ],
+          "targetType": "largest",
+          "answer": 167
+        },
+        {
+          "numbers": [
+            193,
+            189,
+            179,
+            125,
+            196
+          ],
+          "targetType": "smallest",
+          "answer": 125
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1654 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "problems": [
+        {
+          "answer": "s",
+          "parts": [
+            "s"
+          ]
+        },
+        {
+          "answer": "t",
+          "parts": [
+            "t"
+          ]
+        },
+        {
+          "answer": "p",
+          "parts": [
+            "p"
+          ]
+        },
+        {
+          "answer": "m",
+          "parts": [
+            "m"
+          ]
+        },
+        {
+          "answer": "n",
+          "parts": [
+            "n"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "problems": [
+        {
+          "answer": "d",
+          "parts": [
+            "d"
+          ]
+        },
+        {
+          "answer": "g",
+          "parts": [
+            "g"
+          ]
+        },
+        {
+          "answer": "c",
+          "parts": [
+            "c"
+          ]
+        },
+        {
+          "answer": "b",
+          "parts": [
+            "b"
+          ]
+        },
+        {
+          "answer": "r",
+          "parts": [
+            "r"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        {
+          "answer": "h",
+          "parts": [
+            "h"
+          ]
+        },
+        {
+          "answer": "k",
+          "parts": [
+            "k"
+          ]
+        },
+        {
+          "answer": "f",
+          "parts": [
+            "f"
+          ]
+        },
+        {
+          "answer": "l",
+          "parts": [
+            "l"
+          ]
+        },
+        {
+          "answer": "j",
+          "parts": [
+            "j"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "problems": [
+        {
+          "answer": "v",
+          "parts": [
+            "v"
+          ]
+        },
+        {
+          "answer": "w",
+          "parts": [
+            "w"
+          ]
+        },
+        {
+          "answer": "x",
+          "parts": [
+            "x"
+          ]
+        },
+        {
+          "answer": "y",
+          "parts": [
+            "y"
+          ]
+        },
+        {
+          "answer": "z",
+          "parts": [
+            "z"
+          ]
+        },
+        {
+          "answer": "q",
+          "parts": [
+            "q"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "problems": [
+        {
+          "answer": "a",
+          "parts": [
+            "a"
+          ]
+        },
+        {
+          "answer": "e",
+          "parts": [
+            "e"
+          ]
+        },
+        {
+          "answer": "i",
+          "parts": [
+            "i"
+          ]
+        },
+        {
+          "answer": "o",
+          "parts": [
+            "o"
+          ]
+        },
+        {
+          "answer": "u",
+          "parts": [
+            "u"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        {
+          "answer": "ba",
+          "parts": [
+            "b",
+            "a"
+          ]
+        },
+        {
+          "answer": "ca",
+          "parts": [
+            "c",
+            "a"
+          ]
+        },
+        {
+          "answer": "da",
+          "parts": [
+            "d",
+            "a"
+          ]
+        },
+        {
+          "answer": "fa",
+          "parts": [
+            "f",
+            "a"
+          ]
+        },
+        {
+          "answer": "ga",
+          "parts": [
+            "g",
+            "a"
+          ]
+        },
+        {
+          "answer": "ha",
+          "parts": [
+            "h",
+            "a"
+          ]
+        },
+        {
+          "answer": "ja",
+          "parts": [
+            "j",
+            "a"
+          ]
+        },
+        {
+          "answer": "la",
+          "parts": [
+            "l",
+            "a"
+          ]
+        },
+        {
+          "answer": "ma",
+          "parts": [
+            "m",
+            "a"
+          ]
+        },
+        {
+          "answer": "pa",
+          "parts": [
+            "p",
+            "a"
+          ]
+        },
+        {
+          "answer": "ra",
+          "parts": [
+            "r",
+            "a"
+          ]
+        },
+        {
+          "answer": "sa",
+          "parts": [
+            "s",
+            "a"
+          ]
+        },
+        {
+          "answer": "ta",
+          "parts": [
+            "t",
+            "a"
+          ]
+        },
+        {
+          "answer": "va",
+          "parts": [
+            "v",
+            "a"
+          ]
+        },
+        {
+          "answer": "ya",
+          "parts": [
+            "y",
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        {
+          "answer": "fe",
+          "parts": [
+            "f",
+            "e"
+          ]
+        },
+        {
+          "answer": "ge",
+          "parts": [
+            "g",
+            "e"
+          ]
+        },
+        {
+          "answer": "je",
+          "parts": [
+            "j",
+            "e"
+          ]
+        },
+        {
+          "answer": "le",
+          "parts": [
+            "l",
+            "e"
+          ]
+        },
+        {
+          "answer": "ne",
+          "parts": [
+            "n",
+            "e"
+          ]
+        },
+        {
+          "answer": "pe",
+          "parts": [
+            "p",
+            "e"
+          ]
+        },
+        {
+          "answer": "se",
+          "parts": [
+            "s",
+            "e"
+          ]
+        },
+        {
+          "answer": "ve",
+          "parts": [
+            "v",
+            "e"
+          ]
+        },
+        {
+          "answer": "ye",
+          "parts": [
+            "y",
+            "e"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        {
+          "answer": "bi",
+          "parts": [
+            "b",
+            "i"
+          ]
+        },
+        {
+          "answer": "fi",
+          "parts": [
+            "f",
+            "i"
+          ]
+        },
+        {
+          "answer": "li",
+          "parts": [
+            "l",
+            "i"
+          ]
+        },
+        {
+          "answer": "zi",
+          "parts": [
+            "z",
+            "i"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "problems": [
+        {
+          "answer": "bo",
+          "parts": [
+            "b",
+            "o"
+          ]
+        },
+        {
+          "answer": "jo",
+          "parts": [
+            "j",
+            "o"
+          ]
+        },
+        {
+          "answer": "po",
+          "parts": [
+            "p",
+            "o"
+          ]
+        },
+        {
+          "answer": "co",
+          "parts": [
+            "c",
+            "o"
+          ]
+        },
+        {
+          "answer": "mo",
+          "parts": [
+            "m",
+            "o"
+          ]
+        },
+        {
+          "answer": "lo",
+          "parts": [
+            "l",
+            "o"
+          ]
+        },
+        {
+          "answer": "so",
+          "parts": [
+            "s",
+            "o"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "problems": [
+        {
+          "answer": "bu",
+          "parts": [
+            "b",
+            "u"
+          ]
+        },
+        {
+          "answer": "du",
+          "parts": [
+            "d",
+            "u"
+          ]
+        },
+        {
+          "answer": "gu",
+          "parts": [
+            "g",
+            "u"
+          ]
+        },
+        {
+          "answer": "hu",
+          "parts": [
+            "h",
+            "u"
+          ]
+        },
+        {
+          "answer": "ju",
+          "parts": [
+            "j",
+            "u"
+          ]
+        },
+        {
+          "answer": "cu",
+          "parts": [
+            "c",
+            "u"
+          ]
+        },
+        {
+          "answer": "mu",
+          "parts": [
+            "m",
+            "u"
+          ]
+        },
+        {
+          "answer": "pu",
+          "parts": [
+            "p",
+            "u"
+          ]
+        },
+        {
+          "answer": "ru",
+          "parts": [
+            "r",
+            "u"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "problems": [
+        {
+          "answer": "dad",
+          "parts": [
+            "d",
+            "a"
+          ]
+        },
+        {
+          "answer": "mad",
+          "parts": [
+            "m",
+            "a"
+          ]
+        },
+        {
+          "answer": "sad",
+          "parts": [
+            "s",
+            "a"
+          ]
+        },
+        {
+          "answer": "bag",
+          "parts": [
+            "b",
+            "a"
+          ]
+        },
+        {
+          "answer": "map",
+          "parts": [
+            "m",
+            "a"
+          ]
+        },
+        {
+          "answer": "bet",
+          "parts": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "answer": "get",
+          "parts": [
+            "g",
+            "e"
+          ]
+        },
+        {
+          "answer": "bed",
+          "parts": [
+            "b",
+            "e"
+          ]
+        },
+        {
+          "answer": "red",
+          "parts": [
+            "r",
+            "e"
+          ]
+        },
+        {
+          "answer": "leg",
+          "parts": [
+            "l",
+            "e"
+          ]
+        },
+        {
+          "answer": "bin",
+          "parts": [
+            "b",
+            "i"
+          ]
+        },
+        {
+          "answer": "fin",
+          "parts": [
+            "f",
+            "i"
+          ]
+        },
+        {
+          "answer": "win",
+          "parts": [
+            "w",
+            "i"
+          ]
+        },
+        {
+          "answer": "did",
+          "parts": [
+            "d",
+            "i"
+          ]
+        },
+        {
+          "answer": "hid",
+          "parts": [
+            "h",
+            "i"
+          ]
+        },
+        {
+          "answer": "hop",
+          "parts": [
+            "h",
+            "o"
+          ]
+        },
+        {
+          "answer": "top",
+          "parts": [
+            "t",
+            "o"
+          ]
+        },
+        {
+          "answer": "nod",
+          "parts": [
+            "n",
+            "o"
+          ]
+        },
+        {
+          "answer": "dot",
+          "parts": [
+            "d",
+            "o"
+          ]
+        },
+        {
+          "answer": "not",
+          "parts": [
+            "n",
+            "o"
+          ]
+        },
+        {
+          "answer": "bug",
+          "parts": [
+            "b",
+            "u"
+          ]
+        },
+        {
+          "answer": "hug",
+          "parts": [
+            "h",
+            "u"
+          ]
+        },
+        {
+          "answer": "fun",
+          "parts": [
+            "f",
+            "u"
+          ]
+        },
+        {
+          "answer": "run",
+          "parts": [
+            "r",
+            "u"
+          ]
+        },
+        {
+          "answer": "nut",
+          "parts": [
+            "n",
+            "u"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "problems": [
+        {
+          "answer": "th",
+          "parts": [
+            "th"
+          ]
+        },
+        {
+          "answer": "ch",
+          "parts": [
+            "ch"
+          ]
+        },
+        {
+          "answer": "sh",
+          "parts": [
+            "sh"
+          ]
+        },
+        {
+          "answer": "wh",
+          "parts": [
+            "wh"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "problems": [
+        {
+          "answer": "chap",
+          "parts": [
+            "ch",
+            "a"
+          ]
+        },
+        {
+          "answer": "chat",
+          "parts": [
+            "ch",
+            "a"
+          ]
+        },
+        {
+          "answer": "chin",
+          "parts": [
+            "ch",
+            "i"
+          ]
+        },
+        {
+          "answer": "chop",
+          "parts": [
+            "ch",
+            "o"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "problems": [
+        {
+          "answer": "sheep",
+          "parts": [
+            "sh",
+            "ee"
+          ]
+        },
+        {
+          "answer": "ship",
+          "parts": [
+            "sh",
+            "i"
+          ]
+        },
+        {
+          "answer": "shirt",
+          "parts": [
+            "sh",
+            "ir"
+          ]
+        },
+        {
+          "answer": "shop",
+          "parts": [
+            "sh",
+            "o"
+          ]
+        },
+        {
+          "answer": "shot",
+          "parts": [
+            "sh",
+            "o"
+          ]
+        },
+        {
+          "answer": "show",
+          "parts": [
+            "sh",
+            "ow"
+          ]
+        },
+        {
+          "answer": "shut",
+          "parts": [
+            "sh",
+            "u"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "problems": [
+        {
+          "answer": "that",
+          "parts": [
+            "th",
+            "a"
+          ]
+        },
+        {
+          "answer": "them",
+          "parts": [
+            "th",
+            "e"
+          ]
+        },
+        {
+          "answer": "then",
+          "parts": [
+            "th",
+            "e"
+          ]
+        },
+        {
+          "answer": "they",
+          "parts": [
+            "th",
+            "e"
+          ]
+        },
+        {
+          "answer": "this",
+          "parts": [
+            "th",
+            "i"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "problems": [
+        {
+          "answer": "whip",
+          "parts": [
+            "wh",
+            "i"
+          ]
+        },
+        {
+          "answer": "whiz",
+          "parts": [
+            "wh",
+            "i"
+          ]
+        },
+        {
+          "answer": "what",
+          "parts": [
+            "wh",
+            "a"
+          ]
+        },
+        {
+          "answer": "when",
+          "parts": [
+            "wh",
+            "e"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "problems": [
+        {
+          "answer": "neck",
+          "parts": [
+            "n",
+            "e"
+          ]
+        },
+        {
+          "answer": "sick",
+          "parts": [
+            "s",
+            "i"
+          ]
+        },
+        {
+          "answer": "pick",
+          "parts": [
+            "p",
+            "i"
+          ]
+        },
+        {
+          "answer": "wish",
+          "parts": [
+            "w",
+            "i"
+          ]
+        },
+        {
+          "answer": "fish",
+          "parts": [
+            "f",
+            "i"
+          ]
+        },
+        {
+          "answer": "dish",
+          "parts": [
+            "d",
+            "i"
+          ]
+        },
+        {
+          "answer": "with",
+          "parts": [
+            "w",
+            "i"
+          ]
+        },
+        {
+          "answer": "rich",
+          "parts": [
+            "r",
+            "i"
+          ]
+        },
+        {
+          "answer": "bash",
+          "parts": [
+            "b",
+            "a"
+          ]
+        },
+        {
+          "answer": "dash",
+          "parts": [
+            "d",
+            "a"
+          ]
+        },
+        {
+          "answer": "back",
+          "parts": [
+            "b",
+            "a"
+          ]
+        },
+        {
+          "answer": "cash",
+          "parts": [
+            "c",
+            "a"
+          ]
+        },
+        {
+          "answer": "mash",
+          "parts": [
+            "m",
+            "a"
+          ]
+        },
+        {
+          "answer": "path",
+          "parts": [
+            "p",
+            "a"
+          ]
+        },
+        {
+          "answer": "bath",
+          "parts": [
+            "b",
+            "a"
+          ]
+        },
+        {
+          "answer": "math",
+          "parts": [
+            "m",
+            "a"
+          ]
+        },
+        {
+          "answer": "back",
+          "parts": [
+            "b",
+            "a"
+          ]
+        },
+        {
+          "answer": "sack",
+          "parts": [
+            "s",
+            "a"
+          ]
+        },
+        {
+          "answer": "tack",
+          "parts": [
+            "t",
+            "a"
+          ]
+        },
+        {
+          "answer": "mash",
+          "parts": [
+            "m",
+            "a"
+          ]
+        },
+        {
+          "answer": "rush",
+          "parts": [
+            "r",
+            "u"
+          ]
+        },
+        {
+          "answer": "duck",
+          "parts": [
+            "d",
+            "u"
+          ]
+        },
+        {
+          "answer": "such",
+          "parts": [
+            "s",
+            "u"
+          ]
+        },
+        {
+          "answer": "much",
+          "parts": [
+            "m",
+            "u"
+          ]
+        },
+        {
+          "answer": "gosh",
+          "parts": [
+            "g",
+            "o"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "problems": [
+        {
+          "answer": "blue",
+          "parts": [
+            "bl",
+            "ue"
+          ]
+        },
+        {
+          "answer": "blob",
+          "parts": [
+            "bl",
+            "o"
+          ]
+        },
+        {
+          "answer": "clue",
+          "parts": [
+            "cl",
+            "ue"
+          ]
+        },
+        {
+          "answer": "clay",
+          "parts": [
+            "cl",
+            "ay"
+          ]
+        },
+        {
+          "answer": "flip",
+          "parts": [
+            "fl",
+            "i"
+          ]
+        },
+        {
+          "answer": "drip",
+          "parts": [
+            "dr",
+            "i"
+          ]
+        },
+        {
+          "answer": "drab",
+          "parts": [
+            "dr",
+            "a"
+          ]
+        },
+        {
+          "answer": "play",
+          "parts": [
+            "pl",
+            "ay"
+          ]
+        },
+        {
+          "answer": "scar",
+          "parts": [
+            "sc",
+            "ar"
+          ]
+        },
+        {
+          "answer": "skip",
+          "parts": [
+            "sk",
+            "i"
+          ]
+        },
+        {
+          "answer": "skin",
+          "parts": [
+            "sk",
+            "i"
+          ]
+        },
+        {
+          "answer": "swim",
+          "parts": [
+            "sw",
+            "i"
+          ]
+        },
+        {
+          "answer": "snow",
+          "parts": [
+            "sn",
+            "ow"
+          ]
+        },
+        {
+          "answer": "snip",
+          "parts": [
+            "sn",
+            "i"
+          ]
+        },
+        {
+          "answer": "snap",
+          "parts": [
+            "sn",
+            "a"
+          ]
+        },
+        {
+          "answer": "span",
+          "parts": [
+            "sp",
+            "a"
+          ]
+        },
+        {
+          "answer": "spot",
+          "parts": [
+            "sp",
+            "o"
+          ]
+        },
+        {
+          "answer": "spin",
+          "parts": [
+            "sp",
+            "i"
+          ]
+        },
+        {
+          "answer": "slow",
+          "parts": [
+            "sl",
+            "ow"
+          ]
+        },
+        {
+          "answer": "grab",
+          "parts": [
+            "gr",
+            "a"
+          ]
+        },
+        {
+          "answer": "grow",
+          "parts": [
+            "gr",
+            "ow"
+          ]
+        },
+        {
+          "answer": "crab",
+          "parts": [
+            "cr",
+            "a"
+          ]
+        },
+        {
+          "answer": "crib",
+          "parts": [
+            "cr",
+            "i"
+          ]
+        },
+        {
+          "answer": "stem",
+          "parts": [
+            "st",
+            "e"
+          ]
+        },
+        {
+          "answer": "step",
+          "parts": [
+            "st",
+            "e"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "problems": [
+        {
+          "answer": "moon",
+          "parts": [
+            "m",
+            "oo"
+          ]
+        },
+        {
+          "answer": "soon",
+          "parts": [
+            "s",
+            "oo"
+          ]
+        },
+        {
+          "answer": "room",
+          "parts": [
+            "r",
+            "oo"
+          ]
+        },
+        {
+          "answer": "foot",
+          "parts": [
+            "f",
+            "oo"
+          ]
+        },
+        {
+          "answer": "meet",
+          "parts": [
+            "m",
+            "ee"
+          ]
+        },
+        {
+          "answer": "meat",
+          "parts": [
+            "m",
+            "ea"
+          ]
+        },
+        {
+          "answer": "seal",
+          "parts": [
+            "s",
+            "ea"
+          ]
+        },
+        {
+          "answer": "seed",
+          "parts": [
+            "s",
+            "ee"
+          ]
+        },
+        {
+          "answer": "sheep",
+          "parts": [
+            "sh",
+            "ee"
+          ]
+        },
+        {
+          "answer": "beep",
+          "parts": [
+            "b",
+            "ee"
+          ]
+        },
+        {
+          "answer": "each",
+          "parts": [
+            "ea",
+            "ch"
+          ]
+        },
+        {
+          "answer": "paid",
+          "parts": [
+            "p",
+            "ai"
+          ]
+        },
+        {
+          "answer": "pain",
+          "parts": [
+            "p",
+            "ai"
+          ]
+        },
+        {
+          "answer": "sail",
+          "parts": [
+            "s",
+            "ai"
+          ]
+        },
+        {
+          "answer": "fail",
+          "parts": [
+            "f",
+            "ai"
+          ]
+        },
+        {
+          "answer": "pair",
+          "parts": [
+            "p",
+            "ai"
+          ]
+        },
+        {
+          "answer": "stay",
+          "parts": [
+            "st",
+            "ay"
+          ]
+        },
+        {
+          "answer": "gray",
+          "parts": [
+            "gr",
+            "ay"
+          ]
+        },
+        {
+          "answer": "boat",
+          "parts": [
+            "b",
+            "oa"
+          ]
+        },
+        {
+          "answer": "goat",
+          "parts": [
+            "g",
+            "oa"
+          ]
+        },
+        {
+          "answer": "road",
+          "parts": [
+            "r",
+            "oa"
+          ]
+        },
+        {
+          "answer": "float",
+          "parts": [
+            "fl",
+            "oa"
+          ]
+        },
+        {
+          "answer": "bowl",
+          "parts": [
+            "b",
+            "ow"
+          ]
+        },
+        {
+          "answer": "mouth",
+          "parts": [
+            "m",
+            "ou"
+          ]
+        },
+        {
+          "answer": "ouch",
+          "parts": [
+            "ou",
+            "ch"
+          ]
+        },
+        {
+          "answer": "show",
+          "parts": [
+            "sh",
+            "ow"
+          ]
+        },
+        {
+          "answer": "grow",
+          "parts": [
+            "gr",
+            "ow"
+          ]
+        },
+        {
+          "answer": "boil",
+          "parts": [
+            "b",
+            "oi"
+          ]
+        },
+        {
+          "answer": "soil",
+          "parts": [
+            "s",
+            "oi"
+          ]
+        },
+        {
+          "answer": "tray",
+          "parts": [
+            "tr",
+            "ay"
+          ]
+        },
+        {
+          "answer": "play",
+          "parts": [
+            "pl",
+            "ay"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "problems": [
+        {
+          "answer": "car",
+          "parts": [
+            "c",
+            "ar"
+          ]
+        },
+        {
+          "answer": "star",
+          "parts": [
+            "st",
+            "ar"
+          ]
+        },
+        {
+          "answer": "jar",
+          "parts": [
+            "j",
+            "ar"
+          ]
+        },
+        {
+          "answer": "art",
+          "parts": [
+            "ar",
+            "t"
+          ]
+        },
+        {
+          "answer": "arm",
+          "parts": [
+            "ar",
+            "m"
+          ]
+        },
+        {
+          "answer": "dark",
+          "parts": [
+            "d",
+            "ar"
+          ]
+        },
+        {
+          "answer": "mark",
+          "parts": [
+            "m",
+            "ar"
+          ]
+        },
+        {
+          "answer": "far",
+          "parts": [
+            "f",
+            "ar"
+          ]
+        },
+        {
+          "answer": "barn",
+          "parts": [
+            "b",
+            "ar"
+          ]
+        },
+        {
+          "answer": "fern",
+          "parts": [
+            "f",
+            "er"
+          ]
+        },
+        {
+          "answer": "stir",
+          "parts": [
+            "st",
+            "ir"
+          ]
+        },
+        {
+          "answer": "shirt",
+          "parts": [
+            "sh",
+            "ir"
+          ]
+        },
+        {
+          "answer": "skirt",
+          "parts": [
+            "sk",
+            "ir"
+          ]
+        },
+        {
+          "answer": "first",
+          "parts": [
+            "f",
+            "ir"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "problems": [
+        {
+          "answer": "sing",
+          "parts": [
+            "s",
+            "ing"
+          ]
+        },
+        {
+          "answer": "ring",
+          "parts": [
+            "r",
+            "ing"
+          ]
+        },
+        {
+          "answer": "king",
+          "parts": [
+            "k",
+            "ing"
+          ]
+        },
+        {
+          "answer": "song",
+          "parts": [
+            "s",
+            "ong"
+          ]
+        },
+        {
+          "answer": "long",
+          "parts": [
+            "l",
+            "ong"
+          ]
+        },
+        {
+          "answer": "lung",
+          "parts": [
+            "l",
+            "ung"
+          ]
+        },
+        {
+          "answer": "sung",
+          "parts": [
+            "s",
+            "ung"
+          ]
+        },
+        {
+          "answer": "rung",
+          "parts": [
+            "r",
+            "ung"
+          ]
+        },
+        {
+          "answer": "hang",
+          "parts": [
+            "h",
+            "ang"
+          ]
+        },
+        {
+          "answer": "bang",
+          "parts": [
+            "b",
+            "ang"
+          ]
+        },
+        {
+          "answer": "rang",
+          "parts": [
+            "r",
+            "ang"
+          ]
+        }
+      ]
+    }
+  ]
+}

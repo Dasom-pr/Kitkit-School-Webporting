@@ -1,0 +1,1326 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "problems": [
+        {
+          "word": "cat",
+          "sound": "cat.m4a"
+        },
+        {
+          "word": "mat",
+          "sound": "mat.m4a"
+        },
+        {
+          "word": "hat",
+          "sound": "hat.m4a"
+        },
+        {
+          "word": "lat",
+          "sound": "lat.m4a"
+        },
+        {
+          "word": "dat",
+          "sound": "dat.m4a"
+        },
+        {
+          "word": "dad",
+          "sound": "dad.m4a"
+        },
+        {
+          "word": "sad",
+          "sound": "sad.m4a"
+        },
+        {
+          "word": "nad",
+          "sound": "nad.m4a"
+        },
+        {
+          "word": "hen",
+          "sound": "hen.m4a"
+        },
+        {
+          "word": "ten",
+          "sound": "ten.m4a"
+        },
+        {
+          "word": "ren",
+          "sound": "ren.m4a"
+        },
+        {
+          "word": "jen",
+          "sound": "jen.m4a"
+        },
+        {
+          "word": "jet",
+          "sound": "jet.m4a"
+        },
+        {
+          "word": "wet",
+          "sound": "wet.m4a"
+        },
+        {
+          "word": "net",
+          "sound": "net.m4a"
+        },
+        {
+          "word": "tet",
+          "sound": "tet.m4a"
+        },
+        {
+          "word": "win",
+          "sound": "win.m4a"
+        },
+        {
+          "word": "pin",
+          "sound": "pin.m4a"
+        },
+        {
+          "word": "min",
+          "sound": "min.m4a"
+        },
+        {
+          "word": "hin",
+          "sound": "hin.m4a"
+        },
+        {
+          "word": "hit",
+          "sound": "hit.m4a"
+        },
+        {
+          "word": "sit",
+          "sound": "sit.m4a"
+        },
+        {
+          "word": "rit",
+          "sound": "rit.m4a"
+        },
+        {
+          "word": "bit",
+          "sound": "bit.m4a"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "problems": [
+        {
+          "word": "hot",
+          "sound": "hot.m4a"
+        },
+        {
+          "word": "pot",
+          "sound": "pot.m4a"
+        },
+        {
+          "word": "dot",
+          "sound": "dot.m4a"
+        },
+        {
+          "word": "not",
+          "sound": "not.m4a"
+        },
+        {
+          "word": "tot",
+          "sound": "tot.m4a"
+        },
+        {
+          "word": "top",
+          "sound": "top.m4a"
+        },
+        {
+          "word": "pop",
+          "sound": "pop.m4a"
+        },
+        {
+          "word": "cop",
+          "sound": "cop.m4a"
+        },
+        {
+          "word": "bun",
+          "sound": "bun.m4a"
+        },
+        {
+          "word": "sun",
+          "sound": "sun.m4a"
+        },
+        {
+          "word": "fun",
+          "sound": "fun.m4a"
+        },
+        {
+          "word": "dun",
+          "sound": "dun.m4a"
+        },
+        {
+          "word": "bun",
+          "sound": "bun.m4a"
+        },
+        {
+          "word": "bug",
+          "sound": "bug.m4a"
+        },
+        {
+          "word": "mug",
+          "sound": "mug.m4a"
+        },
+        {
+          "word": "tug",
+          "sound": "tug.m4a"
+        },
+        {
+          "word": "tat",
+          "sound": "tat.m4a"
+        },
+        {
+          "word": "sen",
+          "sound": "sen.m4a"
+        },
+        {
+          "word": "jin",
+          "sound": "jin.m4a"
+        },
+        {
+          "word": "vot",
+          "sound": "vot.m4a"
+        },
+        {
+          "word": "mun",
+          "sound": "mun.m4a"
+        },
+        {
+          "word": "lan",
+          "sound": "lan.m4a"
+        },
+        {
+          "word": "rit",
+          "sound": "rit.m4a"
+        },
+        {
+          "word": "det",
+          "sound": "det.m4a"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        {
+          "word": "lake",
+          "sound": "lake.m4a"
+        },
+        {
+          "word": "make",
+          "sound": "make.m4a"
+        },
+        {
+          "word": "cake",
+          "sound": "cake.m4a"
+        },
+        {
+          "word": "jake",
+          "sound": "jake.m4a"
+        },
+        {
+          "word": "pake",
+          "sound": "pake.m4a"
+        },
+        {
+          "word": "nice",
+          "sound": "nice.m4a"
+        },
+        {
+          "word": "mice",
+          "sound": "mice.m4a"
+        },
+        {
+          "word": "fice",
+          "sound": "fice.m4a"
+        },
+        {
+          "word": "nose",
+          "sound": "nose.m4a"
+        },
+        {
+          "word": "rose",
+          "sound": "rose.m4a"
+        },
+        {
+          "word": "cose",
+          "sound": "cose.m4a"
+        },
+        {
+          "word": "bose",
+          "sound": "bose.m4a"
+        },
+        {
+          "word": "cube",
+          "sound": "cube.m4a"
+        },
+        {
+          "word": "tube",
+          "sound": "tube.m4a"
+        },
+        {
+          "word": "sube",
+          "sound": "sube.m4a"
+        },
+        {
+          "word": "lube",
+          "sound": "lube.m4a"
+        },
+        {
+          "word": "dake",
+          "sound": "dake.m4a"
+        },
+        {
+          "word": "nake",
+          "sound": "nake.m4a"
+        },
+        {
+          "word": "bice",
+          "sound": "bice.m4a"
+        },
+        {
+          "word": "sice",
+          "sound": "sice.m4a"
+        },
+        {
+          "word": "kose",
+          "sound": "kose.m4a"
+        },
+        {
+          "word": "tose",
+          "sound": "tose.m4a"
+        },
+        {
+          "word": "pube",
+          "sound": "pube.m4a"
+        },
+        {
+          "word": "hube",
+          "sound": "hube.m4a"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "problems": [
+        {
+          "word": "family",
+          "sound": "family.m4a"
+        },
+        {
+          "word": "father",
+          "sound": "father.m4a"
+        },
+        {
+          "word": "mother",
+          "sound": "mother.m4a"
+        },
+        {
+          "word": "brother",
+          "sound": "brother.m4a"
+        },
+        {
+          "word": "sister",
+          "sound": "sister.m4a"
+        },
+        {
+          "word": "baby",
+          "sound": "baby.m4a"
+        },
+        {
+          "word": "happy",
+          "sound": "happy.m4a"
+        },
+        {
+          "word": "love",
+          "sound": "love.m4a"
+        },
+        {
+          "word": "animal",
+          "sound": "animal.m4a"
+        },
+        {
+          "word": "dog",
+          "sound": "dog.m4a"
+        },
+        {
+          "word": "cow",
+          "sound": "cow.m4a"
+        },
+        {
+          "word": "rabbit",
+          "sound": "rabbit.m4a"
+        },
+        {
+          "word": "lion",
+          "sound": "lion.m4a"
+        },
+        {
+          "word": "sheep",
+          "sound": "sheep.m4a"
+        },
+        {
+          "word": "zebra",
+          "sound": "zebra.m4a"
+        },
+        {
+          "word": "duck",
+          "sound": "duck.m4a"
+        },
+        {
+          "word": "I",
+          "sound": "i.m4a"
+        },
+        {
+          "word": "you",
+          "sound": "you.m4a"
+        },
+        {
+          "word": "he",
+          "sound": "he.m4a"
+        },
+        {
+          "word": "she",
+          "sound": "she.m4a"
+        },
+        {
+          "word": "they",
+          "sound": "they.m4a"
+        },
+        {
+          "word": "it",
+          "sound": "it.m4a"
+        },
+        {
+          "word": "my",
+          "sound": "my.m4a"
+        },
+        {
+          "word": "your",
+          "sound": "your.m4a"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "problems": [
+        {
+          "word": "train",
+          "sound": "train.m4a"
+        },
+        {
+          "word": "snail",
+          "sound": "snail.m4a"
+        },
+        {
+          "word": "mail",
+          "sound": "mail.m4a"
+        },
+        {
+          "word": "kail",
+          "sound": "kail.m4a"
+        },
+        {
+          "word": "jail",
+          "sound": "jail.m4a"
+        },
+        {
+          "word": "clay",
+          "sound": "clay.m4a"
+        },
+        {
+          "word": "play",
+          "sound": "play.m4a"
+        },
+        {
+          "word": "glay",
+          "sound": "glay.m4a"
+        },
+        {
+          "word": "read",
+          "sound": "read.m4a"
+        },
+        {
+          "word": "meal",
+          "sound": "meal.m4a"
+        },
+        {
+          "word": "teal",
+          "sound": "teal.m4a"
+        },
+        {
+          "word": "green",
+          "sound": "green.m4a"
+        },
+        {
+          "word": "sweet",
+          "sound": "sweet.m4a"
+        },
+        {
+          "word": "seed",
+          "sound": "seed.m4a"
+        },
+        {
+          "word": "peed",
+          "sound": "peed.m4a"
+        },
+        {
+          "word": "teed",
+          "sound": "teed.m4a"
+        },
+        {
+          "word": "sky",
+          "sound": "sky.m4a"
+        },
+        {
+          "word": "fly",
+          "sound": "fly.m4a"
+        },
+        {
+          "word": "boat",
+          "sound": "boat.m4a"
+        },
+        {
+          "word": "goat",
+          "sound": "goat.m4a"
+        },
+        {
+          "word": "house",
+          "sound": "house.m4a"
+        },
+        {
+          "word": "mouse",
+          "sound": "mouse.m4a"
+        },
+        {
+          "word": "moon",
+          "sound": "moon.m4a"
+        },
+        {
+          "word": "food",
+          "sound": "food.m4a"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        {
+          "word": "banana",
+          "sound": "banana.m4a"
+        },
+        {
+          "word": "grapes",
+          "sound": "grapes.m4a"
+        },
+        {
+          "word": "mango",
+          "sound": "mango.m4a"
+        },
+        {
+          "word": "apple",
+          "sound": "apple.m4a"
+        },
+        {
+          "word": "orange",
+          "sound": "orange.m4a"
+        },
+        {
+          "word": "potato",
+          "sound": "potato.m4a"
+        },
+        {
+          "word": "carrot",
+          "sound": "carrot.m4a"
+        },
+        {
+          "word": "onion",
+          "sound": "onion.m4a"
+        },
+        {
+          "word": "chair",
+          "sound": "chair.m4a"
+        },
+        {
+          "word": "lunch",
+          "sound": "lunch.m4a"
+        },
+        {
+          "word": "shoes",
+          "sound": "shoes.m4a"
+        },
+        {
+          "word": "fish",
+          "sound": "fish.m4a"
+        },
+        {
+          "word": "thin",
+          "sound": "thin.m4a"
+        },
+        {
+          "word": "math",
+          "sound": "math.m4a"
+        },
+        {
+          "word": "phone",
+          "sound": "phone.m4a"
+        },
+        {
+          "word": "photo",
+          "sound": "photo.m4a"
+        },
+        {
+          "word": "and",
+          "sound": "and.m4a"
+        },
+        {
+          "word": "go",
+          "sound": "go.m4a"
+        },
+        {
+          "word": "are",
+          "sound": "are.m4a"
+        },
+        {
+          "word": "do",
+          "sound": "do.m4a"
+        },
+        {
+          "word": "for",
+          "sound": "for.m4a"
+        },
+        {
+          "word": "am",
+          "sound": "am.m4a"
+        },
+        {
+          "word": "get",
+          "sound": "get.m4a"
+        },
+        {
+          "word": "the",
+          "sound": "the.m4a"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        {
+          "word": "school",
+          "sound": "school.m4a"
+        },
+        {
+          "word": "pencil",
+          "sound": "pencil.m4a"
+        },
+        {
+          "word": "desk",
+          "sound": "desk.m4a"
+        },
+        {
+          "word": "book",
+          "sound": "book.m4a"
+        },
+        {
+          "word": "paper",
+          "sound": "paper.m4a"
+        },
+        {
+          "word": "read",
+          "sound": "read.m4a"
+        },
+        {
+          "word": "write",
+          "sound": "write.m4a"
+        },
+        {
+          "word": "count",
+          "sound": "count.m4a"
+        },
+        {
+          "word": "what",
+          "sound": "what.m4a"
+        },
+        {
+          "word": "when",
+          "sound": "when.m4a"
+        },
+        {
+          "word": "where",
+          "sound": "where.m4a"
+        },
+        {
+          "word": "how",
+          "sound": "how.m4a"
+        },
+        {
+          "word": "see",
+          "sound": "see.m4a"
+        },
+        {
+          "word": "will",
+          "sound": "will.m4a"
+        },
+        {
+          "word": "not",
+          "sound": "not.m4a"
+        },
+        {
+          "word": "good",
+          "sound": "good.m4a"
+        },
+        {
+          "word": "hat",
+          "sound": "hat.m4a"
+        },
+        {
+          "word": "pants",
+          "sound": "pants.m4a"
+        },
+        {
+          "word": "dress",
+          "sound": "dress.m4a"
+        },
+        {
+          "word": "skirt",
+          "sound": "skirt.m4a"
+        },
+        {
+          "word": "boots",
+          "sound": "boots.m4a"
+        },
+        {
+          "word": "shorts",
+          "sound": "shorts.m4a"
+        },
+        {
+          "word": "shirt",
+          "sound": "shirt.m4a"
+        },
+        {
+          "word": "socks",
+          "sound": "socks.m4a"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        {
+          "word": "strong",
+          "sound": "strong.m4a"
+        },
+        {
+          "word": "flower",
+          "sound": "flower.m4a"
+        },
+        {
+          "word": "number",
+          "sound": "number.m4a"
+        },
+        {
+          "word": "basket",
+          "sound": "basket.m4a"
+        },
+        {
+          "word": "toilet",
+          "sound": "toilet.m4a"
+        },
+        {
+          "word": "helmet",
+          "sound": "helmet.m4a"
+        },
+        {
+          "word": "sunset",
+          "sound": "sunset.m4a"
+        },
+        {
+          "word": "eleven",
+          "sound": "eleven.m4a"
+        },
+        {
+          "word": "always",
+          "sound": "always.m4a"
+        },
+        {
+          "word": "monkey",
+          "sound": "monkey.m4a"
+        },
+        {
+          "word": "pretty",
+          "sound": "pretty.m4a"
+        },
+        {
+          "word": "garden",
+          "sound": "garden.m4a"
+        },
+        {
+          "word": "people",
+          "sound": "people.m4a"
+        },
+        {
+          "word": "twelve",
+          "sound": "twelve.m4a"
+        },
+        {
+          "word": "friend",
+          "sound": "friend.m4a"
+        },
+        {
+          "word": "Monday",
+          "sound": "monday.m4a"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "problems": [
+        {
+          "word": "balloon",
+          "sound": "balloon.m4a"
+        },
+        {
+          "word": "student",
+          "sound": "student.m4a"
+        },
+        {
+          "word": "grandpa",
+          "sound": "grandpa.m4a"
+        },
+        {
+          "word": "grandma",
+          "sound": "grandma.m4a"
+        },
+        {
+          "word": "computer",
+          "sound": "computer.m4a"
+        },
+        {
+          "word": "chicken",
+          "sound": "chicken.m4a"
+        },
+        {
+          "word": "motorcycle",
+          "sound": "motorcycle.m4a"
+        },
+        {
+          "word": "mountain",
+          "sound": "mountain.m4a"
+        },
+        {
+          "word": "teacher",
+          "sound": "teacher.m4a"
+        },
+        {
+          "word": "picture",
+          "sound": "picture.m4a"
+        },
+        {
+          "word": "children",
+          "sound": "children.m4a"
+        },
+        {
+          "word": "birthday",
+          "sound": "birthday.m4a"
+        },
+        {
+          "word": "football",
+          "sound": "football.m4a"
+        },
+        {
+          "word": "together",
+          "sound": "together.m4a"
+        },
+        {
+          "word": "kitchen",
+          "sound": "kitchen.m4a"
+        },
+        {
+          "word": "vegetable",
+          "sound": "vegetable.m4a"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "problems": [
+        {
+          "word": "a buffalo",
+          "sound": "abuffalo.m4a"
+        },
+        {
+          "word": "an orange",
+          "sound": "anorange.m4a"
+        },
+        {
+          "word": "the man",
+          "sound": "theman.m4a"
+        },
+        {
+          "word": "my house",
+          "sound": "myhouse.m4a"
+        },
+        {
+          "word": "your sister",
+          "sound": "yoursister.m4a"
+        },
+        {
+          "word": "our school",
+          "sound": "ourschool.m4a"
+        },
+        {
+          "word": "little boys",
+          "sound": "littleboys.m4a"
+        },
+        {
+          "word": "small cups",
+          "sound": "smallcups.m4a"
+        },
+        {
+          "word": "three dogs",
+          "sound": "threedogs.m4a"
+        },
+        {
+          "word": "white flowers",
+          "sound": "whiteflowers.m4a"
+        },
+        {
+          "word": "long snakes",
+          "sound": "longsnakes.m4a"
+        },
+        {
+          "word": "short hair",
+          "sound": "shorthair.m4a"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "problems": [
+        {
+          "word": "a new bike",
+          "sound": "anewbike.m4a"
+        },
+        {
+          "word": "a sunny day",
+          "sound": "asunnyday.m4a"
+        },
+        {
+          "word": "a happy baby",
+          "sound": "ahappybaby.m4a"
+        },
+        {
+          "word": "a yellow banana",
+          "sound": "ayellowbanana.m4a"
+        },
+        {
+          "word": "an old man",
+          "sound": "anoldman.m4a"
+        },
+        {
+          "word": "an orange dress",
+          "sound": "anorangedress.m4a"
+        },
+        {
+          "word": "my two sisters",
+          "sound": "mytwosisters.m4a"
+        },
+        {
+          "word": "my pink shoes",
+          "sound": "mypinkshoes.m4a"
+        },
+        {
+          "word": "five long pencils",
+          "sound": "fivelongpencils.m4a"
+        },
+        {
+          "word": "read a book",
+          "sound": "readabook.m4a"
+        },
+        {
+          "word": "clean the house",
+          "sound": "cleanthehouse.m4a"
+        },
+        {
+          "word": "do the dishes",
+          "sound": "dothedishes.m4a"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "problems": [
+        {
+          "word": "Good morning.",
+          "sound": "goodmorning.m4a"
+        },
+        {
+          "word": "Thank you.",
+          "sound": "thankyou.m4a"
+        },
+        {
+          "word": "I'm sorry.",
+          "sound": "i'msorry.m4a"
+        },
+        {
+          "word": "Time to sleep.",
+          "sound": "timetosleep.m4a"
+        },
+        {
+          "word": "Look at me.",
+          "sound": "lookatme.m4a"
+        },
+        {
+          "word": "Let's go.",
+          "sound": "let'sgo.m4a"
+        },
+        {
+          "word": "He is sad.",
+          "sound": "heissad.m4a"
+        },
+        {
+          "word": "She is tall.",
+          "sound": "sheistall.m4a"
+        },
+        {
+          "word": "They are hungry.",
+          "sound": "theyarehungry.m4a"
+        },
+        {
+          "word": "It is a truck.",
+          "sound": "itisatruck.m4a"
+        },
+        {
+          "word": "This is my mouth.",
+          "sound": "thisismymouth.m4a"
+        },
+        {
+          "word": "It is Monday.",
+          "sound": "itismonday.m4a"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "problems": [
+        {
+          "word": "What's this?",
+          "sound": "what'sthis.m4a"
+        },
+        {
+          "word": "It's a frog.",
+          "sound": "it'safrog.m4a"
+        },
+        {
+          "word": "How are you?",
+          "sound": "howareyou.m4a"
+        },
+        {
+          "word": "I'm good.",
+          "sound": "i'mgood.m4a"
+        },
+        {
+          "word": "Who is he?",
+          "sound": "whoishe.m4a"
+        },
+        {
+          "word": "He is my brother.",
+          "sound": "heismybrother.m4a"
+        },
+        {
+          "word": "Are you happy?",
+          "sound": "areyouhappy.m4a"
+        },
+        {
+          "word": "Yes, I am.",
+          "sound": "yesiam.m4a"
+        },
+        {
+          "word": "Is he a doctor?",
+          "sound": "isheadoctor.m4a"
+        },
+        {
+          "word": "No, he isn't.",
+          "sound": "noheisn't.m4a"
+        },
+        {
+          "word": "Are they fast?",
+          "sound": "aretheyfast.m4a"
+        },
+        {
+          "word": "Yes, they are.",
+          "sound": "yes,theyare.m4a"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "problems": [
+        {
+          "word": "He is a doctor.",
+          "sound": "heisadoctor.m4a"
+        },
+        {
+          "word": "She is a nurse.",
+          "sound": "sheisanurse.m4a"
+        },
+        {
+          "word": "I am a cook.",
+          "sound": "iamacook.m4a"
+        },
+        {
+          "word": "They are farmers.",
+          "sound": "theyarefarmers.m4a"
+        },
+        {
+          "word": "He is at school.",
+          "sound": "heisatschool.m4a"
+        },
+        {
+          "word": "They are at home.",
+          "sound": "theyareathome.m4a"
+        },
+        {
+          "word": "I am a student.",
+          "sound": "iamastudent.m4a"
+        },
+        {
+          "word": "I am not tall.",
+          "sound": "iamnottall.m4a"
+        },
+        {
+          "word": "He is a farmer.",
+          "sound": "heisafarmer.m4a"
+        },
+        {
+          "word": "He is not happy.",
+          "sound": "heisnothappy.m4a"
+        },
+        {
+          "word": "She is a teacher.",
+          "sound": "sheisateacher.m4a"
+        },
+        {
+          "word": "She is not young.",
+          "sound": "sheisnotyoung.m4a"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "problems": [
+        {
+          "word": "There is a tree.",
+          "sound": "thereisatree.m4a"
+        },
+        {
+          "word": "There are trees.",
+          "sound": "therearetrees.m4a"
+        },
+        {
+          "word": "I have a car.",
+          "sound": "ihaveacar.m4a"
+        },
+        {
+          "word": "She has cows.",
+          "sound": "shehascows.m4a"
+        },
+        {
+          "word": "You have cats.",
+          "sound": "youhavecats.m4a"
+        },
+        {
+          "word": "He has a book.",
+          "sound": "hehasabook.m4a"
+        },
+        {
+          "word": "I like carrots.",
+          "sound": "ilikecarrots.m4a"
+        },
+        {
+          "word": "She likes apples.",
+          "sound": "shelikesapples.m4a"
+        },
+        {
+          "word": "They want milk.",
+          "sound": "theywantmilk.m4a"
+        },
+        {
+          "word": "He wants water.",
+          "sound": "hewantswater.m4a"
+        },
+        {
+          "word": "We need eggs.",
+          "sound": "weneedeggs.m4a"
+        },
+        {
+          "word": "I need a pencil.",
+          "sound": "ineedapencil.m4a"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "problems": [
+        {
+          "word": "I can jump.",
+          "sound": "icanjump.m4a"
+        },
+        {
+          "word": "She can run.",
+          "sound": "shecanrun.m4a"
+        },
+        {
+          "word": "They can read.",
+          "sound": "theycanread.m4a"
+        },
+        {
+          "word": "He can write.",
+          "sound": "hecanwrite.m4a"
+        },
+        {
+          "word": "Birds can fly.",
+          "sound": "birdscanfly.m4a"
+        },
+        {
+          "word": "Frogs can swim.",
+          "sound": "frogscanswim.m4a"
+        },
+        {
+          "word": "I cannot jump.",
+          "sound": "icannotjump.m4a"
+        },
+        {
+          "word": "She cannot run.",
+          "sound": "shecannotrun.m4a"
+        },
+        {
+          "word": "They cannot read.",
+          "sound": "theycannotread.m4a"
+        },
+        {
+          "word": "He cannot write.",
+          "sound": "hecannotwrite.m4a"
+        },
+        {
+          "word": "We cannot fly.",
+          "sound": "wecannotfly.m4a"
+        },
+        {
+          "word": "They cannot swim.",
+          "sound": "theycannotswim.m4a"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "problems": [
+        {
+          "word": "I was angry.",
+          "sound": "iwasangry.m4a"
+        },
+        {
+          "word": "You were sick.",
+          "sound": "youweresick.m4a"
+        },
+        {
+          "word": "He was cute.",
+          "sound": "hewascute.m4a"
+        },
+        {
+          "word": "She was shy.",
+          "sound": "shewasshy.m4a"
+        },
+        {
+          "word": "It was dirty.",
+          "sound": "itwasdirty.m4a"
+        },
+        {
+          "word": "They were kind.",
+          "sound": "theywerekind.m4a"
+        },
+        {
+          "word": "There was a king.",
+          "sound": "therewasaking.m4a"
+        },
+        {
+          "word": "He danced.",
+          "sound": "hedanced.m4a"
+        },
+        {
+          "word": "We played.",
+          "sound": "weplayed.m4a"
+        },
+        {
+          "word": "She looked sad.",
+          "sound": "shelookedsad.m4a"
+        },
+        {
+          "word": "I liked animals.",
+          "sound": "ilikedanimals.m4a"
+        },
+        {
+          "word": "They helped me.",
+          "sound": "theyhelpedme.m4a"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "problems": [
+        {
+          "word": "They ran fast.",
+          "sound": "theyranfast.m4a"
+        },
+        {
+          "word": "I saw them.",
+          "sound": "isawthem.m4a"
+        },
+        {
+          "word": "He ate rice.",
+          "sound": "heaterice.m4a"
+        },
+        {
+          "word": "I drank milk.",
+          "sound": "idrankmilk.m4a"
+        },
+        {
+          "word": "We had lunch.",
+          "sound": "wehadlunch.m4a"
+        },
+        {
+          "word": "She said to him.",
+          "sound": "shesaidtohim.m4a"
+        },
+        {
+          "word": "She came back.",
+          "sound": "shecameback.m4a"
+        },
+        {
+          "word": "He got up early.",
+          "sound": "hegotupearly.m4a"
+        },
+        {
+          "word": "I went to school.",
+          "sound": "iwenttoschool.m4a"
+        },
+        {
+          "word": "He had a bicycle.",
+          "sound": "hehadabicycle.m4a"
+        },
+        {
+          "word": "They took a bus.",
+          "sound": "theytookabus.m4a"
+        },
+        {
+          "word": "She made a chair.",
+          "sound": "shemadeachair.m4a"
+        }
+      ]
+    }
+  ]
+}

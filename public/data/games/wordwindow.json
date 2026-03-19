@@ -1,0 +1,2729 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "problems": [
+        {
+          "voice": "en_uk_a1_07.m4a",
+          "sentence": "Jack's hen laid 6 eggs yesterday and@3 eggs today. How many eggs did Jack's hen lay in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_02.m4a",
+          "sentence": "2 birds were sitting on the fence.@4 more birds joined them. How many birds are on the fence?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_a1_03.m4a",
+          "sentence": "Shelby earns star stickers when she does math at school. Yesterday, Shelby earned 4 stars. Today, she earned 3 more. How many stars did Shelby earn in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a1_05.m4a",
+          "sentence": "Tom has 6 books. James has 2 books. How many books do they have in all?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "8"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_06.m4a",
+          "sentence": "Maya served 3 yams at lunch and@5 yams during dinner. How many yams were served during the day?",
+          "examples": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a1_05.m4a",
+          "sentence": "Tom has 6 books. James has 2 books. How many books do they have in all?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "8"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_06.m4a",
+          "sentence": "Maya served 3 yams at lunch and@5 yams during dinner. How many yams were served during the day?",
+          "examples": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a1_08.m4a",
+          "sentence": "7 red apples and 2 green apples are in the basket. How many apples are in the basket?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_01.m4a",
+          "sentence": "Stacie caught 5 fish in the morning. She caught 4 more fish in the afternoon. How many fish did Stacie catch in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_03.m4a",
+          "sentence": "Shelby earns star stickers when she does math at school. Yesterday, Shelby earned 4 stars. Today, she earned 3 more. How many stars did Shelby earn in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a1_08.m4a",
+          "sentence": "7 red apples and 2 green apples are in the basket. How many apples are in the basket?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_07.m4a",
+          "sentence": "Jack's hen laid 6 eggs yesterday and@3 eggs today. How many eggs did Jack's hen lay in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_03.m4a",
+          "sentence": "Shelby earns star stickers when she does math at school. Yesterday, Shelby earned 4 stars. Today, she earned 3 more. How many stars did Shelby earn in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a1_05.m4a",
+          "sentence": "Tom has 6 books. James has 2 books. How many books do they have in all?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "8"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_01.m4a",
+          "sentence": "Stacie caught 5 fish in the morning. She caught 4 more fish in the afternoon. How many fish did Stacie catch in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "problems": [
+        {
+          "voice": "en_uk_d3_02.m4a",
+          "sentence": "Billy has 2 marbles. Audrey has 3 more marbles than Billy. How many marbles does Audrey have?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "8"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_03.m4a",
+          "sentence": "Henry has 4 stamps. Eric has 5 more stamps than Henry. How many stamps does Eric have?",
+          "examples": [
+            "4",
+            "5",
+            "9",
+            "11"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_08.m4a",
+          "sentence": "The school has two lost-and-found boxes. In the first box, there are@5 hats. In the second box, there are@4 more hats than in the first box. How many hats are there in the second box?",
+          "examples": [
+            "5",
+            "9",
+            "14",
+            "15"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d3_04.m4a",
+          "sentence": "Bobby bought 3 more books than Gabby. Gabby bought a book. How many books did Bobby buy?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d3_05.m4a",
+          "sentence": "Deanna has 5 more puzzles than Fatou. Fatou has 3 puzzles. How many puzzles does Deanna have?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_03.m4a",
+          "sentence": "Henry has 4 stamps. Eric has 5 more stamps than Henry. How many stamps does Eric have?",
+          "examples": [
+            "4",
+            "5",
+            "9",
+            "11"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_07.m4a",
+          "sentence": "Thomas has 2 goats on his farm. There are 6 more chickens than goats on his farm. How many chickens does he have?",
+          "examples": [
+            "2",
+            "6",
+            "8",
+            "12"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_01.m4a",
+          "sentence": "Sarah is 5 years old. Her sister Katie is 2 years older than Sarah. How old is Katie?",
+          "examples": [
+            "2",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_06.m4a",
+          "sentence": "The library has 5 more tables than the school office. The school office has@2 tables. How many tables does the library have?",
+          "examples": [
+            "5",
+            "7",
+            "9",
+            "11"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d3_04.m4a",
+          "sentence": "Bobby bought 3 more books than Gabby. Gabby bought a book. How many books did Bobby buy?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d3_01.m4a",
+          "sentence": "Sarah is 5 years old. Her sister Katie is 2 years older than Sarah. How old is Katie?",
+          "examples": [
+            "2",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_03.m4a",
+          "sentence": "Henry has 4 stamps. Eric has 5 more stamps than Henry. How many stamps does Eric have?",
+          "examples": [
+            "4",
+            "5",
+            "9",
+            "11"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_02.m4a",
+          "sentence": "Billy has 2 marbles. Audrey has 3 more marbles than Billy. How many marbles does Audrey have?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "8"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_05.m4a",
+          "sentence": "Deanna has 5 more puzzles than Fatou. Fatou has 3 puzzles. How many puzzles does Deanna have?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_06.m4a",
+          "sentence": "The library has 5 more tables than the school office. The school office has@2 tables. How many tables does the library have?",
+          "examples": [
+            "5",
+            "7",
+            "9",
+            "11"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        {
+          "voice": "en_uk_b1_03.m4a",
+          "sentence": "4 birds are sitting on a branch.@1 flies away. How many birds are left on the branch?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_10.m4a",
+          "sentence": "There are 9 kites flying in the sky.@A wind blows 3 kites down on the ground. How many kites are still flying in the sky?",
+          "examples": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_01.m4a",
+          "sentence": "5 apples are on the table. Sam eats@2 apples. How many apples are left on the table?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_04.m4a",
+          "sentence": "Hannah makes 8 loaves of bread. She gives 3 loaves of bread to her cousin. How many loaves of bread does she have left?",
+          "examples": [
+            "8",
+            "7",
+            "6",
+            "5"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_b1_08.m4a",
+          "sentence": "Sabrina makes 4 bracelets. She gives@2 of them to her friend. How many bracelets does Sabrina have left?",
+          "examples": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_02.m4a",
+          "sentence": "Ana has 7 cookies. She eats 2 of them. How many cookies does she have left?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_b1_04.m4a",
+          "sentence": "Hannah makes 8 loaves of bread. She gives 3 loaves of bread to her cousin. How many loaves of bread does she have left?",
+          "examples": [
+            "8",
+            "7",
+            "6",
+            "5"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_b1_05.m4a",
+          "sentence": "Millie has 9 bracelets. She loses@2 of them. How many bracelets does Millie have left?",
+          "examples": [
+            "9",
+            "7",
+            "5",
+            "3"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_10.m4a",
+          "sentence": "There are 9 kites flying in the sky.@A wind blows 3 kites down on the ground. How many kites are still flying in the sky?",
+          "examples": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_02.m4a",
+          "sentence": "Ana has 7 cookies. She eats 2 of them. How many cookies does she have left?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_b1_01.m4a",
+          "sentence": "5 apples are on the table. Sam eats@2 apples. How many apples are left on the table?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_04.m4a",
+          "sentence": "Hannah makes 8 loaves of bread. She gives 3 loaves of bread to her cousin. How many loaves of bread does she have left?",
+          "examples": [
+            "8",
+            "7",
+            "6",
+            "5"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_b1_05.m4a",
+          "sentence": "Millie has 9 bracelets. She loses@2 of them. How many bracelets does Millie have left?",
+          "examples": [
+            "9",
+            "7",
+            "5",
+            "3"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_10.m4a",
+          "sentence": "There are 9 kites flying in the sky.@A wind blows 3 kites down on the ground. How many kites are still flying in the sky?",
+          "examples": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_02.m4a",
+          "sentence": "Ana has 7 cookies. She eats 2 of them. How many cookies does she have left?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "problems": [
+        {
+          "voice": "en_uk_d1_03.m4a",
+          "sentence": "There are 6 birds and 3 nests. How many more birds are there than nests?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_09.m4a",
+          "sentence": "Amy walks 4 blocks to school. Jane walks 2 blocks to school. How many more blocks does Amy walk than Jane to school?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_01.m4a",
+          "sentence": "Lucy is 9 years old. Her sister Julie is@6 years old. How much older is Lucy than her sister Julie?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_05.m4a",
+          "sentence": "Sam ate 7 cookies and Jane ate@2 cookies. How many fewer cookies did Jane eat than Sam?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d1_06.m4a",
+          "sentence": "Tom planted 5 seeds in a school garden. Jane planted 8 seeds. How many fewer seeds did Tom plant than Jane?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "10"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_04.m4a",
+          "sentence": "There are 5 cups and 7 plates. How many more plates are there than cups?",
+          "examples": [
+            "2",
+            "5",
+            "9",
+            "14"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_10.m4a",
+          "sentence": "Kami had 3 pages of math homework yesterday. She has 9 pages of math homework today. How many more pages does Kami have today than yesterday?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d1_02.m4a",
+          "sentence": "You have 7 balloons and your friend has 5 balloons. How many more balloons do you have than your friend?",
+          "examples": [
+            "2",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_06.m4a",
+          "sentence": "Tom planted 5 seeds in a school garden. Jane planted 8 seeds. How many fewer seeds did Tom plant than Jane?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "10"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_07.m4a",
+          "sentence": "There are 6 beetles and 4 butterflies. How many fewer butterflies are there than beetles?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_02.m4a",
+          "sentence": "You have 7 balloons and your friend has 5 balloons. How many more balloons do you have than your friend?",
+          "examples": [
+            "2",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_08.m4a",
+          "sentence": "Maria read 3 books and Stacy read@5 books. How many more books did Stacy read than Maria?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "7"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_03.m4a",
+          "sentence": "There are 6 birds and 3 nests. How many more birds are there than nests?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_07.m4a",
+          "sentence": "There are 6 beetles and 4 butterflies. How many fewer butterflies are there than beetles?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d1_05.m4a",
+          "sentence": "Sam ate 7 cookies and Jane ate@2 cookies. How many fewer cookies did Jane eat than Sam?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "problems": [
+        {
+          "voice": "en_uk_a1_08.m4a",
+          "sentence": "7 red apples and 2 green apples are in the basket. How many apples are in the basket?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_01.m4a",
+          "sentence": "Stacie caught 5 fish in the morning. She caught 4 more fish in the afternoon. How many fish did Stacie catch in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_10.m4a",
+          "sentence": "Kyle got 3 new shirts on his birthday. He already had 5 shirts. How many shirts does he have now?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a1_09.m4a",
+          "sentence": "Helen saw 12 birds in a tree and@7 birds in another tree. How many birds did she see altogether?",
+          "examples": [
+            "17",
+            "18",
+            "19",
+            "20"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a1_04.m4a",
+          "sentence": "There are 14 fish in a water tank. Kerri put 3 more fish into the tank. How many fish are there?",
+          "examples": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_05.m4a",
+          "sentence": "Tom has 6 books. James has 2 books. How many books do they have in all?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "8"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_03.m4a",
+          "sentence": "Shelby earns star stickers when she does math at school. Yesterday, Shelby earned 4 stars. Today, she earned 3 more. How many stars did Shelby earn in all?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a1_08.m4a",
+          "sentence": "7 red apples and 2 green apples are in the basket. How many apples are in the basket?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_04.m4a",
+          "sentence": "There are 14 fish in a water tank. Kerri put 3 more fish into the tank. How many fish are there?",
+          "examples": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a1_09.m4a",
+          "sentence": "Helen saw 12 birds in a tree and@7 birds in another tree. How many birds did she see altogether?",
+          "examples": [
+            "17",
+            "18",
+            "19",
+            "20"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        {
+          "voice": "en_uk_d3_03.m4a",
+          "sentence": "Henry has 4 stamps. Eric has 5 more stamps than Henry. How many stamps does Eric have?",
+          "examples": [
+            "4",
+            "5",
+            "9",
+            "11"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_06.m4a",
+          "sentence": "The library has 5 more tables than the school office. The school office has@2 tables. How many tables does the library have?",
+          "examples": [
+            "5",
+            "7",
+            "9",
+            "11"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d3_08.m4a",
+          "sentence": "The school has two lost-and-found boxes. In the first box, there are@5 hats. In the second box, there are@4 more hats than in the first box. How many hats are there in the second box?",
+          "examples": [
+            "5",
+            "9",
+            "14",
+            "15"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d3_09.m4a",
+          "sentence": "There are 10 plates at the dinner table. There are 5 more people than plates. How many people are at dinner?",
+          "examples": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d3_10.m4a",
+          "sentence": "There are 14 chairs in Ms. Bloom's classroom. There are 3 more chairs in Mr. Peter's classroom. How many chairs are there in Mr. Peter's classroom?",
+          "examples": [
+            "11",
+            "14",
+            "17",
+            "20"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_07.m4a",
+          "sentence": "Thomas has 2 goats on his farm. There are 6 more chickens than goats on his farm. How many chickens does he have?",
+          "examples": [
+            "2",
+            "6",
+            "8",
+            "12"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_05.m4a",
+          "sentence": "Deanna has 5 more puzzles than Fatou. Fatou has 3 puzzles. How many puzzles does Deanna have?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_02.m4a",
+          "sentence": "Billy has 2 marbles. Audrey has 3 more marbles than Billy. How many marbles does Audrey have?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "8"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_10.m4a",
+          "sentence": "There are 14 chairs in Ms. Bloom's classroom. There are 3 more chairs in Mr. Peter's classroom. How many chairs are there in Mr. Peter's classroom?",
+          "examples": [
+            "11",
+            "14",
+            "17",
+            "20"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d3_09.m4a",
+          "sentence": "There are 10 plates at the dinner table. There are 5 more people than plates. How many people are at dinner?",
+          "examples": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        {
+          "voice": "en_uk_b1_04.m4a",
+          "sentence": "Hannah makes 8 loaves of bread. She gives 3 loaves of bread to her cousin. How many loaves of bread does she have left?",
+          "examples": [
+            "8",
+            "7",
+            "6",
+            "5"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_b1_05.m4a",
+          "sentence": "Millie has 9 bracelets. She loses@2 of them. How many bracelets does Millie have left?",
+          "examples": [
+            "9",
+            "7",
+            "5",
+            "3"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_10.m4a",
+          "sentence": "There are 9 kites flying in the sky.@A wind blows 3 kites down on the ground. How many kites are still flying in the sky?",
+          "examples": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_06.m4a",
+          "sentence": "A farmer gathered 16 eggs. She used@4 eggs to make breakfast. How many eggs does she have left?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_09.m4a",
+          "sentence": "There are 12 cats on a fence. 1 cat jumps down off of the fence. How many cats are left on the fence?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_b1_07.m4a",
+          "sentence": "Lucy has 8 pencils. She loses@7 of them. How many pencils does Lucy have left?",
+          "examples": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_b1_10.m4a",
+          "sentence": "There are 9 kites flying in the sky.@A wind blows 3 kites down on the ground. How many kites are still flying in the sky?",
+          "examples": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b1_02.m4a",
+          "sentence": "Ana has 7 cookies. She eats 2 of them. How many cookies does she have left?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_b1_09.m4a",
+          "sentence": "There are 12 cats on a fence. 1 cat jumps down off of the fence. How many cats are left on the fence?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_b1_06.m4a",
+          "sentence": "A farmer gathered 16 eggs. She used@4 eggs to make breakfast. How many eggs does she have left?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        {
+          "voice": "en_uk_c1_03.m4a",
+          "sentence": "Jen and Joe have 5 children. 2 of them are sons. How many daughters do they have?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_06.m4a",
+          "sentence": "Brittany has 7 shirts in her closet.@3 of them are blue and the rest are green. How many green shirts does she have?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_01.m4a",
+          "sentence": "There are 9 children in a classroom.@6 of them are boys. How many girls are in the classroom?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_c1_10.m4a",
+          "sentence": "Harper and Raven drew 8 pictures together. Harper drew 3 pictures. How many pictures did Raven draw?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "11"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_07.m4a",
+          "sentence": "Katie and her brother picked 6 mangos together. Katie picked 4 mangos. How many mangos did her brother pick?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_c1_04.m4a",
+          "sentence": "Jane has 9 balloons. 6 are green and the rest are blue. How many balloons are blue?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_07.m4a",
+          "sentence": "Katie and her brother picked 6 mangos together. Katie picked 4 mangos. How many mangos did her brother pick?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_c1_09.m4a",
+          "sentence": "Michael's cat had 9 kittens. 5 of them are white and the rest are gray. How many gray kittens did the cat have?",
+          "examples": [
+            "2",
+            "4",
+            "7",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_02.m4a",
+          "sentence": "Ms. Jones ordered 8 bags of sugar.@5 bags are delivered today. The rest will be delivered tomorrow. How many bags of sugar will be delivered tomorrow?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_03.m4a",
+          "sentence": "Jen and Joe have 5 children. 2 of them are sons. How many daughters do they have?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_05.m4a",
+          "sentence": "There are 4 balls in a box. 2 of them are soccer balls and the rest are basketballs. How many are basketballs?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_c1_08.m4a",
+          "sentence": "Anita has 5 books. 3 of them are science books and the rest are storybooks. How many are storybooks?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_c1_10.m4a",
+          "sentence": "Harper and Raven drew 8 pictures together. Harper drew 3 pictures. How many pictures did Raven draw?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "11"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_06.m4a",
+          "sentence": "Brittany has 7 shirts in her closet.@3 of them are blue and the rest are green. How many green shirts does she have?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c1_02.m4a",
+          "sentence": "Ms. Jones ordered 8 bags of sugar.@5 bags are delivered today. The rest will be delivered tomorrow. How many bags of sugar will be delivered tomorrow?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "8"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "problems": [
+        {
+          "voice": "en_uk_e1_02.m4a",
+          "sentence": "Peter has 4 marbles. Sue gives Peter some marbles and now he has@6 marbles in all. How many marbles did Sue give Peter?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_e1_08.m4a",
+          "sentence": "Peter read 6 pages of his book before lunch. After lunch he read some more. If Peter read 9 pages in all, how many pages did he read after lunch?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_e1_10.m4a",
+          "sentence": "George went to a store and bought some t-shirts. He went to another store and bought 2 more t-shirts. He bought a total of 7 t-shirts. How many t-shirts did he buy at the first store?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e1_09.m4a",
+          "sentence": "Kelly saw 4 cats in front of her house. She went to sleep and when she woke up, there were 7 cats in front of her house. How many cats came to her house while she was sleeping?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e1_01.m4a",
+          "sentence": "You have some stamps. Your brother gives 6 stamps to you. Now you have 10 stamps. How many stamps did you start with?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e1_03.m4a",
+          "sentence": "Tess picked 3 flowers in the morning. She picked some more flowers in the afternoon. If Tess picked 8 flowers in all, how many did she pick in the afternoon?",
+          "examples": [
+            "2",
+            "4",
+            "5",
+            "8"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_e1_09.m4a",
+          "sentence": "Kelly saw 4 cats in front of her house. She went to sleep and when she woke up, there were 7 cats in front of her house. How many cats came to her house while she was sleeping?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e1_07.m4a",
+          "sentence": "There were some seashells in Megan's pail. She finds 2 more seashells. Now she has 8 seashells in all. How many seashells did she start with?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_e1_10.m4a",
+          "sentence": "George went to a store and bought some t-shirts. He went to another store and bought 2 more t-shirts. He bought a total of 7 t-shirts. How many t-shirts did he buy at the first store?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e1_04.m4a",
+          "sentence": "A farmer had 7 apple trees. She bought some more trees and now has 10 apple trees in her orchard. How many apple trees did she buy?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e1_05.m4a",
+          "sentence": "A football team scored 3 goals in the first half. Then they scored more goals in the second half. They won the game with 5 goals! How many goals did they socre in the second half?",
+          "examples": [
+            "2",
+            "5",
+            "8",
+            "10"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_e1_02.m4a",
+          "sentence": "Peter has 4 marbles. Sue gives Peter some marbles and now he has@6 marbles in all. How many marbles did Sue give Peter?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_e1_10.m4a",
+          "sentence": "George went to a store and bought some t-shirts. He went to another store and bought 2 more t-shirts. He bought a total of 7 t-shirts. How many t-shirts did he buy at the first store?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e1_08.m4a",
+          "sentence": "Peter read 6 pages of his book before lunch. After lunch he read some more. If Peter read 9 pages in all, how many pages did he read after lunch?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_e1_06.m4a",
+          "sentence": "There are some crickets in a jar. You collect 5 more crickets and now have 10 crickets in all. How many crickets did you start with?",
+          "examples": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "problems": [
+        {
+          "voice": "en_uk_e2_09.m4a",
+          "sentence": "Jen made 6 sandwiches for her family. Her family ate some and 2 were left. How many sandwiches did her family eat?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e2_08.m4a",
+          "sentence": "7 boys ride their bikes. Some of the boys go home. 5 boys continue riding their bikes. How many boys went home?",
+          "examples": [
+            "2",
+            "5",
+            "7",
+            "10"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_e2_07.m4a",
+          "sentence": "David and his friends fly 9 kites. Some kites get stuck in a tree. 6 kites are still flying. How many kites are stuck in the tree?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "10"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_e2_01.m4a",
+          "sentence": "I have 10 apples. I eat some apples.@I have 4 apples left. How many apples did I eat?",
+          "examples": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e2_03.m4a",
+          "sentence": "A man was carrying balloons but the wind blew 6 away. He has 2 balloons left. How many balloons did he start with?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e2_02.m4a",
+          "sentence": "Yesterday, the store had 7 bags of rice. Today, the store has 2 bags of rice. How many bags of rice did the store sell?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "7"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_e2_04.m4a",
+          "sentence": "8 birds sat on a tree branch. Some flew away. Now there are 3 birds on the branch. How many birds flew away?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "10"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e2_09.m4a",
+          "sentence": "Jen made 6 sandwiches for her family. Her family ate some and 2 were left. How many sandwiches did her family eat?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e2_05.m4a",
+          "sentence": "Mia brought 10 jars of homemade jam to the market. She sold some jars and had 3 jars left. How many jars did she sell at the market?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_e2_06.m4a",
+          "sentence": "Tim's dog gave birth to some puppies. Tim gave 6 puppies to his friends. Now he has 2 puppies left. How many puppies did his dog give birth to?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_e2_04.m4a",
+          "sentence": "8 birds sat on a tree branch. Some flew away. Now there are 3 birds on the branch. How many birds flew away?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "10"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_e2_07.m4a",
+          "sentence": "David and his friends fly 9 kites. Some kites get stuck in a tree. 6 kites are still flying. How many kites are stuck in the tree?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "10"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_e2_02.m4a",
+          "sentence": "Yesterday, the store had 7 bags of rice. Today, the store has 2 bags of rice. How many bags of rice did the store sell?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "7"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_e2_10.m4a",
+          "sentence": "Some mangos were in the basket. 4 mangos were taken from the basket. Now there are 6 mangos. How many mangos were in the basket before they were taken?",
+          "examples": [
+            "4",
+            "8",
+            "10",
+            "12"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_e2_03.m4a",
+          "sentence": "A man was carrying balloons but the wind blew 6 away. He has 2 balloons left. How many balloons did he start with?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "problems": [
+        {
+          "voice": "en_uk_a2_04.m4a",
+          "sentence": "Magan bought 8 candies and Jane bought 9 candies. How many candies did they buy in all?",
+          "examples": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a2_06.m4a",
+          "sentence": "Maya has 5 marbles. Jaden has@8 marbles. How many marbles do they have altogether?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a2_02.m4a",
+          "sentence": "There are 8 books on the shelf. Marta put 6 more books on the shelf. How many books are on the shelf?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_a2_01.m4a",
+          "sentence": "Mary is decorating for a birthday party. She blew up 6 balloons this morning and 5 balloons this afternooon. How many balloons did she blow up in all?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_a2_07.m4a",
+          "sentence": "There are 7 pencils in the drawer. Dan placed 9 more pencils in the drawer. How many pencils are in the drawer?",
+          "examples": [
+            "14",
+            "16",
+            "18",
+            "20"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a2_08.m4a",
+          "sentence": "Janet has 8 oranges and Sharon has@4 oranges. How many oranges do they have altogether?",
+          "examples": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a2_05.m4a",
+          "sentence": "There are 6 girls and 7 boys on the bus. How many children are on the bus?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a2_03.m4a",
+          "sentence": "A farmer planted 5 rows of corn before lunch. He planted 7 more rows after lunch. How many rows of corn did he plant during the day?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a2_09.m4a",
+          "sentence": "7 children are on a bus. 4 more children get on the bus. How many children are on the bus?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_a2_04.m4a",
+          "sentence": "Magan bought 8 candies and Jane bought 9 candies. How many candies did they buy in all?",
+          "examples": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a2_10.m4a",
+          "sentence": "There are 7 yellow beads and@8 red beads on a necklace. How many beads are on the necklace in all?",
+          "examples": [
+            "11",
+            "13",
+            "15",
+            "17"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_a2_08.m4a",
+          "sentence": "Janet has 8 oranges and Sharon has@4 oranges. How many oranges do they have altogether?",
+          "examples": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a2_07.m4a",
+          "sentence": "There are 7 pencils in the drawer. Dan placed 9 more pencils in the drawer. How many pencils are in the drawer?",
+          "examples": [
+            "14",
+            "16",
+            "18",
+            "20"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a2_03.m4a",
+          "sentence": "A farmer planted 5 rows of corn before lunch. He planted 7 more rows after lunch. How many rows of corn did he plant during the day?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_a2_06.m4a",
+          "sentence": "Maya has 5 marbles. Jaden has@8 marbles. How many marbles do they have altogether?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "problems": [
+        {
+          "voice": "en_uk_d4_03.m4a",
+          "sentence": "Marin has 7 balls. Ellen has 6 more balls than Marin. How many balls does Ellen have?",
+          "examples": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_d4_08.m4a",
+          "sentence": "Bob has 4 pencils and his sister has@8 more pencils than him. How many pencils does Bob's sister have?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d4_07.m4a",
+          "sentence": "Kelly's chicken laid 6 eggs yesterday. Today, her chicken laid 5 more eggs than yesterday. How many eggs did her chicken lay today?",
+          "examples": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d4_05.m4a",
+          "sentence": "Jacob and Henry were reading the same book. Henry read 9 more pages than Jacob. Jacob read 11 pages of the book. How many pages did Henry read?",
+          "examples": [
+            "9",
+            "11",
+            "20",
+            "25"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d4_04.m4a",
+          "sentence": "Gabby worked 4 more hours than Ian. Ian worked 8 hours. How many hours did Gabby work?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d4_01.m4a",
+          "sentence": "Paul has 7 plums. Brian has 4 more plums than Paul. How many plums does Brian have?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d4_10.m4a",
+          "sentence": "Sandy is 5 years old. Mia is 7 years older than Sandy. How old is Mia?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d4_09.m4a",
+          "sentence": "It rained 8 days in January. It rained 9 more days in February than January. How many days did it rain in February?",
+          "examples": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d4_06.m4a",
+          "sentence": "The postman delivered 3 more letters today than yesterday. He delivered@8 letters yesterday. How many letters did he deliver today?",
+          "examples": [
+            "11",
+            "13",
+            "15",
+            "17"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d4_05.m4a",
+          "sentence": "Jacob and Henry were reading the same book. Henry read 9 more pages than Jacob. Jacob read 11 pages of the book. How many pages did Henry read?",
+          "examples": [
+            "9",
+            "11",
+            "20",
+            "25"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d4_02.m4a",
+          "sentence": "Jackie has 9 pencils. Adam has 5 more pencils than Jackie. How many pencils does Adam have?",
+          "examples": [
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d4_03.m4a",
+          "sentence": "Marin has 7 balls. Ellen has 6 more balls than Marin. How many balls does Ellen have?",
+          "examples": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_d4_10.m4a",
+          "sentence": "Sandy is 5 years old. Mia is 7 years older than Sandy. How old is Mia?",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d4_04.m4a",
+          "sentence": "Gabby worked 4 more hours than Ian. Ian worked 8 hours. How many hours did Gabby work?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d4_06.m4a",
+          "sentence": "The postman delivered 3 more letters today than yesterday. He delivered@8 letters yesterday. How many letters did he deliver today?",
+          "examples": [
+            "11",
+            "13",
+            "15",
+            "17"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "problems": [
+        {
+          "voice": "en_uk_b2_03.m4a",
+          "sentence": "There are 10 students on the school bus. 3 students get off the bus. How many students are left on the bus?",
+          "examples": [
+            "3",
+            "7",
+            "10",
+            "13"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_07.m4a",
+          "sentence": "Nick has 13 oranges. He eats@5 of them. How many oranges does he have left?",
+          "examples": [
+            "5",
+            "8",
+            "11",
+            "13"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_02.m4a",
+          "sentence": "Sam has 12 math problems for homework. He answered 3 of them. How many more math problems does Sam have left to answer?",
+          "examples": [
+            "3",
+            "7",
+            "9",
+            "12"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_b2_06.m4a",
+          "sentence": "Josh has 16 marbles and loses@7 of them. How many marbles does Josh have now?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_b2_01.m4a",
+          "sentence": "Nassir picks up a 17-page book. He reads 9 pages. How many pages does he have left to read?",
+          "examples": [
+            "5",
+            "8",
+            "9",
+            "15"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_02.m4a",
+          "sentence": "Sam has 12 math problems for homework. He answered 3 of them. How many more math problems does Sam have left to answer?",
+          "examples": [
+            "3",
+            "7",
+            "9",
+            "12"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_b2_05.m4a",
+          "sentence": "Diego has 11 mangos in a basket. Diego gives 4 mangos to his sister. How many mangos are left in the basket?",
+          "examples": [
+            "5",
+            "7",
+            "9",
+            "11"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_07.m4a",
+          "sentence": "Nick has 13 oranges. He eats@5 of them. How many oranges does he have left?",
+          "examples": [
+            "5",
+            "8",
+            "11",
+            "13"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_10.m4a",
+          "sentence": "Sara has 14 pencils in her bag. She let her friends borrow 7 of them. How many pencils does Sara have left?",
+          "examples": [
+            "4",
+            "7",
+            "10",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_06.m4a",
+          "sentence": "Josh has 16 marbles and loses@7 of them. How many marbles does Josh have now?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_b2_05.m4a",
+          "sentence": "Diego has 11 mangos in a basket. Diego gives 4 mangos to his sister. How many mangos are left in the basket?",
+          "examples": [
+            "5",
+            "7",
+            "9",
+            "11"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_03.m4a",
+          "sentence": "There are 10 students on the school bus. 3 students get off the bus. How many students are left on the bus?",
+          "examples": [
+            "3",
+            "7",
+            "10",
+            "13"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_08.m4a",
+          "sentence": "Lena has 12 books. She donates@8 books to her class library. How many books does Lena have left?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_b2_04.m4a",
+          "sentence": "There are 15 ducks swimming in a pond. 7 ducks fly away. How many ducks are still swimming in the pond?",
+          "examples": [
+            "5",
+            "7",
+            "8",
+            "10"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_b2_09.m4a",
+          "sentence": "There are 18 sheep in a barn. 9 sheep are sold. How many sheep are left in the barn?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "11"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "problems": [
+        {
+          "voice": "en_uk_d2_01.m4a",
+          "sentence": "Beth has 13 flowers in her garden. Kate has 8 flowers. How many more flowers does Beth have than Kate?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "13"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d2_02.m4a",
+          "sentence": "Tina borrowed 11 books from the library. Her friend borrowed 5 books. How many more books did Tina borrow than her friend?",
+          "examples": [
+            "5",
+            "6",
+            "8",
+            "11"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d2_08.m4a",
+          "sentence": "Ernest makes 5 paper airplanes. Nicole makes 14 paper airplanes. How many fewer paper airplanes does Ernest make than Nicole?",
+          "examples": [
+            "4",
+            "5",
+            "9",
+            "14"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d2_06.m4a",
+          "sentence": "Fred is 12 years old. His brother Tom is 8 years old. How much younger is Tom than Fred?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "18"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d2_09.m4a",
+          "sentence": "Children are drawing pictures to decorate their classroom.@The boys draw 11 pictures and the girls draw 20. How many more pictures do girls draw than boys?",
+          "examples": [
+            "9",
+            "11",
+            "15",
+            "20"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d2_04.m4a",
+          "sentence": "Anna bought 12 plants. Her sister bought 7 plants. How many more plants did Anna buy than her sister?",
+          "examples": [
+            "3",
+            "5",
+            "7",
+            "12"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d2_10.m4a",
+          "sentence": "It rained 15 days in March. It rained@8 days in April. How many more days did it rain in March than April?",
+          "examples": [
+            "5",
+            "7",
+            "8",
+            "15"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d2_06.m4a",
+          "sentence": "Fred is 12 years old. His brother Tom is 8 years old. How much younger is Tom than Fred?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "18"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d2_07.m4a",
+          "sentence": "Jane bakes 15 cookies and 7 cakes. How many fewer cakes did she bake than cookies?",
+          "examples": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d2_05.m4a",
+          "sentence": "There are 13 girls and 18 boys in a class. How many more boys are there than girls?",
+          "examples": [
+            "5",
+            "10",
+            "13",
+            "18"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_d2_10.m4a",
+          "sentence": "It rained 15 days in March. It rained@8 days in April. How many more days did it rain in March than April?",
+          "examples": [
+            "5",
+            "7",
+            "8",
+            "15"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d2_01.m4a",
+          "sentence": "Beth has 13 flowers in her garden. Kate has 8 flowers. How many more flowers does Beth have than Kate?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "13"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d2_07.m4a",
+          "sentence": "Jane bakes 15 cookies and 7 cakes. How many fewer cakes did she bake than cookies?",
+          "examples": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_d2_08.m4a",
+          "sentence": "Ernest makes 5 paper airplanes. Nicole makes 14 paper airplanes. How many fewer paper airplanes does Ernest make than Nicole?",
+          "examples": [
+            "4",
+            "5",
+            "9",
+            "14"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_d2_03.m4a",
+          "sentence": "Sydney found 20 seashells on the beach. Noah found 6 seashells. How many more seashells did Sydney find than Noah?",
+          "examples": [
+            "6",
+            "10",
+            "14",
+            "20"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "problems": [
+        {
+          "voice": "en_uk_c2_07.m4a",
+          "sentence": "Ms. Hannah is playing a hide-and-seek game with her 11 students. She finds 3 students. How many students are still hiding?",
+          "examples": [
+            "3",
+            "5",
+            "8",
+            "11"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_c2_01.m4a",
+          "sentence": "There are 15 students in a classroom. 9 of the students are wearing long pants. The rest are wearing short pants. How many students are wearing short pants?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "15"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_02.m4a",
+          "sentence": "Brad has 17 balloons. 8 balloons are red and the rest are green. How many balloons are green?",
+          "examples": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_c2_03.m4a",
+          "sentence": "Laci and Kendra caught 14 fireflies altogether. Laci caught 5 fireflies. How many fireflies did Kendra catch?",
+          "examples": [
+            "6",
+            "9",
+            "12",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_05.m4a",
+          "sentence": "Ms. Dawson has 12 students in her class. Some students are absent and@7 students are present. How many students are absent?",
+          "examples": [
+            "5",
+            "7",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_c2_09.m4a",
+          "sentence": "The tennis team has 12 players.@6 of the players are girls. Some are boys. How many tennis players are boys?",
+          "examples": [
+            "2",
+            "6",
+            "10",
+            "12"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_06.m4a",
+          "sentence": "A piece of wood is 13 inches long. It is cut into two parts. One part is@6 inches long. How long is the other part?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_03.m4a",
+          "sentence": "Laci and Kendra caught 14 fireflies altogether. Laci caught 5 fireflies. How many fireflies did Kendra catch?",
+          "examples": [
+            "6",
+            "9",
+            "12",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_04.m4a",
+          "sentence": "Zach has 17 birthday gifts. 9 gifts are from his family and the rest are from his friends. How many gifts are from his friends?",
+          "examples": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_08.m4a",
+          "sentence": "There are 16 children in a classroom. Some children go outside to play.@7 children stay inside to read books. How many children are outside?",
+          "examples": [
+            "7",
+            "9",
+            "13",
+            "16"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_10.m4a",
+          "sentence": "Megan writes 14 letters to friends and family. 7 letters are for her friends and the rest are for her family. How many letters are for her family?",
+          "examples": [
+            "4",
+            "7",
+            "10",
+            "14"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_04.m4a",
+          "sentence": "Zach has 17 birthday gifts. 9 gifts are from his family and the rest are from his friends. How many gifts are from his friends?",
+          "examples": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_09.m4a",
+          "sentence": "The tennis team has 12 players.@6 of the players are girls. Some are boys. How many tennis players are boys?",
+          "examples": [
+            "2",
+            "6",
+            "10",
+            "12"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_06.m4a",
+          "sentence": "A piece of wood is 13 inches long. It is cut into two parts. One part is@6 inches long. How long is the other part?",
+          "examples": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_c2_05.m4a",
+          "sentence": "Ms. Dawson has 12 students in her class. Some students are absent and@7 students are present. How many students are absent?",
+          "examples": [
+            "5",
+            "7",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "problems": [
+        {
+          "voice": "en_uk_f1_03.m4a",
+          "sentence": "Allie bought 2 boxes of mangos. Each box has 4 mangos. How many mangos did she buy?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f1_01.m4a",
+          "sentence": "Mike has 3 pairs of socks. Each pair has 2 socks. How many socks does Mike have?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f1_08.m4a",
+          "sentence": "Jane counted 3 flowers in the flower pot. Each flower has 5 petals. How many petals are there in all?",
+          "examples": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f1_02.m4a",
+          "sentence": "A bee has 6 legs. How many legs do@2 bees have?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f1_09.m4a",
+          "sentence": "It takes Sally 7 minutes to run a mile. How long would it take her to run@4 miles?",
+          "examples": [
+            "7",
+            "14",
+            "28",
+            "35"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f1_05.m4a",
+          "sentence": "There are 3 sheeps in the pasture. Each sheep has 4 lambs. How many lambs are in the pasture?",
+          "examples": [
+            "6",
+            "9",
+            "12",
+            "15"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f1_06.m4a",
+          "sentence": "A duck has 2 legs. How many legs do@3 ducks have?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f1_04.m4a",
+          "sentence": "There are 2 wagons on the farm. Each wagon carries 8 children. How many children are in the wagons?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_f1_10.m4a",
+          "sentence": "Kit, Ruth, and Dean each ate 2 slices of pizza. How many slices of pizza did they eat in all?",
+          "examples": [
+            "3",
+            "6",
+            "12",
+            "15"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f1_07.m4a",
+          "sentence": "Shelly bought 4 boxes of donuts. Each box contains 5 donuts. How many donuts did she buy altogether?",
+          "examples": [
+            "5",
+            "15",
+            "20",
+            "30"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f1_01.m4a",
+          "sentence": "Mike has 3 pairs of socks. Each pair has 2 socks. How many socks does Mike have?",
+          "examples": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f1_05.m4a",
+          "sentence": "There are 3 sheeps in the pasture. Each sheep has 4 lambs. How many lambs are in the pasture?",
+          "examples": [
+            "6",
+            "9",
+            "12",
+            "15"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f1_03.m4a",
+          "sentence": "Allie bought 2 boxes of mangos. Each box has 4 mangos. How many mangos did she buy?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f1_04.m4a",
+          "sentence": "There are 2 wagons on the farm. Each wagon carries 8 children. How many children are in the wagons?",
+          "examples": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ],
+          "answer": 3
+        },
+        {
+          "voice": "en_uk_f1_09.m4a",
+          "sentence": "It takes Sally 7 minutes to run a mile. How long would it take her to run@4 miles?",
+          "examples": [
+            "7",
+            "14",
+            "28",
+            "35"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "problems": [
+        {
+          "voice": "en_uk_f2_01.m4a",
+          "sentence": "2 children share 8 sweets equally. How many sweets does each child get?",
+          "examples": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f2_02.m4a",
+          "sentence": "You and your sister share 10 bags of chips equally. How many bags of chips will each of you get?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "10"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f2_03.m4a",
+          "sentence": "A farmer has 16 eggs and puts them into 2 boxes equally. How many eggs are in each box?",
+          "examples": [
+            "2",
+            "4",
+            "8",
+            "16"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f2_06.m4a",
+          "sentence": "3 friends share 12 candies equally. How many candies does each friend get?",
+          "examples": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f2_09.m4a",
+          "sentence": "20 students were equally divided into 4 groups by the teacher. How many students are in each group?",
+          "examples": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_f2_04.m4a",
+          "sentence": "Sarah picked 6 flowers. She put an equal amount of flowers into 2 vases. How many flowers did she put in each vase?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f2_02.m4a",
+          "sentence": "You and your sister share 10 bags of chips equally. How many bags of chips will each of you get?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "10"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f2_05.m4a",
+          "sentence": "Miranda baked 18 brownies. She put an equal number of brownies on to@2 plates. How many brownies are on each plate?",
+          "examples": [
+            "2",
+            "8",
+            "9",
+            "18"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f2_08.m4a",
+          "sentence": "Mr. Simpson's class has 18 books. He arranges them equally on 3 shelves. How many books are on each shelf?",
+          "examples": [
+            "3",
+            "6",
+            "16",
+            "18"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f2_10.m4a",
+          "sentence": "Marco bought 12 fish. He put an equal number of fish into 4 tanks. How many fish are in each tank?",
+          "examples": [
+            "3",
+            "4",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_f2_02.m4a",
+          "sentence": "You and your sister share 10 bags of chips equally. How many bags of chips will each of you get?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "10"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f2_04.m4a",
+          "sentence": "Sarah picked 6 flowers. She put an equal amount of flowers into 2 vases. How many flowers did she put in each vase?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "answer": 1
+        },
+        {
+          "voice": "en_uk_f2_03.m4a",
+          "sentence": "A farmer has 16 eggs and puts them into 2 boxes equally. How many eggs are in each box?",
+          "examples": [
+            "2",
+            "4",
+            "8",
+            "16"
+          ],
+          "answer": 2
+        },
+        {
+          "voice": "en_uk_f2_07.m4a",
+          "sentence": "Shante picked 6 mangos from a tree. He put an equal number of mangos into 3 boxes. How many mangos did he put in each box?",
+          "examples": [
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "answer": 0
+        },
+        {
+          "voice": "en_uk_f2_09.m4a",
+          "sentence": "20 students were equally divided into 4 groups by the teacher. How many students are in each group?",
+          "examples": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

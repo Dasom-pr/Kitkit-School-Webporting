@@ -1,0 +1,529 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "problems": [
+        {
+          "multiplicand": 2,
+          "multiplier": 1,
+          "product": 2
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 2,
+          "product": 4
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 3,
+          "product": 6
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 4,
+          "product": 8
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 5,
+          "product": 10
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 6,
+          "product": 12
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 7,
+          "product": 14
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 8,
+          "product": 16
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 9,
+          "product": 18
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "problems": [
+        {
+          "multiplicand": 3,
+          "multiplier": 1,
+          "product": 3
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 2,
+          "product": 6
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 3,
+          "product": 9
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 4,
+          "product": 12
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 5,
+          "product": 15
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 6,
+          "product": 18
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 7,
+          "product": 21
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 8,
+          "product": 24
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 9,
+          "product": 27
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        {
+          "multiplicand": 4,
+          "multiplier": 1,
+          "product": 4
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 2,
+          "product": 8
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 3,
+          "product": 12
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 4,
+          "product": 16
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 5,
+          "product": 20
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 6,
+          "product": 24
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 7,
+          "product": 28
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 8,
+          "product": 32
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 9,
+          "product": 36
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "problems": [
+        {
+          "multiplicand": 5,
+          "multiplier": 1,
+          "product": 5
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 2,
+          "product": 10
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 3,
+          "product": 15
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 4,
+          "product": 20
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 5,
+          "product": 25
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 6,
+          "product": 30
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 7,
+          "product": 35
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 8,
+          "product": 40
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 9,
+          "product": 45
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "problems": [
+        {
+          "multiplicand": 6,
+          "multiplier": 1,
+          "product": 6
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 2,
+          "product": 12
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 3,
+          "product": 18
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 4,
+          "product": 24
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 5,
+          "product": 30
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 6,
+          "product": 36
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 7,
+          "product": 42
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 8,
+          "product": 48
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 9,
+          "product": 54
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        {
+          "multiplicand": 7,
+          "multiplier": 1,
+          "product": 7
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 2,
+          "product": 14
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 3,
+          "product": 21
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 4,
+          "product": 28
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 5,
+          "product": 35
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 6,
+          "product": 42
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 7,
+          "product": 49
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 8,
+          "product": 56
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 9,
+          "product": 63
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        {
+          "multiplicand": 8,
+          "multiplier": 1,
+          "product": 8
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 2,
+          "product": 16
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 3,
+          "product": 24
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 4,
+          "product": 32
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 5,
+          "product": 40
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 6,
+          "product": 48
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 7,
+          "product": 56
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 8,
+          "product": 64
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 9,
+          "product": 72
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        {
+          "multiplicand": 9,
+          "multiplier": 1,
+          "product": 9
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 2,
+          "product": 18
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 3,
+          "product": 27
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 4,
+          "product": 36
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 5,
+          "product": 45
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 6,
+          "product": 54
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 7,
+          "product": 63
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 8,
+          "product": 72
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 9,
+          "product": 81
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "problems": [
+        {
+          "multiplicand": 3,
+          "multiplier": 4,
+          "product": 12
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 3,
+          "product": 12
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 5,
+          "product": 35
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 7,
+          "product": 35
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 2,
+          "product": 16
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 8,
+          "product": 16
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 4,
+          "product": 24
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 6,
+          "product": 24
+        },
+        {
+          "multiplicand": 9,
+          "multiplier": 3,
+          "product": 27
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 9,
+          "product": 27
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 4,
+          "product": 20
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 5,
+          "product": 20
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 8,
+          "product": 32
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 4,
+          "product": 32
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 6,
+          "product": 18
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 3,
+          "product": 18
+        },
+        {
+          "multiplicand": 7,
+          "multiplier": 2,
+          "product": 14
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 7,
+          "product": 14
+        },
+        {
+          "multiplicand": 6,
+          "multiplier": 5,
+          "product": 30
+        },
+        {
+          "multiplicand": 5,
+          "multiplier": 6,
+          "product": 30
+        },
+        {
+          "multiplicand": 4,
+          "multiplier": 2,
+          "product": 8
+        },
+        {
+          "multiplicand": 2,
+          "multiplier": 4,
+          "product": 8
+        },
+        {
+          "multiplicand": 8,
+          "multiplier": 3,
+          "product": 24
+        },
+        {
+          "multiplicand": 3,
+          "multiplier": 8,
+          "product": 24
+        }
+      ]
+    }
+  ]
+}

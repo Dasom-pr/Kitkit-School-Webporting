@@ -1,0 +1,3698 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "problems": [
+        {
+          "picture": "image_1_1.jpg",
+          "labels": [
+            {
+              "word": "food",
+              "x": 280,
+              "y": -1520,
+              "sound": "food.m4a"
+            },
+            {
+              "word": "egg",
+              "x": 1305,
+              "y": -725,
+              "sound": "egg.m4a"
+            },
+            {
+              "word": "bread",
+              "x": 253,
+              "y": -899,
+              "sound": "bread.m4a"
+            },
+            {
+              "word": "milk",
+              "x": 995,
+              "y": -1252,
+              "sound": "milk.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_1_2.jpg",
+          "labels": [
+            {
+              "word": "vegetables",
+              "x": 280,
+              "y": -1520,
+              "sound": "vegetables.m4a"
+            },
+            {
+              "word": "tomato",
+              "x": 292,
+              "y": -607,
+              "sound": "tomato.m4a"
+            },
+            {
+              "word": "potato",
+              "x": 1298,
+              "y": -740,
+              "sound": "potato.m4a"
+            },
+            {
+              "word": "onion",
+              "x": 1078,
+              "y": -1243,
+              "sound": "onion.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_1_3.jpg",
+          "labels": [
+            {
+              "word": "fruits",
+              "x": 280,
+              "y": -1520,
+              "sound": "fruits.m4a"
+            },
+            {
+              "word": "banana",
+              "x": 1247,
+              "y": -753,
+              "sound": "banana.m4a"
+            },
+            {
+              "word": "orange",
+              "x": 253,
+              "y": -899,
+              "sound": "orange.m4a"
+            },
+            {
+              "word": "cherry",
+              "x": 806,
+              "y": -1198,
+              "sound": "cherry.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_1_4.jpg",
+          "labels": [
+            {
+              "word": "tropical fruits",
+              "x": 280,
+              "y": -1520,
+              "sound": "tropicalfruits.m4a"
+            },
+            {
+              "word": "mango",
+              "x": 1188,
+              "y": -1172,
+              "sound": "mango.m4a"
+            },
+            {
+              "word": "pineapple",
+              "x": 531,
+              "y": -1265,
+              "sound": "pineapple.m4a"
+            },
+            {
+              "word": "coconut",
+              "x": 531,
+              "y": -463,
+              "sound": "coconut.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "problems": [
+        {
+          "picture": "image_2_1.jpg",
+          "labels": [
+            {
+              "word": "fruits",
+              "x": 280,
+              "y": -1520,
+              "sound": "fruits.m4a"
+            },
+            {
+              "word": "apple",
+              "x": 1116,
+              "y": -1019,
+              "sound": "apple.m4a"
+            },
+            {
+              "word": "papaya",
+              "x": 373,
+              "y": -577,
+              "sound": "papaya.m4a"
+            },
+            {
+              "word": "grapes",
+              "x": 1305,
+              "y": -448,
+              "sound": "grapes.m4a"
+            },
+            {
+              "word": "peach",
+              "x": 814,
+              "y": -1200,
+              "sound": "peach.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_2_2.jpg",
+          "labels": [
+            {
+              "word": "fruits",
+              "x": 280,
+              "y": -1520,
+              "sound": "fruits.m4a"
+            },
+            {
+              "word": "coconut",
+              "x": 313,
+              "y": -692,
+              "sound": "coconut.m4a"
+            },
+            {
+              "word": "shell",
+              "x": 313,
+              "y": -457,
+              "sound": "shell.m4a"
+            },
+            {
+              "word": "papaya",
+              "x": 1239,
+              "y": -1282,
+              "sound": "papaya.m4a"
+            },
+            {
+              "word": "seeds",
+              "x": 1239,
+              "y": -1028,
+              "sound": "seeds.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_2_3.jpg",
+          "labels": [
+            {
+              "word": "drink",
+              "x": 746,
+              "y": -944,
+              "sound": "drink.m4a"
+            },
+            {
+              "word": "water",
+              "x": 255,
+              "y": -446,
+              "sound": "water.m4a"
+            },
+            {
+              "word": "milk",
+              "x": 1333,
+              "y": -385,
+              "sound": "milk.m4a"
+            },
+            {
+              "word": "juice",
+              "x": 1307,
+              "y": -1392,
+              "sound": "juice.m4a"
+            },
+            {
+              "word": "coffee",
+              "x": 476,
+              "y": -1538,
+              "sound": "coffee.m4a"
+            },
+            {
+              "word": "soda",
+              "x": 774,
+              "y": -312,
+              "sound": "soda.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_2_4.jpg",
+          "labels": [
+            {
+              "word": "foods",
+              "x": 280,
+              "y": -1520,
+              "sound": "foods.m4a"
+            },
+            {
+              "word": "fruits",
+              "x": 416,
+              "y": -1169,
+              "sound": "fruits.m4a"
+            },
+            {
+              "word": "vegetables",
+              "x": 1220,
+              "y": -518,
+              "sound": "vegetables.m4a"
+            },
+            {
+              "word": "meat",
+              "x": 423,
+              "y": -664,
+              "sound": "meat.m4a"
+            },
+            {
+              "word": "grains",
+              "x": 1161,
+              "y": -1190,
+              "sound": "grains.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        {
+          "picture": "image_3_1.jpg",
+          "labels": [
+            {
+              "word": "family",
+              "x": 280,
+              "y": -1520,
+              "sound": "family.m4a"
+            },
+            {
+              "word": "mom",
+              "x": 1280,
+              "y": -1315,
+              "sound": "mom.m4a"
+            },
+            {
+              "word": "dad",
+              "x": 248,
+              "y": -537,
+              "sound": "dad.m4a"
+            },
+            {
+              "word": "brother",
+              "x": 729,
+              "y": -518,
+              "sound": "brother.m4a"
+            },
+            {
+              "word": "sister",
+              "x": 949,
+              "y": -1163,
+              "sound": "sister.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_3_2.jpg",
+          "labels": [
+            {
+              "word": "family",
+              "x": 280,
+              "y": -1520,
+              "sound": "family.m4a"
+            },
+            {
+              "word": "grandmother",
+              "x": 1108,
+              "y": -928,
+              "sound": "grandmother.m4a"
+            },
+            {
+              "word": "grandfather",
+              "x": 1304,
+              "y": -1259,
+              "sound": "grandfather.m4a"
+            },
+            {
+              "word": "mother",
+              "x": 899,
+              "y": -732,
+              "sound": "mother.m4a"
+            },
+            {
+              "word": "father",
+              "x": 608,
+              "y": -1285,
+              "sound": "father.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_3_3.jpg",
+          "labels": [
+            {
+              "word": "people",
+              "x": 256,
+              "y": -1443,
+              "sound": "people.m4a"
+            },
+            {
+              "word": "man",
+              "x": 607,
+              "y": -782,
+              "sound": "man.m4a"
+            },
+            {
+              "word": "woman",
+              "x": 950,
+              "y": -1256,
+              "sound": "woman.m4a"
+            },
+            {
+              "word": "boy",
+              "x": 319,
+              "y": -539,
+              "sound": "boy.m4a"
+            },
+            {
+              "word": "girl",
+              "x": 1185,
+              "y": -720,
+              "sound": "girl.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_3_4.jpg",
+          "labels": [
+            {
+              "word": "jobs",
+              "x": 280,
+              "y": -1520,
+              "sound": "jobs.m4a"
+            },
+            {
+              "word": "teacher",
+              "x": 248,
+              "y": -537,
+              "sound": "teacher.m4a"
+            },
+            {
+              "word": "doctor",
+              "x": 811,
+              "y": -463,
+              "sound": "doctor.m4a"
+            },
+            {
+              "word": "farmer",
+              "x": 1228,
+              "y": -1334,
+              "sound": "farmer.m4a"
+            },
+            {
+              "word": "pilot",
+              "x": 1252,
+              "y": -633,
+              "sound": "pilot.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "problems": [
+        {
+          "picture": "image_4_1.jpg",
+          "labels": [
+            {
+              "word": "animals",
+              "x": 758,
+              "y": -1520,
+              "sound": "animals.m4a"
+            },
+            {
+              "word": "dog",
+              "x": 1251,
+              "y": -1045,
+              "sound": "dog.m4a"
+            },
+            {
+              "word": "cat",
+              "x": 972,
+              "y": -373,
+              "sound": "cat.m4a"
+            },
+            {
+              "word": "cow",
+              "x": 297,
+              "y": -767,
+              "sound": "cow.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_4_2.jpg",
+          "labels": [
+            {
+              "word": "animals",
+              "x": 280,
+              "y": -1520,
+              "sound": "animals.m4a"
+            },
+            {
+              "word": "bear",
+              "x": 757,
+              "y": -899,
+              "sound": "bear.m4a"
+            },
+            {
+              "word": "snake",
+              "x": 1240,
+              "y": -1136,
+              "sound": "snake.m4a"
+            },
+            {
+              "word": "monkey",
+              "x": 751,
+              "y": -577,
+              "sound": "monkey.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_4_3.jpg",
+          "labels": [
+            {
+              "word": "cage",
+              "x": 280,
+              "y": -1520,
+              "sound": "cage.m4a"
+            },
+            {
+              "word": "chicken",
+              "x": 280,
+              "y": -989,
+              "sound": "chicken.m4a"
+            },
+            {
+              "word": "chick",
+              "x": 1280,
+              "y": -482,
+              "sound": "chick.m4a"
+            },
+            {
+              "word": "egg",
+              "x": 1280,
+              "y": -1235,
+              "sound": "egg.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_4_4.jpg",
+          "labels": [
+            {
+              "word": "farm",
+              "x": 280,
+              "y": -1520,
+              "sound": "farm.m4a"
+            },
+            {
+              "word": "barn",
+              "x": 394,
+              "y": -438,
+              "sound": "barn.m4a"
+            },
+            {
+              "word": "pig",
+              "x": 1324,
+              "y": -753,
+              "sound": "pig.m4a"
+            },
+            {
+              "word": "hen",
+              "x": 257,
+              "y": -889,
+              "sound": "hen.m4a"
+            },
+            {
+              "word": "rooster",
+              "x": 883,
+              "y": -1146,
+              "sound": "rooster.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "problems": [
+        {
+          "picture": "image_5_1.jpg",
+          "labels": [
+            {
+              "word": "wild cats",
+              "x": 725,
+              "y": -1520,
+              "sound": "wildcats.m4a"
+            },
+            {
+              "word": "leopard",
+              "x": 298,
+              "y": -944,
+              "sound": "leopard.m4a"
+            },
+            {
+              "word": "lion",
+              "x": 1250,
+              "y": -1115,
+              "sound": "lion.m4a"
+            },
+            {
+              "word": "tiger",
+              "x": 989,
+              "y": -441,
+              "sound": "tiger.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_5_2.jpg",
+          "labels": [
+            {
+              "word": "birds",
+              "x": 719,
+              "y": -914,
+              "sound": "birds.m4a"
+            },
+            {
+              "word": "cock",
+              "x": 1250,
+              "y": -368,
+              "sound": "cock.m4a"
+            },
+            {
+              "word": "crow",
+              "x": 299,
+              "y": -1479,
+              "sound": "crow.m4a"
+            },
+            {
+              "word": "owl",
+              "x": 1250,
+              "y": -1479,
+              "sound": "owl.m4a"
+            },
+            {
+              "word": "goose",
+              "x": 299,
+              "y": -368,
+              "sound": "goose.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_5_3.jpg",
+          "labels": [
+            {
+              "word": "insects",
+              "x": 694,
+              "y": -442,
+              "sound": "insects.m4a"
+            },
+            {
+              "word": "bee",
+              "x": 1274,
+              "y": -832,
+              "sound": "bee.m4a"
+            },
+            {
+              "word": "fly",
+              "x": 394,
+              "y": -1478,
+              "sound": "fly.m4a"
+            },
+            {
+              "word": "ladybug",
+              "x": 617,
+              "y": -802,
+              "sound": "ladybug.m4a"
+            },
+            {
+              "word": "butterfly",
+              "x": 1249,
+              "y": -1359,
+              "sound": "butterfly.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_5_4.jpg",
+          "labels": [
+            {
+              "word": "forest",
+              "x": 1075,
+              "y": -413,
+              "sound": "forest.m4a"
+            },
+            {
+              "word": "squirrel",
+              "x": 299,
+              "y": -1074,
+              "sound": "squirrel.m4a"
+            },
+            {
+              "word": "snake",
+              "x": 322,
+              "y": -472,
+              "sound": "snake.m4a"
+            },
+            {
+              "word": "frog",
+              "x": 1243,
+              "y": -704,
+              "sound": "frog.m4a"
+            },
+            {
+              "word": "toucan",
+              "x": 1295,
+              "y": -1178,
+              "sound": "toucan.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        {
+          "picture": "image_6_1.jpg",
+          "labels": [
+            {
+              "word": "sea animals",
+              "x": 735,
+              "y": -973,
+              "sound": "seaanimals.m4a"
+            },
+            {
+              "word": "octopus",
+              "x": 1054,
+              "y": -465,
+              "sound": "octopus.m4a"
+            },
+            {
+              "word": "dolphin",
+              "x": 1043,
+              "y": -1088,
+              "sound": "dolphin.m4a"
+            },
+            {
+              "word": "turtle",
+              "x": 254,
+              "y": -465,
+              "sound": "turtle.m4a"
+            },
+            {
+              "word": "starfish",
+              "x": 254,
+              "y": -1388,
+              "sound": "starfish.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_6_2.jpg",
+          "labels": [
+            {
+              "word": "wild animals",
+              "x": 1045,
+              "y": -465,
+              "sound": "wildanimals.m4a"
+            },
+            {
+              "word": "leopard",
+              "x": 1297,
+              "y": -1150,
+              "sound": "leopard.m4a"
+            },
+            {
+              "word": "boar",
+              "x": 1060,
+              "y": -950,
+              "sound": "boar.m4a"
+            },
+            {
+              "word": "deer",
+              "x": 322,
+              "y": -714,
+              "sound": "deer.m4a"
+            },
+            {
+              "word": "toucan",
+              "x": 531,
+              "y": -1479,
+              "sound": "toucan.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_6_3.jpg",
+          "labels": [
+            {
+              "word": "farm animals",
+              "x": 725,
+              "y": -637,
+              "sound": "farmanimals.m4a"
+            },
+            {
+              "word": "hen",
+              "x": 1321,
+              "y": -1355,
+              "sound": "hen.m4a"
+            },
+            {
+              "word": "horse",
+              "x": 690,
+              "y": -972,
+              "sound": "horse.m4a"
+            },
+            {
+              "word": "sheep",
+              "x": 1355,
+              "y": -842,
+              "sound": "sheep.m4a"
+            },
+            {
+              "word": "duck",
+              "x": 197,
+              "y": -1255,
+              "sound": "duck.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_6_4.jpg",
+          "labels": [
+            {
+              "word": "animals",
+              "x": 728,
+              "y": -1480,
+              "sound": "animals.m4a"
+            },
+            {
+              "word": "elephant",
+              "x": 1243,
+              "y": -1012,
+              "sound": "elephant.m4a"
+            },
+            {
+              "word": "giraffe",
+              "x": 354,
+              "y": -1105,
+              "sound": "giraffe.m4a"
+            },
+            {
+              "word": "buffalo",
+              "x": 1188,
+              "y": -490,
+              "sound": "buffalo.m4a"
+            },
+            {
+              "word": "zebra",
+              "x": 473,
+              "y": -490,
+              "sound": "zebra.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        {
+          "picture": "image_7_1.jpg",
+          "labels": [
+            {
+              "word": "actions",
+              "x": 521,
+              "y": -1480,
+              "sound": "actions.m4a"
+            },
+            {
+              "word": "walk",
+              "x": 1316,
+              "y": -1295,
+              "sound": "walk.m4a"
+            },
+            {
+              "word": "cry",
+              "x": 253,
+              "y": -1149,
+              "sound": "cry.m4a"
+            },
+            {
+              "word": "eat",
+              "x": 313,
+              "y": -490,
+              "sound": "eat.m4a"
+            },
+            {
+              "word": "sleep",
+              "x": 880,
+              "y": -465,
+              "sound": "sleep.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_7_2.jpg",
+          "labels": [
+            {
+              "word": "actions",
+              "x": 1118,
+              "y": -1509,
+              "sound": "actions.m4a"
+            },
+            {
+              "word": "jump",
+              "x": 1358,
+              "y": -686,
+              "sound": "jump.m4a"
+            },
+            {
+              "word": "kick",
+              "x": 710,
+              "y": -1042,
+              "sound": "kick.m4a"
+            },
+            {
+              "word": "dance",
+              "x": 710,
+              "y": -486,
+              "sound": "dance.m4a"
+            },
+            {
+              "word": "swim",
+              "x": 230,
+              "y": -1244,
+              "sound": "swim.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_7_3.jpg",
+          "labels": [
+            {
+              "word": "sky",
+              "x": 301,
+              "y": -1509,
+              "sound": "sky.m4a"
+            },
+            {
+              "word": "bird",
+              "x": 787,
+              "y": -586,
+              "sound": "bird.m4a"
+            },
+            {
+              "word": "kite",
+              "x": 1280,
+              "y": -832,
+              "sound": "kite.m4a"
+            },
+            {
+              "word": "balloon",
+              "x": 346,
+              "y": -832,
+              "sound": "balloon.m4a"
+            },
+            {
+              "word": "airplane",
+              "x": 969,
+              "y": -1156,
+              "sound": "airplane.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_7_4.jpg",
+          "labels": [
+            {
+              "word": "sports",
+              "x": 293,
+              "y": -1474,
+              "sound": "sports.m4a"
+            },
+            {
+              "word": "swimming",
+              "x": 857,
+              "y": -1168,
+              "sound": "swimming.m4a"
+            },
+            {
+              "word": "running",
+              "x": 1263,
+              "y": -443,
+              "sound": "running.m4a"
+            },
+            {
+              "word": "cycling",
+              "x": 745,
+              "y": -447,
+              "sound": "cycling.m4a"
+            },
+            {
+              "word": "skiing",
+              "x": 375,
+              "y": -1231,
+              "sound": "skiing.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        {
+          "picture": "image_8_1.jpg",
+          "labels": [
+            {
+              "word": "actions",
+              "x": 320,
+              "y": -1489,
+              "sound": "actions.m4a"
+            },
+            {
+              "word": "read",
+              "x": 553,
+              "y": -501,
+              "sound": "read.m4a"
+            },
+            {
+              "word": "write",
+              "x": 266,
+              "y": -1184,
+              "sound": "write.m4a"
+            },
+            {
+              "word": "sing",
+              "x": 1134,
+              "y": -501,
+              "sound": "sing.m4a"
+            },
+            {
+              "word": "run",
+              "x": 1260,
+              "y": -1213,
+              "sound": "run.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_8_2.jpg",
+          "labels": [
+            {
+              "word": "actions",
+              "x": 320,
+              "y": -1489,
+              "sound": "actions.m4a"
+            },
+            {
+              "word": "eat",
+              "x": 245,
+              "y": -972,
+              "sound": "eat.m4a"
+            },
+            {
+              "word": "swim",
+              "x": 271,
+              "y": -540,
+              "sound": "swim.m4a"
+            },
+            {
+              "word": "kick",
+              "x": 1347,
+              "y": -586,
+              "sound": "kick.m4a"
+            },
+            {
+              "word": "play",
+              "x": 1105,
+              "y": -1392,
+              "sound": "play.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_8_3.jpg",
+          "labels": [
+            {
+              "word": "playing",
+              "x": 264,
+              "y": -1501,
+              "sound": "playing.m4a"
+            },
+            {
+              "word": "football",
+              "x": 243,
+              "y": -834,
+              "sound": "football.m4a"
+            },
+            {
+              "word": "swimming",
+              "x": 1118,
+              "y": -1027,
+              "sound": "swimming.m4a"
+            },
+            {
+              "word": "hide-and-seek",
+              "x": 1248,
+              "y": -397,
+              "sound": "hideandseek.m4a"
+            },
+            {
+              "word": "reading",
+              "x": 693,
+              "y": -397,
+              "sound": "reading.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_8_4.jpg",
+          "labels": [
+            {
+              "word": "balls",
+              "x": 417,
+              "y": -1501,
+              "sound": "balls.m4a"
+            },
+            {
+              "word": "soccer ball",
+              "x": 322,
+              "y": -929,
+              "sound": "soccerball.m4a"
+            },
+            {
+              "word": "basketball",
+              "x": 1123,
+              "y": -1265,
+              "sound": "basketball.m4a"
+            },
+            {
+              "word": "baseball",
+              "x": 1249,
+              "y": -581,
+              "sound": "baseball.m4a"
+            },
+            {
+              "word": "tennis ball",
+              "x": 321,
+              "y": -508,
+              "sound": "tennisball.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "problems": [
+        {
+          "picture": "image_9_1.jpg",
+          "labels": [
+            {
+              "word": "lion",
+              "x": 1106,
+              "y": -1477,
+              "sound": "lion.m4a"
+            },
+            {
+              "word": "teeth",
+              "x": 1128,
+              "y": -805,
+              "sound": "teeth.m4a"
+            },
+            {
+              "word": "mane",
+              "x": 468,
+              "y": -1291,
+              "sound": "mane.m4a"
+            },
+            {
+              "word": "legs",
+              "x": 776,
+              "y": -569,
+              "sound": "legs.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_9_2.jpg",
+          "labels": [
+            {
+              "word": "rat",
+              "x": 1066,
+              "y": -1437,
+              "sound": "rat.m4a"
+            },
+            {
+              "word": "tail",
+              "x": 368,
+              "y": -449,
+              "sound": "tail.m4a"
+            },
+            {
+              "word": "whiskers",
+              "x": 1214,
+              "y": -1085,
+              "sound": "whiskers.m4a"
+            },
+            {
+              "word": "fur",
+              "x": 425,
+              "y": -1085,
+              "sound": "fur.m4a"
+            },
+            {
+              "word": "paw",
+              "x": 1214,
+              "y": -449,
+              "sound": "paw.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_9_3.jpg",
+          "labels": [
+            {
+              "word": "bee",
+              "x": 1095,
+              "y": -1442,
+              "sound": "bee.m4a"
+            },
+            {
+              "word": "wing",
+              "x": 1231,
+              "y": -871,
+              "sound": "wing.m4a"
+            },
+            {
+              "word": "antenna",
+              "x": 249,
+              "y": -808,
+              "sound": "antenna.m4a"
+            },
+            {
+              "word": "head",
+              "x": 354,
+              "y": -1171,
+              "sound": "head.m4a"
+            },
+            {
+              "word": "leg",
+              "x": 909,
+              "y": -569,
+              "sound": "leg.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_9_4.jpg",
+          "labels": [
+            {
+              "word": "elephant",
+              "x": 298,
+              "y": -1535,
+              "sound": "elephant.m4a"
+            },
+            {
+              "word": "trunk",
+              "x": 1209,
+              "y": -1244,
+              "sound": "trunk.m4a"
+            },
+            {
+              "word": "tusk",
+              "x": 1302,
+              "y": -674,
+              "sound": "tusk.m4a"
+            },
+            {
+              "word": "back",
+              "x": 354,
+              "y": -1171,
+              "sound": "back.m4a"
+            },
+            {
+              "word": "ear",
+              "x": 575,
+              "y": -674,
+              "sound": "ear.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "problems": [
+        {
+          "picture": "image_10_1.jpg",
+          "labels": [
+            {
+              "word": "cooking",
+              "x": 713,
+              "y": -1513,
+              "sound": "cooking.m4a"
+            },
+            {
+              "word": "egg",
+              "x": 1261,
+              "y": -812,
+              "sound": "egg.m4a"
+            },
+            {
+              "word": "milk",
+              "x": 1304,
+              "y": -1176,
+              "sound": "milk.m4a"
+            },
+            {
+              "word": "flour",
+              "x": 397,
+              "y": -879,
+              "sound": "flour.m4a"
+            },
+            {
+              "word": "sugar",
+              "x": 898,
+              "y": -506,
+              "sound": "sugar.m4a"
+            },
+            {
+              "word": "butter",
+              "x": 641,
+              "y": -1154,
+              "sound": "butter.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_10_2.jpg",
+          "labels": [
+            {
+              "word": "painting",
+              "x": 719,
+              "y": -1488,
+              "sound": "painting.m4a"
+            },
+            {
+              "word": "paint",
+              "x": 1251,
+              "y": -733,
+              "sound": "paint.m4a"
+            },
+            {
+              "word": "brush",
+              "x": 306,
+              "y": -733,
+              "sound": "brush.m4a"
+            },
+            {
+              "word": "roller",
+              "x": 367,
+              "y": -1090,
+              "sound": "roller.m4a"
+            },
+            {
+              "word": "painter",
+              "x": 1175,
+              "y": -1082,
+              "sound": "painter.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_10_3.jpg",
+          "labels": [
+            {
+              "word": "fishing",
+              "x": 1073,
+              "y": -497,
+              "sound": "fishing.m4a"
+            },
+            {
+              "word": "fish",
+              "x": 1162,
+              "y": -772,
+              "sound": "fish.m4a"
+            },
+            {
+              "word": "fishing rod",
+              "x": 1226,
+              "y": -1296,
+              "sound": "fishingrod.m4a"
+            },
+            {
+              "word": "pail",
+              "x": 309,
+              "y": -1150,
+              "sound": "pail.m4a"
+            },
+            {
+              "word": "fisher",
+              "x": 477,
+              "y": -882,
+              "sound": "fisher.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_10_4.jpg",
+          "labels": [
+            {
+              "word": "football",
+              "x": 294,
+              "y": -489,
+              "sound": "football.m4a"
+            },
+            {
+              "word": "goal",
+              "x": 918,
+              "y": -1249,
+              "sound": "goal.m4a"
+            },
+            {
+              "word": "goalkeeper",
+              "x": 1280,
+              "y": -1011,
+              "sound": "goalkeeper.m4a"
+            },
+            {
+              "word": "kicker",
+              "x": 530,
+              "y": -933,
+              "sound": "kicker.m4a"
+            },
+            {
+              "word": "field",
+              "x": 1101,
+              "y": -661,
+              "sound": "field.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "problems": [
+        {
+          "picture": "image_11_1.jpg",
+          "labels": [
+            {
+              "word": "house",
+              "x": 1112,
+              "y": -1504,
+              "sound": "house.m4a"
+            },
+            {
+              "word": "window",
+              "x": 1245,
+              "y": -1120,
+              "sound": "window.m4a"
+            },
+            {
+              "word": "door",
+              "x": 1130,
+              "y": -580,
+              "sound": "door.m4a"
+            },
+            {
+              "word": "roof",
+              "x": 492,
+              "y": -1242,
+              "sound": "roof.m4a"
+            },
+            {
+              "word": "yard",
+              "x": 430,
+              "y": -606,
+              "sound": "yard.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_11_2.jpg",
+          "labels": [
+            {
+              "word": "yard",
+              "x": 319,
+              "y": -1488,
+              "sound": "yard.m4a"
+            },
+            {
+              "word": "tree",
+              "x": 1256,
+              "y": -1272,
+              "sound": "tree.m4a"
+            },
+            {
+              "word": "flower",
+              "x": 680,
+              "y": -986,
+              "sound": "flower.m4a"
+            },
+            {
+              "word": "fence",
+              "x": 1256,
+              "y": -745,
+              "sound": "fence.m4a"
+            },
+            {
+              "word": "tent",
+              "x": 627,
+              "y": -554,
+              "sound": "tent.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_11_3.jpg",
+          "labels": [
+            {
+              "word": "living room",
+              "x": 319,
+              "y": -1488,
+              "sound": "livingroom.m4a"
+            },
+            {
+              "word": "table",
+              "x": 1143,
+              "y": -627,
+              "sound": "table.m4a"
+            },
+            {
+              "word": "sofa",
+              "x": 395,
+              "y": -609,
+              "sound": "sofa.m4a"
+            },
+            {
+              "word": "lamp",
+              "x": 654,
+              "y": -1168,
+              "sound": "lamp.m4a"
+            },
+            {
+              "word": "television",
+              "x": 1281,
+              "y": -967,
+              "sound": "television.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_11_4.jpg",
+          "labels": [
+            {
+              "word": "bathroom",
+              "x": 280,
+              "y": -1520,
+              "sound": "bathroom.m4a"
+            },
+            {
+              "word": "bathtub",
+              "x": 434,
+              "y": -605,
+              "sound": "bathtub.m4a"
+            },
+            {
+              "word": "sink",
+              "x": 934,
+              "y": -690,
+              "sound": "sink.m4a"
+            },
+            {
+              "word": "soap",
+              "x": 1094,
+              "y": -1035,
+              "sound": "soap.m4a"
+            },
+            {
+              "word": "bubbles",
+              "x": 306,
+              "y": -963,
+              "sound": "bubbles.m4a"
+            },
+            {
+              "word": "towel",
+              "x": 838,
+              "y": -1213,
+              "sound": "towel.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "problems": [
+        {
+          "picture": "image_12_1.jpg",
+          "labels": [
+            {
+              "word": "sky",
+              "x": 1106,
+              "y": -510,
+              "sound": "sky.m4a"
+            },
+            {
+              "word": "sun",
+              "x": 1271,
+              "y": -968,
+              "sound": "sun.m4a"
+            },
+            {
+              "word": "clouds",
+              "x": 1044,
+              "y": -1283,
+              "sound": "clouds.m4a"
+            },
+            {
+              "word": "moon",
+              "x": 381,
+              "y": -858,
+              "sound": "moon.m4a"
+            },
+            {
+              "word": "stars",
+              "x": 309,
+              "y": -1283,
+              "sound": "stars.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_12_2.jpg",
+          "labels": [
+            {
+              "word": "space",
+              "x": 859,
+              "y": -1488,
+              "sound": "space.m4a"
+            },
+            {
+              "word": "earth",
+              "x": 774,
+              "y": -599,
+              "sound": "earth.m4a"
+            },
+            {
+              "word": "land",
+              "x": 281,
+              "y": -913,
+              "sound": "land.m4a"
+            },
+            {
+              "word": "water",
+              "x": 382,
+              "y": -1213,
+              "sound": "water.m4a"
+            },
+            {
+              "word": "moon",
+              "x": 1317,
+              "y": -931,
+              "sound": "moon.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_12_3.jpg",
+          "labels": [
+            {
+              "word": "weather",
+              "x": 1073,
+              "y": -1479,
+              "sound": "weather.m4a"
+            },
+            {
+              "word": "rainy",
+              "x": 520,
+              "y": -976,
+              "sound": "rainy.m4a"
+            },
+            {
+              "word": "cloudy",
+              "x": 1254,
+              "y": -944,
+              "sound": "cloudy.m4a"
+            },
+            {
+              "word": "windy",
+              "x": 1130,
+              "y": -445,
+              "sound": "windy.m4a"
+            },
+            {
+              "word": "foggy",
+              "x": 555,
+              "y": -466,
+              "sound": "foggy.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_12_4.jpg",
+          "labels": [
+            {
+              "word": "colors",
+              "x": 1134,
+              "y": -1520,
+              "sound": "colors.m4a"
+            },
+            {
+              "word": "red",
+              "x": 849,
+              "y": -917,
+              "sound": "red.m4a"
+            },
+            {
+              "word": "blue",
+              "x": 408,
+              "y": -1231,
+              "sound": "blue.m4a"
+            },
+            {
+              "word": "green",
+              "x": 608,
+              "y": -448,
+              "sound": "green.m4a"
+            },
+            {
+              "word": "yellow",
+              "x": 1134,
+              "y": -709,
+              "sound": "yellow.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "problems": [
+        {
+          "picture": "image_13_1.jpg",
+          "labels": [
+            {
+              "word": "day",
+              "x": 719,
+              "y": -1451,
+              "sound": "day.m4a"
+            },
+            {
+              "word": "morning",
+              "x": 366,
+              "y": -416,
+              "sound": "morning.m4a"
+            },
+            {
+              "word": "sunrise",
+              "x": 336,
+              "y": -791,
+              "sound": "sunrise.m4a"
+            },
+            {
+              "word": "evening",
+              "x": 1167,
+              "y": -416,
+              "sound": "evening.m4a"
+            },
+            {
+              "word": "sunset",
+              "x": 1254,
+              "y": -1122,
+              "sound": "sunset.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_13_2.jpg",
+          "labels": [
+            {
+              "word": "times of day",
+              "x": 194,
+              "y": -1011,
+              "sound": "timesofday.m4a"
+            },
+            {
+              "word": "morning",
+              "x": 797,
+              "y": -1286,
+              "sound": "morning.m4a"
+            },
+            {
+              "word": "afternoon",
+              "x": 1331,
+              "y": -1140,
+              "sound": "afternoon.m4a"
+            },
+            {
+              "word": "evening",
+              "x": 577,
+              "y": -591,
+              "sound": "evening.m4a"
+            },
+            {
+              "word": "night",
+              "x": 1331,
+              "y": -608,
+              "sound": "night.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_13_3.jpg",
+          "labels": [
+            {
+              "word": "weather",
+              "x": 667,
+              "y": -934,
+              "sound": "weather.m4a"
+            },
+            {
+              "word": "rain",
+              "x": 1298,
+              "y": -409,
+              "sound": "rain.m4a"
+            },
+            {
+              "word": "storm",
+              "x": 484,
+              "y": -426,
+              "sound": "storm.m4a"
+            },
+            {
+              "word": "snow",
+              "x": 704,
+              "y": -1462,
+              "sound": "snow.m4a"
+            },
+            {
+              "word": "lightning",
+              "x": 1298,
+              "y": -1462,
+              "sound": "lightning.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_13_4.jpg",
+          "labels": [
+            {
+              "word": "colors",
+              "x": 719,
+              "y": -1520,
+              "sound": "colors.m4a"
+            },
+            {
+              "word": "black",
+              "x": 1155,
+              "y": -1147,
+              "sound": "black.m4a"
+            },
+            {
+              "word": "white",
+              "x": 628,
+              "y": -631,
+              "sound": "white.m4a"
+            },
+            {
+              "word": "purple",
+              "x": 408,
+              "y": -1147,
+              "sound": "purple.m4a"
+            },
+            {
+              "word": "orange",
+              "x": 1257,
+              "y": -528,
+              "sound": "orange.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "problems": [
+        {
+          "picture": "image_14_1.jpg",
+          "labels": [
+            {
+              "word": "tree",
+              "x": 485,
+              "y": -1520,
+              "sound": "tree.m4a"
+            },
+            {
+              "word": "roots",
+              "x": 680,
+              "y": -566,
+              "sound": "roots.m4a"
+            },
+            {
+              "word": "trunk",
+              "x": 1171,
+              "y": -954,
+              "sound": "trunk.m4a"
+            },
+            {
+              "word": "branches",
+              "x": 1121,
+              "y": -1241,
+              "sound": "branches.m4a"
+            },
+            {
+              "word": "leaves",
+              "x": 355,
+              "y": -1168,
+              "sound": "leaves.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_14_2.jpg",
+          "labels": [
+            {
+              "word": "pond",
+              "x": 297,
+              "y": -1520,
+              "sound": "pond.m4a"
+            },
+            {
+              "word": "duck",
+              "x": 1223,
+              "y": -879,
+              "sound": "duck.m4a"
+            },
+            {
+              "word": "stone",
+              "x": 702,
+              "y": -430,
+              "sound": "stone.m4a"
+            },
+            {
+              "word": "grass",
+              "x": 535,
+              "y": -1131,
+              "sound": "grass.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_14_3.jpg",
+          "labels": [
+            {
+              "word": "nature",
+              "x": 297,
+              "y": -1520,
+              "sound": "nature.m4a"
+            },
+            {
+              "word": "forest",
+              "x": 874,
+              "y": -1230,
+              "sound": "forest.m4a"
+            },
+            {
+              "word": "stream",
+              "x": 1094,
+              "y": -597,
+              "sound": "stream.m4a"
+            },
+            {
+              "word": "grass",
+              "x": 1223,
+              "y": -928,
+              "sound": "grass.m4a"
+            },
+            {
+              "word": "waterfall",
+              "x": 389,
+              "y": -816,
+              "sound": "waterfall.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_14_4.jpg",
+          "labels": [
+            {
+              "word": "forest",
+              "x": 319,
+              "y": -1488,
+              "sound": "forest.m4a"
+            },
+            {
+              "word": "fawn",
+              "x": 892,
+              "y": -536,
+              "sound": "fawn.m4a"
+            },
+            {
+              "word": "stream",
+              "x": 353,
+              "y": -853,
+              "sound": "stream.m4a"
+            },
+            {
+              "word": "rock",
+              "x": 1280,
+              "y": -871,
+              "sound": "rock.m4a"
+            },
+            {
+              "word": "tree",
+              "x": 1060,
+              "y": -1190,
+              "sound": "tree.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "problems": [
+        {
+          "picture": "image_15_1.jpg",
+          "labels": [
+            {
+              "word": "classroom",
+              "x": 297,
+              "y": -1520,
+              "sound": "classroom.m4a"
+            },
+            {
+              "word": "student",
+              "x": 1223,
+              "y": -540,
+              "sound": "student.m4a"
+            },
+            {
+              "word": "teacher",
+              "x": 682,
+              "y": -852,
+              "sound": "teacher.m4a"
+            },
+            {
+              "word": "blackboard",
+              "x": 1003,
+              "y": -1303,
+              "sound": "blackboard.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_15_2.jpg",
+          "labels": [
+            {
+              "word": "classroom",
+              "x": 1098,
+              "y": -1508,
+              "sound": "classroom.m4a"
+            },
+            {
+              "word": "desk",
+              "x": 1280,
+              "y": -567,
+              "sound": "desk.m4a"
+            },
+            {
+              "word": "chair",
+              "x": 751,
+              "y": -640,
+              "sound": "chair.m4a"
+            },
+            {
+              "word": "book",
+              "x": 363,
+              "y": -1162,
+              "sound": "book.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_15_3.jpg",
+          "labels": [
+            {
+              "word": "lunch",
+              "x": 1118,
+              "y": -1373,
+              "sound": "lunch.m4a"
+            },
+            {
+              "word": "plate",
+              "x": 839,
+              "y": -522,
+              "sound": "plate.m4a"
+            },
+            {
+              "word": "rice",
+              "x": 458,
+              "y": -787,
+              "sound": "rice.m4a"
+            },
+            {
+              "word": "spoon",
+              "x": 1093,
+              "y": -986,
+              "sound": "spoon.m4a"
+            },
+            {
+              "word": "cup",
+              "x": 532,
+              "y": -1187,
+              "sound": "cup.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_15_4.jpg",
+          "labels": [
+            {
+              "word": "party",
+              "x": 694,
+              "y": -1427,
+              "sound": "party.m4a"
+            },
+            {
+              "word": "cake",
+              "x": 1141,
+              "y": -568,
+              "sound": "cake.m4a"
+            },
+            {
+              "word": "present",
+              "x": 381,
+              "y": -585,
+              "sound": "present.m4a"
+            },
+            {
+              "word": "party hat",
+              "x": 310,
+              "y": -1043,
+              "sound": "partyhat.m4a"
+            },
+            {
+              "word": "balloon",
+              "x": 751,
+              "y": -972,
+              "sound": "balloon.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "problems": [
+        {
+          "picture": "image_16_1.jpg",
+          "labels": [
+            {
+              "word": "vehicles",
+              "x": 311,
+              "y": -1513,
+              "sound": "vehicles.m4a"
+            },
+            {
+              "word": "plane",
+              "x": 531,
+              "y": -1250,
+              "sound": "plane.m4a"
+            },
+            {
+              "word": "helicopter",
+              "x": 425,
+              "y": -729,
+              "sound": "helicopter.m4a"
+            },
+            {
+              "word": "truck",
+              "x": 1318,
+              "y": -1317,
+              "sound": "truck.m4a"
+            },
+            {
+              "word": "bike",
+              "x": 1285,
+              "y": -516,
+              "sound": "bike.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_16_2.jpg",
+          "labels": [
+            {
+              "word": "vehicles",
+              "x": 311,
+              "y": -1513,
+              "sound": "vehicles.m4a"
+            },
+            {
+              "word": "bus",
+              "x": 1280,
+              "y": -514,
+              "sound": "bus.m4a"
+            },
+            {
+              "word": "car",
+              "x": 267,
+              "y": -855,
+              "sound": "car.m4a"
+            },
+            {
+              "word": "motocycle",
+              "x": 1230,
+              "y": -993,
+              "sound": "motocycle.m4a"
+            },
+            {
+              "word": "train",
+              "x": 639,
+              "y": -1297,
+              "sound": "train.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_16_3.jpg",
+          "labels": [
+            {
+              "word": "car",
+              "x": 297,
+              "y": -1427,
+              "sound": "car.m4a"
+            },
+            {
+              "word": "mirror",
+              "x": 1184,
+              "y": -1084,
+              "sound": "mirror.m4a"
+            },
+            {
+              "word": "wheel",
+              "x": 601,
+              "y": -410,
+              "sound": "wheel.m4a"
+            },
+            {
+              "word": "door",
+              "x": 1224,
+              "y": -410,
+              "sound": "door.m4a"
+            },
+            {
+              "word": "headlight",
+              "x": 381,
+              "y": -926,
+              "sound": "headlight.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_16_4.jpg",
+          "labels": [
+            {
+              "word": "airplane",
+              "x": 319,
+              "y": -1488,
+              "sound": "airplane.m4a"
+            },
+            {
+              "word": "engine",
+              "x": 1280,
+              "y": -934,
+              "sound": "engine.m4a"
+            },
+            {
+              "word": "wing",
+              "x": 1083,
+              "y": -593,
+              "sound": "wing.m4a"
+            },
+            {
+              "word": "cockpit",
+              "x": 281,
+              "y": -999,
+              "sound": "cockpit.m4a"
+            },
+            {
+              "word": "pilot",
+              "x": 1004,
+              "y": -1263,
+              "sound": "pilot.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "problems": [
+        {
+          "picture": "image_17_1.jpg",
+          "labels": [
+            {
+              "word": "shapes",
+              "x": 1137,
+              "y": -1516,
+              "sound": "shapes.m4a"
+            },
+            {
+              "word": "circle",
+              "x": 758,
+              "y": -1242,
+              "sound": "circle.m4a"
+            },
+            {
+              "word": "triangle",
+              "x": 1194,
+              "y": -899,
+              "sound": "triangle.m4a"
+            },
+            {
+              "word": "heart",
+              "x": 883,
+              "y": -1072,
+              "sound": "heart.m4a"
+            },
+            {
+              "word": "square",
+              "x": 612,
+              "y": -627,
+              "sound": "square.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_17_2.jpg",
+          "labels": [
+            {
+              "word": "shapes",
+              "x": 721,
+              "y": -1539,
+              "sound": "shapes.m4a"
+            },
+            {
+              "word": "diamond",
+              "x": 1267,
+              "y": -1163,
+              "sound": "diamond.m4a"
+            },
+            {
+              "word": "star",
+              "x": 853,
+              "y": -452,
+              "sound": "star.m4a"
+            },
+            {
+              "word": "oval",
+              "x": 826,
+              "y": -899,
+              "sound": "oval.m4a"
+            },
+            {
+              "word": "rectangle",
+              "x": 367,
+              "y": -1116,
+              "sound": "rectangle.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_17_3.jpg",
+          "labels": [
+            {
+              "word": "cats",
+              "x": 708,
+              "y": -1508,
+              "sound": "cats.m4a"
+            },
+            {
+              "word": "big",
+              "x": 882,
+              "y": -860,
+              "sound": "big.m4a"
+            },
+            {
+              "word": "small",
+              "x": 1155,
+              "y": -494,
+              "sound": "small.m4a"
+            },
+            {
+              "word": "stripes",
+              "x": 322,
+              "y": -1245,
+              "sound": "stripes.m4a"
+            },
+            {
+              "word": "spots",
+              "x": 361,
+              "y": -567,
+              "sound": "spots.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_17_4.jpg",
+          "labels": [
+            {
+              "word": "opposites",
+              "x": 700,
+              "y": -1533,
+              "sound": "opposites.m4a"
+            },
+            {
+              "word": "tall",
+              "x": 1316,
+              "y": -952,
+              "sound": "tall.m4a"
+            },
+            {
+              "word": "short",
+              "x": 1313,
+              "y": -482,
+              "sound": "short.m4a"
+            },
+            {
+              "word": "heavy",
+              "x": 267,
+              "y": -1137,
+              "sound": "heavy.m4a"
+            },
+            {
+              "word": "light",
+              "x": 1215,
+              "y": -1311,
+              "sound": "light.m4a"
+            },
+            {
+              "word": "same",
+              "x": 440,
+              "y": -831,
+              "sound": "same.m4a"
+            },
+            {
+              "word": "different",
+              "x": 726,
+              "y": -482,
+              "sound": "different.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "problems": [
+        {
+          "picture": "image_18_1.jpg",
+          "labels": [
+            {
+              "word": "numbers",
+              "x": 704,
+              "y": -1519,
+              "sound": "numbers.m4a"
+            },
+            {
+              "word": "one",
+              "x": 1035,
+              "y": -466,
+              "sound": "one.m4a"
+            },
+            {
+              "word": "two",
+              "x": 303,
+              "y": -970,
+              "sound": "two.m4a"
+            },
+            {
+              "word": "three",
+              "x": 502,
+              "y": -466,
+              "sound": "three.m4a"
+            },
+            {
+              "word": "four",
+              "x": 781,
+              "y": -969,
+              "sound": "four.m4a"
+            },
+            {
+              "word": "five",
+              "x": 1282,
+              "y": -972,
+              "sound": "five.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_18_2.jpg",
+          "labels": [
+            {
+              "word": "numbers",
+              "x": 704,
+              "y": -1519,
+              "sound": "numbers.m4a"
+            },
+            {
+              "word": "six",
+              "x": 1282,
+              "y": -972,
+              "sound": "six.m4a"
+            },
+            {
+              "word": "seven",
+              "x": 303,
+              "y": -970,
+              "sound": "seven.m4a"
+            },
+            {
+              "word": "eight",
+              "x": 781,
+              "y": -969,
+              "sound": "eight.m4a"
+            },
+            {
+              "word": "nine",
+              "x": 1035,
+              "y": -466,
+              "sound": "nine.m4a"
+            },
+            {
+              "word": "ten",
+              "x": 502,
+              "y": -466,
+              "sound": "ten.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_18_3.jpg",
+          "labels": [
+            {
+              "word": "race",
+              "x": 280,
+              "y": -1520,
+              "sound": "race.m4a"
+            },
+            {
+              "word": "first",
+              "x": 1335,
+              "y": -881,
+              "sound": "first.m4a"
+            },
+            {
+              "word": "second",
+              "x": 748,
+              "y": -1165,
+              "sound": "second.m4a"
+            },
+            {
+              "word": "third",
+              "x": 860,
+              "y": -481,
+              "sound": "third.m4a"
+            },
+            {
+              "word": "fourth",
+              "x": 249,
+              "y": -1203,
+              "sound": "fourth.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_18_4.jpg",
+          "labels": [
+            {
+              "word": "animals",
+              "x": 280,
+              "y": -1520,
+              "sound": "animals.m4a"
+            },
+            {
+              "word": "fish",
+              "x": 1358,
+              "y": -1312,
+              "sound": "fish.m4a"
+            },
+            {
+              "word": "snake",
+              "x": 764,
+              "y": -1259,
+              "sound": "snake.m4a"
+            },
+            {
+              "word": "flamingo",
+              "x": 905,
+              "y": -496,
+              "sound": "flamingo.m4a"
+            },
+            {
+              "word": "duck",
+              "x": 1352,
+              "y": -414,
+              "sound": "duck.m4a"
+            },
+            {
+              "word": "kitten",
+              "x": 182,
+              "y": -957,
+              "sound": "kitten.m4a"
+            },
+            {
+              "word": "giraffe",
+              "x": 573,
+              "y": -750,
+              "sound": "giraffe.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "problems": [
+        {
+          "picture": "image_19_1.jpg",
+          "labels": [
+            {
+              "word": "clothes",
+              "x": 280,
+              "y": -1520,
+              "sound": "clothes.m4a"
+            },
+            {
+              "word": "pants",
+              "x": 519,
+              "y": -906,
+              "sound": "pants.m4a"
+            },
+            {
+              "word": "shorts",
+              "x": 1022,
+              "y": -1165,
+              "sound": "shorts.m4a"
+            },
+            {
+              "word": "skirt",
+              "x": 1120,
+              "y": -420,
+              "sound": "skirt.m4a"
+            },
+            {
+              "word": "dress",
+              "x": 252,
+              "y": -620,
+              "sound": "dress.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_19_2.jpg",
+          "labels": [
+            {
+              "word": "clothes",
+              "x": 280,
+              "y": -1520,
+              "sound": "clothes.m4a"
+            },
+            {
+              "word": "hat",
+              "x": 774,
+              "y": -734,
+              "sound": "hat.m4a"
+            },
+            {
+              "word": "shoes",
+              "x": 1351,
+              "y": -410,
+              "sound": "shoes.m4a"
+            },
+            {
+              "word": "shirt",
+              "x": 205,
+              "y": -1116,
+              "sound": "shirt.m4a"
+            },
+            {
+              "word": "jacket",
+              "x": 1342,
+              "y": -1050,
+              "sound": "jacket.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_19_3.jpg",
+          "labels": [
+            {
+              "word": "rainy day",
+              "x": 280,
+              "y": -1520,
+              "sound": "rainyday.m4a"
+            },
+            {
+              "word": "rainboots",
+              "x": 400,
+              "y": -517,
+              "sound": "rainboots.m4a"
+            },
+            {
+              "word": "raincoat",
+              "x": 712,
+              "y": -851,
+              "sound": "raincoat.m4a"
+            },
+            {
+              "word": "umbrella",
+              "x": 791,
+              "y": -1170,
+              "sound": "umbrella.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_19_4.jpg",
+          "labels": [
+            {
+              "word": "washing",
+              "x": 280,
+              "y": -1520,
+              "sound": "washing.m4a"
+            },
+            {
+              "word": "washing machine",
+              "x": 1217,
+              "y": -776,
+              "sound": "washingmachine.m4a"
+            },
+            {
+              "word": "basket",
+              "x": 273,
+              "y": -594,
+              "sound": "basket.m4a"
+            },
+            {
+              "word": "laundry",
+              "x": 436,
+              "y": -1026,
+              "sound": "laundry.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "problems": [
+        {
+          "picture": "image_20_1.jpg",
+          "labels": [
+            {
+              "word": "feelings",
+              "x": 280,
+              "y": -1520,
+              "sound": "feelings.m4a"
+            },
+            {
+              "word": "happy",
+              "x": 223,
+              "y": -1010,
+              "sound": "happy.m4a"
+            },
+            {
+              "word": "sad",
+              "x": 219,
+              "y": -520,
+              "sound": "sad.m4a"
+            },
+            {
+              "word": "angry",
+              "x": 1304,
+              "y": -1294,
+              "sound": "angry.m4a"
+            },
+            {
+              "word": "surprised",
+              "x": 1321,
+              "y": -829,
+              "sound": "surprised.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_20_2.jpg",
+          "labels": [
+            {
+              "word": "feelings",
+              "x": 280,
+              "y": -1520,
+              "sound": "feelings.m4a"
+            },
+            {
+              "word": "scared",
+              "x": 219,
+              "y": -520,
+              "sound": "scared.m4a"
+            },
+            {
+              "word": "sad",
+              "x": 1321,
+              "y": -829,
+              "sound": "sad.m4a"
+            },
+            {
+              "word": "excited",
+              "x": 223,
+              "y": -1010,
+              "sound": "excited.m4a"
+            },
+            {
+              "word": "sleepy",
+              "x": 1304,
+              "y": -1294,
+              "sound": "sleepy.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_20_3.jpg",
+          "labels": [
+            {
+              "word": "senses",
+              "x": 280,
+              "y": -1520,
+              "sound": "senses.m4a"
+            },
+            {
+              "word": "see",
+              "x": 1098,
+              "y": -1245,
+              "sound": "see.m4a"
+            },
+            {
+              "word": "hear",
+              "x": 1327,
+              "y": -850,
+              "sound": "hear.m4a"
+            },
+            {
+              "word": "smell",
+              "x": 1270,
+              "y": -577,
+              "sound": "smell.m4a"
+            },
+            {
+              "word": "taste",
+              "x": 301,
+              "y": -1133,
+              "sound": "taste.m4a"
+            },
+            {
+              "word": "touch",
+              "x": 296,
+              "y": -698,
+              "sound": "touch.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "problems": [
+        {
+          "picture": "image_21_1.jpg",
+          "labels": [
+            {
+              "word": "food",
+              "x": 280,
+              "y": -1520,
+              "sound": "food.m4a"
+            },
+            {
+              "word": "red peper",
+              "x": 1216,
+              "y": -777,
+              "sound": "redpeper.m4a"
+            },
+            {
+              "word": "ice cream",
+              "x": 332,
+              "y": -1244,
+              "sound": "icecream.m4a"
+            },
+            {
+              "word": "lemon",
+              "x": 339,
+              "y": -844,
+              "sound": "lemon.m4a"
+            },
+            {
+              "word": "chocolate",
+              "x": 1217,
+              "y": -1249,
+              "sound": "chocolate.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_21_2.jpg",
+          "labels": [
+            {
+              "word": "vegetables",
+              "x": 280,
+              "y": -1520,
+              "sound": "vegetables.m4a"
+            },
+            {
+              "word": "carrot",
+              "x": 1296,
+              "y": -1025,
+              "sound": "carrot.m4a"
+            },
+            {
+              "word": "eggplant",
+              "x": 405,
+              "y": -592,
+              "sound": "eggplant.m4a"
+            },
+            {
+              "word": "pepper",
+              "x": 247,
+              "y": -1197,
+              "sound": "pepper.m4a"
+            },
+            {
+              "word": "broccoli",
+              "x": 962,
+              "y": -1295,
+              "sound": "broccoli.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_21_3.jpg",
+          "labels": [
+            {
+              "word": "tropical fruits",
+              "x": 280,
+              "y": -1520,
+              "sound": "tropicalfruits.m4a"
+            },
+            {
+              "word": "pomegranate",
+              "x": 520,
+              "y": -1263,
+              "sound": "pomegranate.m4a"
+            },
+            {
+              "word": "papaya",
+              "x": 1325,
+              "y": -1082,
+              "sound": "papaya.m4a"
+            },
+            {
+              "word": "jackfruit",
+              "x": 1176,
+              "y": -475,
+              "sound": "jackfruit.m4a"
+            },
+            {
+              "word": "guava",
+              "x": 403,
+              "y": -424,
+              "sound": "guava.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_21_4.jpg",
+          "labels": [
+            {
+              "word": "toys",
+              "x": 280,
+              "y": -1520,
+              "sound": "toys.m4a"
+            },
+            {
+              "word": "robot",
+              "x": 583,
+              "y": -529,
+              "sound": "robot.m4a"
+            },
+            {
+              "word": "car",
+              "x": 383,
+              "y": -997,
+              "sound": "car.m4a"
+            },
+            {
+              "word": "marbles",
+              "x": 1249,
+              "y": -1302,
+              "sound": "marbles.m4a"
+            },
+            {
+              "word": "blocks",
+              "x": 1256,
+              "y": -603,
+              "sound": "blocks.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "problems": [
+        {
+          "picture": "image_22_1.jpg",
+          "labels": [
+            {
+              "word": "face",
+              "x": 280,
+              "y": -1520,
+              "sound": "face.m4a"
+            },
+            {
+              "word": "eye",
+              "x": 258,
+              "y": -1037,
+              "sound": "eye.m4a"
+            },
+            {
+              "word": "nose",
+              "x": 1239,
+              "y": -906,
+              "sound": "nose.m4a"
+            },
+            {
+              "word": "mouth",
+              "x": 298,
+              "y": -699,
+              "sound": "mouth.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_22_2.jpg",
+          "labels": [
+            {
+              "word": "face",
+              "x": 280,
+              "y": -1520,
+              "sound": "face.m4a"
+            },
+            {
+              "word": "forehead",
+              "x": 1323,
+              "y": -1343,
+              "sound": "forehead.m4a"
+            },
+            {
+              "word": "cheek",
+              "x": 457,
+              "y": -1027,
+              "sound": "cheek.m4a"
+            },
+            {
+              "word": "chin",
+              "x": 1311,
+              "y": -710,
+              "sound": "chin.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_22_3.jpg",
+          "labels": [
+            {
+              "word": "body",
+              "x": 280,
+              "y": -1520,
+              "sound": "body.m4a"
+            },
+            {
+              "word": "head",
+              "x": 942,
+              "y": -1307,
+              "sound": "head.m4a"
+            },
+            {
+              "word": "shoulders",
+              "x": 1055,
+              "y": -1064,
+              "sound": "shoulders.m4a"
+            },
+            {
+              "word": "knees",
+              "x": 1139,
+              "y": -803,
+              "sound": "knees.m4a"
+            },
+            {
+              "word": "feet",
+              "x": 1157,
+              "y": -540,
+              "sound": "feet.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_22_4.jpg",
+          "labels": [
+            {
+              "word": "hands",
+              "x": 280,
+              "y": -1520,
+              "sound": "hands.m4a"
+            },
+            {
+              "word": "palm",
+              "x": 1015,
+              "y": -538,
+              "sound": "palm.m4a"
+            },
+            {
+              "word": "finger",
+              "x": 365,
+              "y": -975,
+              "sound": "finger.m4a"
+            },
+            {
+              "word": "nail",
+              "x": 1211,
+              "y": -1029,
+              "sound": "nail.m4a"
+            },
+            {
+              "word": "wrist",
+              "x": 1127,
+              "y": -1241,
+              "sound": "wrist.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "problems": [
+        {
+          "picture": "image_23_1.jpg",
+          "labels": [
+            {
+              "word": "playground",
+              "x": 280,
+              "y": -1520,
+              "sound": "playground.m4a"
+            },
+            {
+              "word": "slide",
+              "x": 1096,
+              "y": -968,
+              "sound": "slide.m4a"
+            },
+            {
+              "word": "swing",
+              "x": 1311,
+              "y": -518,
+              "sound": "swing.m4a"
+            },
+            {
+              "word": "seesaw",
+              "x": 307,
+              "y": -513,
+              "sound": "seesaw.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_23_2.jpg",
+          "labels": [
+            {
+              "word": "airport",
+              "x": 280,
+              "y": -1520,
+              "sound": "airport.m4a"
+            },
+            {
+              "word": "airplane",
+              "x": 691,
+              "y": -559,
+              "sound": "airplane.m4a"
+            },
+            {
+              "word": "runway",
+              "x": 481,
+              "y": -1222,
+              "sound": "runway.m4a"
+            },
+            {
+              "word": "control tower",
+              "x": 1058,
+              "y": -1162,
+              "sound": "controltower.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_23_3.jpg",
+          "labels": [
+            {
+              "word": "village",
+              "x": 280,
+              "y": -1520,
+              "sound": "village.m4a"
+            },
+            {
+              "word": "house",
+              "x": 262,
+              "y": -1205,
+              "sound": "house.m4a"
+            },
+            {
+              "word": "road",
+              "x": 884,
+              "y": -571,
+              "sound": "road.m4a"
+            },
+            {
+              "word": "hill",
+              "x": 1008,
+              "y": -1074,
+              "sound": "hill.m4a"
+            },
+            {
+              "word": "tree",
+              "x": 1264,
+              "y": -827,
+              "sound": "tree.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_23_4.jpg",
+          "labels": [
+            {
+              "word": "farm",
+              "x": 280,
+              "y": -1520,
+              "sound": "farm.m4a"
+            },
+            {
+              "word": "farmer",
+              "x": 1053,
+              "y": -1178,
+              "sound": "farmer.m4a"
+            },
+            {
+              "word": "cow",
+              "x": 242,
+              "y": -838,
+              "sound": "cow.m4a"
+            },
+            {
+              "word": "milk",
+              "x": 1381,
+              "y": -823,
+              "sound": "milk.m4a"
+            },
+            {
+              "word": "pail",
+              "x": 416,
+              "y": -420,
+              "sound": "pail.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "problems": [
+        {
+          "picture": "image_24_1.jpg",
+          "labels": [
+            {
+              "word": "position",
+              "x": 280,
+              "y": -1520,
+              "sound": "position.m4a"
+            },
+            {
+              "word": "on",
+              "x": 1105,
+              "y": -513,
+              "sound": "on.m4a"
+            },
+            {
+              "word": "under",
+              "x": 412,
+              "y": -1288,
+              "sound": "under.m4a"
+            },
+            {
+              "word": "in",
+              "x": 409,
+              "y": -405,
+              "sound": "in.m4a"
+            },
+            {
+              "word": "behind",
+              "x": 1103,
+              "y": -1029,
+              "sound": "behind.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_24_2.jpg",
+          "labels": [
+            {
+              "word": "slide",
+              "x": 280,
+              "y": -1520,
+              "sound": "slide.m4a"
+            },
+            {
+              "word": "ladder",
+              "x": 1325,
+              "y": -620,
+              "sound": "ladder.m4a"
+            },
+            {
+              "word": "slope",
+              "x": 335,
+              "y": -896,
+              "sound": "slope.m4a"
+            },
+            {
+              "word": "up",
+              "x": 955,
+              "y": -1073,
+              "sound": "up.m4a"
+            },
+            {
+              "word": "down",
+              "x": 223,
+              "y": -494,
+              "sound": "down.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_24_3.jpg",
+          "labels": [
+            {
+              "word": "letter",
+              "x": 718,
+              "y": -1324,
+              "sound": "letter.m4a"
+            },
+            {
+              "word": "envelope",
+              "x": 358,
+              "y": -1038,
+              "sound": "envelope.m4a"
+            },
+            {
+              "word": "stamp",
+              "x": 1267,
+              "y": -1008,
+              "sound": "stamp.m4a"
+            },
+            {
+              "word": "address",
+              "x": 884,
+              "y": -686,
+              "sound": "address.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_24_4.jpg",
+          "labels": [
+            {
+              "word": "mail",
+              "x": 280,
+              "y": -1520,
+              "sound": "mail.m4a"
+            },
+            {
+              "word": "letter",
+              "x": 1023,
+              "y": -1312,
+              "sound": "letter.m4a"
+            },
+            {
+              "word": "postcard",
+              "x": 544,
+              "y": -986,
+              "sound": "postcard.m4a"
+            },
+            {
+              "word": "package",
+              "x": 251,
+              "y": -592,
+              "sound": "package.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "problems": [
+        {
+          "picture": "image_25_1.jpg",
+          "labels": [
+            {
+              "word": "world",
+              "x": 280,
+              "y": -1520,
+              "sound": "world.m4a"
+            },
+            {
+              "word": "ocean",
+              "x": 1352,
+              "y": -731,
+              "sound": "ocean.m4a"
+            },
+            {
+              "word": "mountain",
+              "x": 396,
+              "y": -801,
+              "sound": "mountain.m4a"
+            },
+            {
+              "word": "desert",
+              "x": 357,
+              "y": -1071,
+              "sound": "desert.m4a"
+            },
+            {
+              "word": "lake",
+              "x": 1244,
+              "y": -1369,
+              "sound": "lake.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_25_2.jpg",
+          "labels": [
+            {
+              "word": "opposites",
+              "x": 280,
+              "y": -1520,
+              "sound": "opposites.m4a"
+            },
+            {
+              "word": "cold",
+              "x": 729,
+              "y": -1290,
+              "sound": "cold.m4a"
+            },
+            {
+              "word": "hot",
+              "x": 232,
+              "y": -1292,
+              "sound": "hot.m4a"
+            },
+            {
+              "word": "wet",
+              "x": 1288,
+              "y": -1277,
+              "sound": "wet.m4a"
+            },
+            {
+              "word": "dry",
+              "x": 1290,
+              "y": -454,
+              "sound": "dry.m4a"
+            },
+            {
+              "word": "bright",
+              "x": 721,
+              "y": -718,
+              "sound": "bright.m4a"
+            },
+            {
+              "word": "dark",
+              "x": 341,
+              "y": -479,
+              "sound": "dark.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_25_3.jpg",
+          "labels": [
+            {
+              "word": "market",
+              "x": 280,
+              "y": -1520,
+              "sound": "market.m4a"
+            },
+            {
+              "word": "beans",
+              "x": 1338,
+              "y": -1129,
+              "sound": "beans.m4a"
+            },
+            {
+              "word": "truck",
+              "x": 927,
+              "y": -567,
+              "sound": "truck.m4a"
+            },
+            {
+              "word": "fish",
+              "x": 309,
+              "y": -486,
+              "sound": "fish.m4a"
+            },
+            {
+              "word": "basket",
+              "x": 274,
+              "y": -996,
+              "sound": "basket.m4a"
+            },
+            {
+              "word": "people",
+              "x": 1347,
+              "y": -737,
+              "sound": "people.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_25_4.jpg",
+          "labels": [
+            {
+              "word": "city",
+              "x": 280,
+              "y": -1520,
+              "sound": "city.m4a"
+            },
+            {
+              "word": "hospital",
+              "x": 535,
+              "y": -1317,
+              "sound": "hospital.m4a"
+            },
+            {
+              "word": "bank",
+              "x": 1201,
+              "y": -1289,
+              "sound": "bank.m4a"
+            },
+            {
+              "word": "hotel",
+              "x": 535,
+              "y": -520,
+              "sound": "hotel.m4a"
+            },
+            {
+              "word": "police",
+              "x": 1208,
+              "y": -513,
+              "sound": "police.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "problems": [
+        {
+          "picture": "image_26_1.jpg",
+          "labels": [
+            {
+              "word": "senses",
+              "x": 280,
+              "y": -1520,
+              "sound": "senses.m4a"
+            },
+            {
+              "word": "eyes",
+              "x": 1213,
+              "y": -990,
+              "sound": "eyes.m4a"
+            },
+            {
+              "word": "see",
+              "x": 1224,
+              "y": -1438,
+              "sound": "see.m4a"
+            },
+            {
+              "word": "nose",
+              "x": 332,
+              "y": -749,
+              "sound": "nose.m4a"
+            },
+            {
+              "word": "smell",
+              "x": 264,
+              "y": -1218,
+              "sound": "smell.m4a"
+            },
+            {
+              "word": "tongue",
+              "x": 868,
+              "y": -539,
+              "sound": "tongue.m4a"
+            },
+            {
+              "word": "taste",
+              "x": 1295,
+              "y": -833,
+              "sound": "taste.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_26_2.jpg",
+          "labels": [
+            {
+              "word": "ocean",
+              "x": 280,
+              "y": -1520,
+              "sound": "ocean.m4a"
+            },
+            {
+              "word": "turtle",
+              "x": 1230,
+              "y": -809,
+              "sound": "turtle.m4a"
+            },
+            {
+              "word": "shell",
+              "x": 1299,
+              "y": -1239,
+              "sound": "shell.m4a"
+            },
+            {
+              "word": "ray",
+              "x": 302,
+              "y": -1028,
+              "sound": "ray.m4a"
+            },
+            {
+              "word": "wings",
+              "x": 839,
+              "y": -1344,
+              "sound": "wings.m4a"
+            },
+            {
+              "word": "octopus",
+              "x": 284,
+              "y": -468,
+              "sound": "octopus.m4a"
+            },
+            {
+              "word": "eight arms",
+              "x": 1038,
+              "y": -620,
+              "sound": "eightarms.m4a"
+            }
+          ]
+        },
+        {
+          "picture": "image_26_3.jpg",
+          "labels": [
+            {
+              "word": "hair",
+              "x": 280,
+              "y": -1520,
+              "sound": "hair.m4a"
+            },
+            {
+              "word": "straight",
+              "x": 1337,
+              "y": -542,
+              "sound": "straight.m4a"
+            },
+            {
+              "word": "curly",
+              "x": 856,
+              "y": -537,
+              "sound": "curly.m4a"
+            },
+            {
+              "word": "long",
+              "x": 487,
+              "y": -714,
+              "sound": "long.m4a"
+            },
+            {
+              "word": "short",
+              "x": 176,
+              "y": -1143,
+              "sound": "short.m4a"
+            },
+            {
+              "word": "black",
+              "x": 597,
+              "y": -1297,
+              "sound": "black.m4a"
+            },
+            {
+              "word": "brown",
+              "x": 1338,
+              "y": -1350,
+              "sound": "brown.m4a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

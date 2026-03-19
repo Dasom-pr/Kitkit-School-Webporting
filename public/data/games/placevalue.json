@@ -1,0 +1,1743 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "problems": [
+        {
+          "objectNo": 100,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 0,
+          "suggestNo": 100
+        },
+        {
+          "objectNo": 10,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 0,
+          "suggestNo": 10
+        },
+        {
+          "objectNo": 1,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 0,
+          "suggestNo": 1
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "problems": [
+        {
+          "objectNo": 14,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 15,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 13,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 17,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 12,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 13,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 16,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 12,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 18,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 11,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 16,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 12,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 19,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 15,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 13,
+          "suggestNo": 0
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        {
+          "objectNo": 30,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 50,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 20,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 70,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 60,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 40,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 70,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 10,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 80,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 30,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 50,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 20,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 90,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 60,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 40,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 24,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 35,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 47,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 62,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 74,
+          "suggestNo": 0
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "problems": [
+        {
+          "objectNo": 26,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 37,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 53,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 72,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 84,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 28,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 46,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 55,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 83,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 91,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 25,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 48,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 63,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 74,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 92,
+          "suggestNo": 0
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "problems": [
+        {
+          "objectNo": 35,
+          "suggestNo": 25
+        },
+        {
+          "objectNo": 47,
+          "suggestNo": 37
+        },
+        {
+          "objectNo": 53,
+          "suggestNo": 43
+        },
+        {
+          "objectNo": 64,
+          "suggestNo": 54
+        },
+        {
+          "objectNo": 88,
+          "suggestNo": 78
+        },
+        {
+          "objectNo": 27,
+          "suggestNo": 17
+        },
+        {
+          "objectNo": 43,
+          "suggestNo": 33
+        },
+        {
+          "objectNo": 54,
+          "suggestNo": 44
+        },
+        {
+          "objectNo": 72,
+          "suggestNo": 62
+        },
+        {
+          "objectNo": 95,
+          "suggestNo": 85
+        },
+        {
+          "objectNo": 38,
+          "suggestNo": 28
+        },
+        {
+          "objectNo": 47,
+          "suggestNo": 37
+        },
+        {
+          "objectNo": 65,
+          "suggestNo": 55
+        },
+        {
+          "objectNo": 82,
+          "suggestNo": 72
+        },
+        {
+          "objectNo": 94,
+          "suggestNo": 84
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        {
+          "objectNo": 25,
+          "suggestNo": 35
+        },
+        {
+          "objectNo": 38,
+          "suggestNo": 48
+        },
+        {
+          "objectNo": 52,
+          "suggestNo": 62
+        },
+        {
+          "objectNo": 68,
+          "suggestNo": 78
+        },
+        {
+          "objectNo": 74,
+          "suggestNo": 84
+        },
+        {
+          "objectNo": 12,
+          "suggestNo": 22
+        },
+        {
+          "objectNo": 38,
+          "suggestNo": 48
+        },
+        {
+          "objectNo": 43,
+          "suggestNo": 53
+        },
+        {
+          "objectNo": 74,
+          "suggestNo": 84
+        },
+        {
+          "objectNo": 83,
+          "suggestNo": 93
+        },
+        {
+          "objectNo": 28,
+          "suggestNo": 38
+        },
+        {
+          "objectNo": 43,
+          "suggestNo": 53
+        },
+        {
+          "objectNo": 57,
+          "suggestNo": 67
+        },
+        {
+          "objectNo": 72,
+          "suggestNo": 82
+        },
+        {
+          "objectNo": 85,
+          "suggestNo": 95
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        {
+          "objectNo": 116,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 108,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 112,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 117,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 103,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 113,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 106,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 119,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 115,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 104,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 114,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 107,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 118,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 113,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 105,
+          "suggestNo": 0
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        {
+          "objectNo": 70,
+          "suggestNo": 30
+        },
+        {
+          "objectNo": 80,
+          "suggestNo": 50
+        },
+        {
+          "objectNo": 60,
+          "suggestNo": 20
+        },
+        {
+          "objectNo": 80,
+          "suggestNo": 40
+        },
+        {
+          "objectNo": 80,
+          "suggestNo": 70
+        },
+        {
+          "objectNo": 60,
+          "suggestNo": 40
+        },
+        {
+          "objectNo": 80,
+          "suggestNo": 50
+        },
+        {
+          "objectNo": 50,
+          "suggestNo": 30
+        },
+        {
+          "objectNo": 70,
+          "suggestNo": 60
+        },
+        {
+          "objectNo": 90,
+          "suggestNo": 80
+        },
+        {
+          "objectNo": 70,
+          "suggestNo": 20
+        },
+        {
+          "objectNo": 90,
+          "suggestNo": 60
+        },
+        {
+          "objectNo": 70,
+          "suggestNo": 50
+        },
+        {
+          "objectNo": 60,
+          "suggestNo": 40
+        },
+        {
+          "objectNo": 80,
+          "suggestNo": 70
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "problems": [
+        {
+          "objectNo": 40,
+          "suggestNo": 60
+        },
+        {
+          "objectNo": 30,
+          "suggestNo": 70
+        },
+        {
+          "objectNo": 40,
+          "suggestNo": 90
+        },
+        {
+          "objectNo": 20,
+          "suggestNo": 50
+        },
+        {
+          "objectNo": 10,
+          "suggestNo": 40
+        },
+        {
+          "objectNo": 50,
+          "suggestNo": 80
+        },
+        {
+          "objectNo": 30,
+          "suggestNo": 50
+        },
+        {
+          "objectNo": 50,
+          "suggestNo": 60
+        },
+        {
+          "objectNo": 40,
+          "suggestNo": 70
+        },
+        {
+          "objectNo": 10,
+          "suggestNo": 30
+        },
+        {
+          "objectNo": 20,
+          "suggestNo": 70
+        },
+        {
+          "objectNo": 40,
+          "suggestNo": 50
+        },
+        {
+          "objectNo": 30,
+          "suggestNo": 60
+        },
+        {
+          "objectNo": 50,
+          "suggestNo": 90
+        },
+        {
+          "objectNo": 20,
+          "suggestNo": 40
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "problems": [
+        {
+          "objectNo": 64,
+          "suggestNo": 60
+        },
+        {
+          "objectNo": 36,
+          "suggestNo": 6
+        },
+        {
+          "objectNo": 73,
+          "suggestNo": 43
+        },
+        {
+          "objectNo": 29,
+          "suggestNo": 26
+        },
+        {
+          "objectNo": 74,
+          "suggestNo": 52
+        },
+        {
+          "objectNo": 45,
+          "suggestNo": 40
+        },
+        {
+          "objectNo": 27,
+          "suggestNo": 7
+        },
+        {
+          "objectNo": 63,
+          "suggestNo": 23
+        },
+        {
+          "objectNo": 39,
+          "suggestNo": 34
+        },
+        {
+          "objectNo": 77,
+          "suggestNo": 41
+        },
+        {
+          "objectNo": 57,
+          "suggestNo": 50
+        },
+        {
+          "objectNo": 48,
+          "suggestNo": 8
+        },
+        {
+          "objectNo": 56,
+          "suggestNo": 36
+        },
+        {
+          "objectNo": 68,
+          "suggestNo": 63
+        },
+        {
+          "objectNo": 68,
+          "suggestNo": 23
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "problems": [
+        {
+          "objectNo": 17,
+          "suggestNo": 8
+        },
+        {
+          "objectNo": 13,
+          "suggestNo": 9
+        },
+        {
+          "objectNo": 12,
+          "suggestNo": 4
+        },
+        {
+          "objectNo": 12,
+          "suggestNo": 3
+        },
+        {
+          "objectNo": 14,
+          "suggestNo": 7
+        },
+        {
+          "objectNo": 11,
+          "suggestNo": 2
+        },
+        {
+          "objectNo": 12,
+          "suggestNo": 8
+        },
+        {
+          "objectNo": 15,
+          "suggestNo": 7
+        },
+        {
+          "objectNo": 14,
+          "suggestNo": 9
+        },
+        {
+          "objectNo": 11,
+          "suggestNo": 6
+        },
+        {
+          "objectNo": 11,
+          "suggestNo": 4
+        },
+        {
+          "objectNo": 14,
+          "suggestNo": 6
+        },
+        {
+          "objectNo": 14,
+          "suggestNo": 5
+        },
+        {
+          "objectNo": 16,
+          "suggestNo": 9
+        },
+        {
+          "objectNo": 13,
+          "suggestNo": 8
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "problems": [
+        {
+          "objectNo": 23,
+          "suggestNo": 16
+        },
+        {
+          "objectNo": 22,
+          "suggestNo": 14
+        },
+        {
+          "objectNo": 26,
+          "suggestNo": 18
+        },
+        {
+          "objectNo": 21,
+          "suggestNo": 13
+        },
+        {
+          "objectNo": 20,
+          "suggestNo": 15
+        },
+        {
+          "objectNo": 22,
+          "suggestNo": 15
+        },
+        {
+          "objectNo": 21,
+          "suggestNo": 12
+        },
+        {
+          "objectNo": 23,
+          "suggestNo": 17
+        },
+        {
+          "objectNo": 22,
+          "suggestNo": 14
+        },
+        {
+          "objectNo": 25,
+          "suggestNo": 18
+        },
+        {
+          "objectNo": 21,
+          "suggestNo": 13
+        },
+        {
+          "objectNo": 20,
+          "suggestNo": 16
+        },
+        {
+          "objectNo": 23,
+          "suggestNo": 14
+        },
+        {
+          "objectNo": 27,
+          "suggestNo": 19
+        },
+        {
+          "objectNo": 23,
+          "suggestNo": 17
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "problems": [
+        {
+          "objectNo": 20,
+          "suggestNo": 13
+        },
+        {
+          "objectNo": 53,
+          "suggestNo": 45
+        },
+        {
+          "objectNo": 33,
+          "suggestNo": 26
+        },
+        {
+          "objectNo": 41,
+          "suggestNo": 37
+        },
+        {
+          "objectNo": 71,
+          "suggestNo": 64
+        },
+        {
+          "objectNo": 24,
+          "suggestNo": 16
+        },
+        {
+          "objectNo": 41,
+          "suggestNo": 35
+        },
+        {
+          "objectNo": 53,
+          "suggestNo": 48
+        },
+        {
+          "objectNo": 62,
+          "suggestNo": 54
+        },
+        {
+          "objectNo": 85,
+          "suggestNo": 79
+        },
+        {
+          "objectNo": 25,
+          "suggestNo": 18
+        },
+        {
+          "objectNo": 31,
+          "suggestNo": 23
+        },
+        {
+          "objectNo": 53,
+          "suggestNo": 47
+        },
+        {
+          "objectNo": 70,
+          "suggestNo": 65
+        },
+        {
+          "objectNo": 82,
+          "suggestNo": 78
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "problems": [
+        {
+          "objectNo": 43,
+          "suggestNo": 25
+        },
+        {
+          "objectNo": 90,
+          "suggestNo": 54
+        },
+        {
+          "objectNo": 82,
+          "suggestNo": 46
+        },
+        {
+          "objectNo": 64,
+          "suggestNo": 37
+        },
+        {
+          "objectNo": 81,
+          "suggestNo": 63
+        },
+        {
+          "objectNo": 56,
+          "suggestNo": 38
+        },
+        {
+          "objectNo": 80,
+          "suggestNo": 56
+        },
+        {
+          "objectNo": 66,
+          "suggestNo": 47
+        },
+        {
+          "objectNo": 64,
+          "suggestNo": 29
+        },
+        {
+          "objectNo": 91,
+          "suggestNo": 64
+        },
+        {
+          "objectNo": 70,
+          "suggestNo": 27
+        },
+        {
+          "objectNo": 66,
+          "suggestNo": 19
+        },
+        {
+          "objectNo": 81,
+          "suggestNo": 45
+        },
+        {
+          "objectNo": 64,
+          "suggestNo": 37
+        },
+        {
+          "objectNo": 93,
+          "suggestNo": 58
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "problems": [
+        {
+          "objectNo": 27,
+          "suggestNo": 35
+        },
+        {
+          "objectNo": 16,
+          "suggestNo": 22
+        },
+        {
+          "objectNo": 46,
+          "suggestNo": 54
+        },
+        {
+          "objectNo": 54,
+          "suggestNo": 63
+        },
+        {
+          "objectNo": 68,
+          "suggestNo": 75
+        },
+        {
+          "objectNo": 16,
+          "suggestNo": 24
+        },
+        {
+          "objectNo": 48,
+          "suggestNo": 53
+        },
+        {
+          "objectNo": 29,
+          "suggestNo": 35
+        },
+        {
+          "objectNo": 54,
+          "suggestNo": 62
+        },
+        {
+          "objectNo": 76,
+          "suggestNo": 85
+        },
+        {
+          "objectNo": 28,
+          "suggestNo": 33
+        },
+        {
+          "objectNo": 58,
+          "suggestNo": 64
+        },
+        {
+          "objectNo": 48,
+          "suggestNo": 51
+        },
+        {
+          "objectNo": 85,
+          "suggestNo": 92
+        },
+        {
+          "objectNo": 69,
+          "suggestNo": 76
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "problems": [
+        {
+          "objectNo": 35,
+          "suggestNo": 52
+        },
+        {
+          "objectNo": 46,
+          "suggestNo": 83
+        },
+        {
+          "objectNo": 37,
+          "suggestNo": 65
+        },
+        {
+          "objectNo": 28,
+          "suggestNo": 44
+        },
+        {
+          "objectNo": 34,
+          "suggestNo": 73
+        },
+        {
+          "objectNo": 28,
+          "suggestNo": 63
+        },
+        {
+          "objectNo": 19,
+          "suggestNo": 56
+        },
+        {
+          "objectNo": 27,
+          "suggestNo": 45
+        },
+        {
+          "objectNo": 35,
+          "suggestNo": 74
+        },
+        {
+          "objectNo": 36,
+          "suggestNo": 82
+        },
+        {
+          "objectNo": 27,
+          "suggestNo": 55
+        },
+        {
+          "objectNo": 45,
+          "suggestNo": 64
+        },
+        {
+          "objectNo": 18,
+          "suggestNo": 46
+        },
+        {
+          "objectNo": 58,
+          "suggestNo": 72
+        },
+        {
+          "objectNo": 36,
+          "suggestNo": 83
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "problems": [
+        {
+          "objectNo": 100,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 300,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 600,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 700,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 200,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 500,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 800,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 300,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 100,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 600,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 300,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 500,
+          "suggestNo": 0
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "problems": [
+        {
+          "objectNo": 538,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 462,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 647,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 825,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 384,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 481,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 628,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 742,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 537,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 831,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 527,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 385,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 639,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 472,
+          "suggestNo": 0
+        },
+        {
+          "objectNo": 815,
+          "suggestNo": 0
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "problems": [
+        {
+          "objectNo": 500,
+          "suggestNo": 200
+        },
+        {
+          "objectNo": 600,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 300,
+          "suggestNo": 100
+        },
+        {
+          "objectNo": 700,
+          "suggestNo": 300
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 200
+        },
+        {
+          "objectNo": 600,
+          "suggestNo": 300
+        },
+        {
+          "objectNo": 800,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 200
+        },
+        {
+          "objectNo": 500,
+          "suggestNo": 100
+        },
+        {
+          "objectNo": 700,
+          "suggestNo": 300
+        },
+        {
+          "objectNo": 700,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 200
+        },
+        {
+          "objectNo": 600,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 500,
+          "suggestNo": 200
+        },
+        {
+          "objectNo": 800,
+          "suggestNo": 500
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "problems": [
+        {
+          "objectNo": 300,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 200,
+          "suggestNo": 600
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 700
+        },
+        {
+          "objectNo": 100,
+          "suggestNo": 500
+        },
+        {
+          "objectNo": 500,
+          "suggestNo": 800
+        },
+        {
+          "objectNo": 200,
+          "suggestNo": 500
+        },
+        {
+          "objectNo": 100,
+          "suggestNo": 300
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 700
+        },
+        {
+          "objectNo": 300,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 500,
+          "suggestNo": 600
+        },
+        {
+          "objectNo": 100,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 500,
+          "suggestNo": 800
+        },
+        {
+          "objectNo": 300,
+          "suggestNo": 500
+        },
+        {
+          "objectNo": 200,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 400,
+          "suggestNo": 700
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "problems": [
+        {
+          "objectNo": 253,
+          "suggestNo": 153
+        },
+        {
+          "objectNo": 446,
+          "suggestNo": 436
+        },
+        {
+          "objectNo": 448,
+          "suggestNo": 348
+        },
+        {
+          "objectNo": 592,
+          "suggestNo": 582
+        },
+        {
+          "objectNo": 758,
+          "suggestNo": 658
+        },
+        {
+          "objectNo": 448,
+          "suggestNo": 438
+        },
+        {
+          "objectNo": 365,
+          "suggestNo": 265
+        },
+        {
+          "objectNo": 651,
+          "suggestNo": 641
+        },
+        {
+          "objectNo": 576,
+          "suggestNo": 476
+        },
+        {
+          "objectNo": 749,
+          "suggestNo": 739
+        },
+        {
+          "objectNo": 454,
+          "suggestNo": 354
+        },
+        {
+          "objectNo": 281,
+          "suggestNo": 271
+        },
+        {
+          "objectNo": 628,
+          "suggestNo": 528
+        },
+        {
+          "objectNo": 766,
+          "suggestNo": 756
+        },
+        {
+          "objectNo": 488,
+          "suggestNo": 388
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "problems": [
+        {
+          "objectNo": 391,
+          "suggestNo": 491
+        },
+        {
+          "objectNo": 548,
+          "suggestNo": 648
+        },
+        {
+          "objectNo": 279,
+          "suggestNo": 379
+        },
+        {
+          "objectNo": 763,
+          "suggestNo": 773
+        },
+        {
+          "objectNo": 428,
+          "suggestNo": 438
+        },
+        {
+          "objectNo": 481,
+          "suggestNo": 581
+        },
+        {
+          "objectNo": 746,
+          "suggestNo": 846
+        },
+        {
+          "objectNo": 335,
+          "suggestNo": 435
+        },
+        {
+          "objectNo": 829,
+          "suggestNo": 839
+        },
+        {
+          "objectNo": 628,
+          "suggestNo": 638
+        },
+        {
+          "objectNo": 639,
+          "suggestNo": 739
+        },
+        {
+          "objectNo": 382,
+          "suggestNo": 482
+        },
+        {
+          "objectNo": 743,
+          "suggestNo": 843
+        },
+        {
+          "objectNo": 548,
+          "suggestNo": 558
+        },
+        {
+          "objectNo": 673,
+          "suggestNo": 683
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "problems": [
+        {
+          "objectNo": 24,
+          "suggestNo": 100
+        },
+        {
+          "objectNo": 133,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 65,
+          "suggestNo": 300
+        },
+        {
+          "objectNo": 18,
+          "suggestNo": 200
+        },
+        {
+          "objectNo": 216,
+          "suggestNo": 500
+        },
+        {
+          "objectNo": 72,
+          "suggestNo": 200
+        },
+        {
+          "objectNo": 148,
+          "suggestNo": 500
+        },
+        {
+          "objectNo": 61,
+          "suggestNo": 300
+        },
+        {
+          "objectNo": 36,
+          "suggestNo": 100
+        },
+        {
+          "objectNo": 236,
+          "suggestNo": 600
+        },
+        {
+          "objectNo": 86,
+          "suggestNo": 100
+        },
+        {
+          "objectNo": 217,
+          "suggestNo": 400
+        },
+        {
+          "objectNo": 163,
+          "suggestNo": 300
+        },
+        {
+          "objectNo": 68,
+          "suggestNo": 700
+        },
+        {
+          "objectNo": 238,
+          "suggestNo": 500
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "problems": [
+        {
+          "objectNo": 456,
+          "suggestNo": 135
+        },
+        {
+          "objectNo": 567,
+          "suggestNo": 154
+        },
+        {
+          "objectNo": 684,
+          "suggestNo": 263
+        },
+        {
+          "objectNo": 789,
+          "suggestNo": 257
+        },
+        {
+          "objectNo": 757,
+          "suggestNo": 332
+        },
+        {
+          "objectNo": 578,
+          "suggestNo": 152
+        },
+        {
+          "objectNo": 477,
+          "suggestNo": 136
+        },
+        {
+          "objectNo": 667,
+          "suggestNo": 235
+        },
+        {
+          "objectNo": 779,
+          "suggestNo": 253
+        },
+        {
+          "objectNo": 768,
+          "suggestNo": 327
+        },
+        {
+          "objectNo": 379,
+          "suggestNo": 143
+        },
+        {
+          "objectNo": 588,
+          "suggestNo": 126
+        },
+        {
+          "objectNo": 678,
+          "suggestNo": 253
+        },
+        {
+          "objectNo": 598,
+          "suggestNo": 284
+        },
+        {
+          "objectNo": 885,
+          "suggestNo": 362
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "problems": [
+        {
+          "objectNo": 463,
+          "suggestNo": 135
+        },
+        {
+          "objectNo": 390,
+          "suggestNo": 254
+        },
+        {
+          "objectNo": 837,
+          "suggestNo": 375
+        },
+        {
+          "objectNo": 619,
+          "suggestNo": 457
+        },
+        {
+          "objectNo": 851,
+          "suggestNo": 583
+        },
+        {
+          "objectNo": 363,
+          "suggestNo": 128
+        },
+        {
+          "objectNo": 692,
+          "suggestNo": 275
+        },
+        {
+          "objectNo": 538,
+          "suggestNo": 382
+        },
+        {
+          "objectNo": 693,
+          "suggestNo": 476
+        },
+        {
+          "objectNo": 723,
+          "suggestNo": 558
+        },
+        {
+          "objectNo": 490,
+          "suggestNo": 157
+        },
+        {
+          "objectNo": 343,
+          "suggestNo": 206
+        },
+        {
+          "objectNo": 618,
+          "suggestNo": 335
+        },
+        {
+          "objectNo": 707,
+          "suggestNo": 462
+        },
+        {
+          "objectNo": 822,
+          "suggestNo": 574
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "problems": [
+        {
+          "objectNo": 242,
+          "suggestNo": 583
+        },
+        {
+          "objectNo": 423,
+          "suggestNo": 647
+        },
+        {
+          "objectNo": 523,
+          "suggestNo": 758
+        },
+        {
+          "objectNo": 322,
+          "suggestNo": 836
+        },
+        {
+          "objectNo": 553,
+          "suggestNo": 965
+        },
+        {
+          "objectNo": 225,
+          "suggestNo": 475
+        },
+        {
+          "objectNo": 416,
+          "suggestNo": 548
+        },
+        {
+          "objectNo": 220,
+          "suggestNo": 630
+        },
+        {
+          "objectNo": 314,
+          "suggestNo": 749
+        },
+        {
+          "objectNo": 610,
+          "suggestNo": 836
+        },
+        {
+          "objectNo": 372,
+          "suggestNo": 583
+        },
+        {
+          "objectNo": 463,
+          "suggestNo": 694
+        },
+        {
+          "objectNo": 251,
+          "suggestNo": 774
+        },
+        {
+          "objectNo": 623,
+          "suggestNo": 895
+        },
+        {
+          "objectNo": 611,
+          "suggestNo": 936
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "problems": [
+        {
+          "objectNo": 237,
+          "suggestNo": 754
+        },
+        {
+          "objectNo": 316,
+          "suggestNo": 652
+        },
+        {
+          "objectNo": 425,
+          "suggestNo": 843
+        },
+        {
+          "objectNo": 254,
+          "suggestNo": 539
+        },
+        {
+          "objectNo": 175,
+          "suggestNo": 634
+        },
+        {
+          "objectNo": 402,
+          "suggestNo": 641
+        },
+        {
+          "objectNo": 318,
+          "suggestNo": 537
+        },
+        {
+          "objectNo": 415,
+          "suggestNo": 823
+        },
+        {
+          "objectNo": 354,
+          "suggestNo": 732
+        },
+        {
+          "objectNo": 456,
+          "suggestNo": 813
+        },
+        {
+          "objectNo": 409,
+          "suggestNo": 532
+        },
+        {
+          "objectNo": 339,
+          "suggestNo": 645
+        },
+        {
+          "objectNo": 533,
+          "suggestNo": 792
+        },
+        {
+          "objectNo": 205,
+          "suggestNo": 820
+        },
+        {
+          "objectNo": 423,
+          "suggestNo": 951
+        }
+      ]
+    }
+  ]
+}

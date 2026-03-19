@@ -46,7 +46,25 @@ const WhatIsThisPage = lazy(() => import('./pages/games/WhatIsThisPage'))
 const SentenceBridgePage = lazy(() => import('./pages/games/SentenceBridgePage'))
 const PatternTrainPage = lazy(() => import('./pages/games/PatternTrainPage'))
 const ShapeMatchingPage = lazy(() => import('./pages/games/ShapeMatchingPage'))
+const FeedingTimePage = lazy(() => import('./pages/games/FeedingTimePage'))
+const WordKickerPage = lazy(() => import('./pages/games/WordKickerPage'))
+const MathKickerPage = lazy(() => import('./pages/games/MathKickerPage'))
+const MangoShopPage = lazy(() => import('./pages/games/MangoShopPage'))
+const WordMatrixPage = lazy(() => import('./pages/games/WordMatrixPage'))
+const SoundTrainPage = lazy(() => import('./pages/games/SoundTrainPage'))
+const WordNotePage = lazy(() => import('./pages/games/WordNotePage'))
+const ReadingBirdPage = lazy(() => import('./pages/games/ReadingBirdPage'))
+const BirdPhonicsPage = lazy(() => import('./pages/games/BirdPhonicsPage'))
+const LabelingPage = lazy(() => import('./pages/games/LabelingPage'))
+const LRComprehensionPage = lazy(() => import('./pages/games/LRComprehensionPage'))
 const AdminPage = lazy(() => import('./pages/AdminPage'))
+const NumberTrainPage = lazy(() => import('./pages/games/NumberTrainPage'))
+const PlaceValuePage = lazy(() => import('./pages/games/PlaceValuePage'))
+const QuickFactsPage = lazy(() => import('./pages/games/QuickFactsPage'))
+const WordWindowPage = lazy(() => import('./pages/games/WordWindowPage'))
+const ThirtyPuzzlePage = lazy(() => import('./pages/games/ThirtyPuzzlePage'))
+const MultiplicationBoardPage = lazy(() => import('./pages/games/MultiplicationBoardPage'))
+const NumberTracingExtPage = lazy(() => import('./pages/games/NumberTracingExtPage'))
 
 function Loading() {
   return (
@@ -106,6 +124,24 @@ export default function App() {
         <Route path="/game/sentencebridge" element={<SentenceBridgePage />} />
         <Route path="/game/patterntrain" element={<PatternTrainPage />} />
         <Route path="/game/shapematching" element={<ShapeMatchingPage />} />
+        <Route path="/game/feedingtime" element={<FeedingTimePage />} />
+        <Route path="/game/wordkicker" element={<WordKickerPage />} />
+        <Route path="/game/mathkicker" element={<MathKickerPage />} />
+        <Route path="/game/mangoshop" element={<MangoShopPage />} />
+        <Route path="/game/wordmatrix" element={<WordMatrixPage />} />
+        <Route path="/game/soundtrain" element={<SoundTrainPage />} />
+        <Route path="/game/wordnote" element={<WordNotePage />} />
+        <Route path="/game/readingbird" element={<ReadingBirdPage />} />
+        <Route path="/game/birdphonics" element={<BirdPhonicsPage />} />
+        <Route path="/game/labeling" element={<LabelingPage />} />
+        <Route path="/game/lrcomprehension" element={<LRComprehensionPage />} />
+        <Route path="/game/numbertrain" element={<NumberTrainPage />} />
+        <Route path="/game/placevalue" element={<PlaceValuePage />} />
+        <Route path="/game/quickfacts" element={<QuickFactsPage />} />
+        <Route path="/game/wordwindow" element={<WordWindowPage />} />
+        <Route path="/game/thirtypuzzle" element={<ThirtyPuzzlePage />} />
+        <Route path="/game/multiplicationboard" element={<MultiplicationBoardPage />} />
+        <Route path="/game/numbertracingext" element={<NumberTracingExtPage />} />
         <Route path="/book/:id" element={<BookViewerPage />} />
         <Route path="/video/:id" element={<VideoPlayerPage />} />
       </Routes>
