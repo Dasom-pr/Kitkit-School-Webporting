@@ -5,8 +5,12 @@ import ProgressBar from '../../components/ProgressBar'
 import BackButton from '../../components/BackButton'
 import { useShellParams } from '../../hooks/useShellParams'
 
-const AVAILABLE_LEVELS = [1, 2, 4, 5, 9]
-const LEVEL_COLORS = ['#66BB6A', '#42A5F5', '#FFA726', '#AB47BC', '#EF5350']
+const AVAILABLE_LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+const LEVEL_COLORS = [
+  '#66BB6A','#42A5F5','#FFA726','#AB47BC','#EF5350',
+  '#26C6DA','#8D6E63','#78909C','#EC407A','#7E57C2',
+  '#29B6F6','#FF7043',
+]
 
 export default function ShapeMatchingPage() {
   const navigate = useNavigate()
@@ -58,7 +62,7 @@ export default function ShapeMatchingPage() {
           Shape Matching
         </h1>
         <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: 20, margin: 0 }}>
-          Drag cards to match the same shapes!
+          Tap two cards with the same shape to match them!
         </p>
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
           {AVAILABLE_LEVELS.map((lvl, i) => (
@@ -83,7 +87,7 @@ export default function ShapeMatchingPage() {
         position: 'absolute', top: 0, left: 0,
         width: '100%', height: '100%', touchAction: 'none',
       }} />
-      <BackButton color="#fff" onClick={isFromShell ? shellBack : undefined} />
+      <BackButton color="#fff" onClick={isFromShell ? shellBack : () => setLevel(0)} />
       <ProgressBar current={progress.current} max={progress.max} />
 
       {showComplete && (

@@ -1,81 +1,125 @@
 import { BaseEngine, GAME_WIDTH, GAME_HEIGHT, loadImage, loadAudio, playSound } from '../common/BaseEngine'
 import { assetUrl } from '../../utils/assetPath'
 
-const SHAPE_IMG_PATH = assetUrl('/assets/games/linematching/images/planefigure')
+// ─── Layout ──────────────────────────────────────────────────────────────────
+const CARD_W   = 500
+const CARD_H   = 560
+const IMG_SIZE = 320
+const DIVIDER_X = GAME_WIDTH / 2
 
-const CARD_W = 380
-const CARD_H = 460
-const IMG_SIZE = 260
+// 2×2 grid per side
+const LEFT_COLS  = [300,  900]
+const RIGHT_COLS = [1660, 2260]
+const ROWS       = [560, 1320]
 
-interface CardAnim {
-  phase: 'snap' | 'match_move' | 'match_fade'
-  progress: number
-  startX: number
-  startY: number
-  targetX: number
-  targetY: number
-  opacity: number
+const ASSET_BASE = '/assets/games/shapematching'
+
+// ─── Types ───────────────────────────────────────────────────────────────────
+type CardType = 'Image' | 'Object' | 'Name' | 'Attribute'
+
+interface CardSpec {
+  type:     CardType
+  color:    string
+  size:     string
+  rotation: number | string
 }
 
-interface Card {
-  id: number
-  x: number
-  y: number
-  homeX: number
-  homeY: number
-  image: HTMLImageElement
-  label: string
-  matched: boolean
-  dragging: boolean
-  linked: boolean
-  linkedWith: number
-  scale: number
-  anim: CardAnim | null
+interface ProblemDef {
+  numPairs:   number
+  group:      string
+  matchSound: boolean
+  cardA:      CardSpec
+  cardB:      CardSpec
 }
 
-interface PairDef {
-  id: number
-  imageA: string
-  imageB: string
-  label: string
+interface ShapeInfo {
+  is3D:   boolean
+  sides?: number
+  faces?: number
 }
 
-interface LevelData {
-  level: number
-  pairs: PairDef[]
+interface GameCard {
+  pairId:      number      // cards with the same pairId belong to one pair
+  shape:       string
+  side:        'A' | 'B'
+  type:        CardType
+  rotationDeg: number
+  x:           number
+  y:           number
+  image:       HTMLImageElement | null
+  matched:     boolean
+  selected:    boolean
 }
 
-function lerp(a: number, b: number, t: number) {
-  return a + (b - a) * t
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+function pick<T>(arr: T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)]
 }
 
-function easeOut(t: number) {
-  return 1 - Math.pow(1 - t, 3)
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
 }
 
+function roundRect(
+  ctx: CanvasRenderingContext2D,
+  x: number, y: number, w: number, h: number, r: number
+) {
+  ctx.moveTo(x + r, y)
+  ctx.lineTo(x + w - r, y)
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r)
+  ctx.lineTo(x + w, y + h - r)
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h)
+  ctx.lineTo(x + r, y + h)
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r)
+  ctx.lineTo(x, y + r)
+  ctx.quadraticCurveTo(x, y, x + r, y)
+  ctx.closePath()
+}
+
+// ─── Engine ──────────────────────────────────────────────────────────────────
 export class ShapeMatchingEngine extends BaseEngine {
-  level: number
-  cards: Card[] = []
-  dragIndex = -1
-  dragOffsetX = 0
-  dragOffsetY = 0
-  isAnimating = false
-  matchCount = 0
-  totalPairs = 0
-  loaded = false
+  private levelNum: number
+
+  private problems:    ProblemDef[]                   = []
+  private shapeGroups: Record<string, string[]>       = {}
+  private shapeInfo:   Record<string, ShapeInfo>      = {}
+
+  private problemIndex  = 0
+  private cards:        GameCard[] = []
+  private selectedCard: GameCard | null = null
+  private matchCount    = 0
+  private totalPairs    = 0
+  private loaded        = false
+  private transitioning = false
+
+  private sfxPick:  HTMLAudioElement
+  private sfxMatch: HTMLAudioElement
+  private sfxNames: Record<string, HTMLAudioElement> = {}
+  private cardBg:   HTMLImageElement
+  // number images: 0-10
+  private numImgs:  HTMLImageElement[] = []
 
   onProgressChange?: (current: number, max: number) => void
 
-  private sfxPick: HTMLAudioElement
-  private sfxMatch: HTMLAudioElement
-
   constructor(canvas: HTMLCanvasElement, level: number) {
     super(canvas)
-    this.level = level
-    this.sfxPick  = loadAudio(assetUrl('/assets/games/linematching/linestart.m4a'))
-    this.sfxMatch = loadAudio(assetUrl('/assets/games/linematching/boom.m4a'))
+    this.levelNum = level
+    this.sfxPick  = loadAudio(assetUrl(`${ASSET_BASE}/sound/train_slotin.m4a`))
+    this.sfxMatch = loadAudio(assetUrl(`${ASSET_BASE}/sound/quiz_correct.m4a`))
+    this.cardBg   = loadImage(assetUrl(`${ASSET_BASE}/images/matching_shape_cardbg.png`))
+    for (let i = 0; i <= 10; i++) {
+      this.numImgs[i] = loadImage(
+        assetUrl(`${ASSET_BASE}/images/matchinggame_numbers_type1_${i}.png`)
+      )
+    }
   }
 
+  // ── Lifecycle ──────────────────────────────────────────────────────────────
   start() {
     this.resize()
     this.gameState = 'playing'
@@ -89,215 +133,240 @@ export class ShapeMatchingEngine extends BaseEngine {
   }
 
   private async loadLevel() {
-    const res = await fetch('/data/games/shapematching.json')
+    const res  = await fetch('/data/games/shapematching.json')
     const data = await res.json()
-    const levelData: LevelData =
-      data.levels.find((l: LevelData) => l.level === this.level) ?? data.levels[0]
 
-    this.totalPairs = levelData.pairs.length
-    this.matchCount = 0
-    this.cards = []
+    this.shapeGroups = data.shapeGroups
+    this.shapeInfo   = data.shapeInfo
 
-    const defs: Array<{ id: number; image: HTMLImageElement; label: string }> = []
-    for (const pair of levelData.pairs) {
-      defs.push({ id: pair.id, image: loadImage(`${SHAPE_IMG_PATH}/${pair.imageA}`), label: pair.label })
-      defs.push({ id: pair.id, image: loadImage(`${SHAPE_IMG_PATH}/${pair.imageB}`), label: pair.label })
+    const levelData = (data.levels as Array<{ level: number; problems: ProblemDef[] }>)
+      .find(l => l.level === this.levelNum) ?? data.levels[0]
+
+    this.problems     = levelData.problems
+    this.problemIndex = 0
+
+    for (const shape of Object.keys(this.shapeInfo)) {
+      this.sfxNames[shape] = loadAudio(
+        assetUrl(`${ASSET_BASE}/sound/${shape}.m4a`)
+      )
     }
 
-    // Shuffle
-    for (let i = defs.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[defs[i], defs[j]] = [defs[j], defs[i]]
-    }
-
-    const positions = this.generatePositions(defs.length)
-
-    this.cards = defs.map((d, i) => ({
-      ...d,
-      x: positions[i].x,
-      y: positions[i].y,
-      homeX: positions[i].x,
-      homeY: positions[i].y,
-      matched: false,
-      dragging: false,
-      linked: false,
-      linkedWith: -1,
-      scale: 1.0,
-      anim: null,
-    }))
-
-    this.onProgressChange?.(0, this.totalPairs)
+    this.loadProblem()
     this.loaded = true
   }
 
-  private generatePositions(count: number) {
-    const marginX = CARD_W * 0.65
-    const marginY = CARD_H * 0.65
-    const minY = marginY + 120
-    const maxY = GAME_HEIGHT - marginY
-    const minDist = CARD_W * 1.05
-    const positions: Array<{ x: number; y: number }> = []
+  private loadProblem() {
+    const prob  = this.problems[this.problemIndex]
+    const group = this.shapeGroups[prob.group] ?? []
 
-    for (let i = 0; i < count; i++) {
-      let best = { x: GAME_WIDTH / 2, y: GAME_HEIGHT / 2 }
-      let bestDist = -1
+    // ── Pick shapes: for Attribute cards ensure no duplicate attribute values ──
+    const needsUniqueAttr =
+      prob.cardA.type === 'Attribute' || prob.cardB.type === 'Attribute'
+    const shapes = needsUniqueAttr
+      ? this.pickUniqueAttrShapes(group, prob.numPairs)
+      : shuffle(group).slice(0, prob.numPairs)
 
-      for (let attempt = 0; attempt < 120; attempt++) {
-        const half = i % 2 === 0
-        const x = half
-          ? marginX + Math.random() * (GAME_WIDTH / 2 - marginX * 1.5)
-          : GAME_WIDTH / 2 + marginX * 0.5 + Math.random() * (GAME_WIDTH / 2 - marginX * 1.5)
-        const y = minY + Math.random() * (maxY - minY)
+    this.matchCount   = 0
+    this.totalPairs   = shapes.length   // may be < numPairs if not enough unique
+    this.selectedCard = null
 
-        const d = positions.reduce((m, p) => {
-          const dx = x - p.x, dy = y - p.y
-          return Math.min(m, Math.sqrt(dx * dx + dy * dy))
-        }, Infinity)
+    const cardsA: GameCard[] = []
+    const cardsB: GameCard[] = []
 
-        if (d > bestDist) { bestDist = d; best = { x, y } }
-        if (d >= minDist) break
-      }
-      positions.push(best)
+    for (let i = 0; i < shapes.length; i++) {
+      const shape = shapes[i]
+      const info  = this.shapeInfo[shape] ?? { is3D: false, sides: 0 }
+      cardsA.push(this.buildCard(i, shape, 'A', prob.cardA, info))
+      cardsB.push(this.buildCard(i, shape, 'B', prob.cardB, info))
     }
-    return positions
+
+    const posLeft  = this.getPositions('left',  shapes.length)
+    const posRight = this.getPositions('right', shapes.length)
+    const shuffledA = shuffle(cardsA)
+    const shuffledB = shuffle(cardsB)
+
+    shuffledA.forEach((c, i) => { c.x = posLeft[i].x;  c.y = posLeft[i].y  })
+    shuffledB.forEach((c, i) => { c.x = posRight[i].x; c.y = posRight[i].y })
+
+    this.cards = [...shuffledA, ...shuffledB]
+    this.onProgressChange?.(this.matchCount, this.totalPairs)
   }
 
-  onPointerDown(x: number, y: number) {
-    if (this.isAnimating || !this.loaded) return
+  /** Pick `count` shapes with unique attribute (sides / faces) values */
+  private pickUniqueAttrShapes(group: string[], count: number): string[] {
+    const shuffled = shuffle(group)
+    const seen     = new Set<number>()
+    const result:  string[] = []
+    for (const shape of shuffled) {
+      const info = this.shapeInfo[shape]
+      if (!info) continue
+      const val = info.is3D ? (info.faces ?? 0) : (info.sides ?? 0)
+      if (!seen.has(val)) {
+        seen.add(val)
+        result.push(shape)
+        if (result.length >= count) break
+      }
+    }
+    return result
+  }
 
-    for (let i = this.cards.length - 1; i >= 0; i--) {
-      const card = this.cards[i]
-      if (card.matched || card.dragging) continue
+  // ── Card factory ───────────────────────────────────────────────────────────
+  private buildCard(
+    id: number,
+    shape: string,
+    side: 'A' | 'B',
+    spec: CardSpec,
+    info: ShapeInfo
+  ): GameCard {
+    const rotationDeg = spec.rotation === 'Random'
+      ? pick([0, 90, 180, 270])
+      : (spec.rotation as number)
+
+    let image: HTMLImageElement | null = null
+
+    switch (spec.type) {
+      case 'Image':
+        image = loadImage(assetUrl(this.buildImageUrl(shape, spec.color, spec.size, info.is3D)))
+        break
+      case 'Object': {
+        const objUrl = `${ASSET_BASE}/images/matchinggame_${shape}_object.png`
+        image = loadImage(assetUrl(objUrl))
+        break
+      }
+      case 'Attribute': {
+        const attrVal = info.is3D ? (info.faces ?? 0) : (info.sides ?? 0)
+        // Use the pre-loaded number image (0–10)
+        image = this.numImgs[Math.min(attrVal, 10)] ?? null
+        break
+      }
+      case 'Name':
+        image = null  // drawn as text
+        break
+    }
+
+    return {
+      pairId: id, shape, side,
+      type: spec.type, rotationDeg,
+      x: 0, y: 0,
+      image,
+      matched: false, selected: false,
+    }
+  }
+
+  private buildImageUrl(shape: string, color: string, size: string, is3D: boolean): string {
+    if (is3D) {
+      return `${ASSET_BASE}/images/matchinggame_${shape}.png`
+    }
+    const col = color === 'Random' ? pick(['1', '2']) : color
+    const sz  = size  === 'Random' ? pick(['large', 'medium', 'small']) : size
+    if (col === 'N/A' || sz === 'N/A') {
+      return `${ASSET_BASE}/images/matchinggame_${shape}.png`
+    }
+    return `${ASSET_BASE}/images/matchinggame_${shape}_${col}_${sz}.png`
+  }
+
+  private getPositions(side: 'left' | 'right', count: number): Array<{ x: number; y: number }> {
+    const cols = side === 'left' ? LEFT_COLS : RIGHT_COLS
+    if (count <= 4) {
+      return Array.from({ length: count }, (_, i) => ({
+        x: cols[i % 2],
+        y: ROWS[Math.floor(i / 2)],
+      }))
+    }
+    // Fallback: vertical list (shouldn't normally occur with numPairs=4)
+    return Array.from({ length: count }, (_, i) => ({
+      x: side === 'left' ? 600 : 1960,
+      y: 300 + i * 380,
+    }))
+  }
+
+  // ── Input ──────────────────────────────────────────────────────────────────
+  onPointerDown(x: number, y: number) {
+    if (!this.loaded || this.transitioning) return
+
+    for (const card of this.cards) {
+      if (card.matched) continue
       if (!this.hitTest(x, y, card)) continue
 
-      card.dragging = true
-      card.scale = 1.12
-      card.anim = null
-      this.dragOffsetX = x - card.x
-      this.dragOffsetY = y - card.y
-      // Move picked card to front
-      this.cards.splice(i, 1)
-      this.cards.push(card)
-      this.dragIndex = this.cards.length - 1
-      playSound(this.sfxPick)
+      if (!this.selectedCard) {
+        // No selection yet → select this card
+        card.selected    = true
+        this.selectedCard = card
+        playSound(this.sfxPick)
+
+      } else if (card === this.selectedCard) {
+        // Tap same card again → deselect
+        card.selected    = false
+        this.selectedCard = null
+
+      } else if (
+        card.pairId === this.selectedCard.pairId &&
+        card.side   !== this.selectedCard.side
+      ) {
+        // Correct match!
+        this.triggerMatch(card)
+
+      } else if (card.side === this.selectedCard.side) {
+        // Same side, different card → change selection
+        this.selectedCard.selected = false
+        card.selected    = true
+        this.selectedCard = card
+        playSound(this.sfxPick)
+
+      } else {
+        // Wrong pair (opposite side, different shape) → clear selection
+        this.selectedCard.selected = false
+        this.selectedCard          = null
+      }
+
       break
     }
   }
 
-  onPointerMove(x: number, y: number) {
-    if (this.isAnimating || this.dragIndex < 0) return
+  onPointerMove(_x: number, _y: number) { /* tap-only game */ }
+  onPointerUp(_x: number, _y: number)   { /* tap-only game */ }
 
-    const card = this.cards[this.dragIndex]
-    card.x = x - this.dragOffsetX
-    card.y = y - this.dragOffsetY
+  private triggerMatch(second: GameCard) {
+    const shape = second.shape
+    const prob  = this.problems[this.problemIndex]
 
-    // Update link
-    const prevLink = card.linkedWith
-    let newLink = -1
-
-    for (let i = 0; i < this.cards.length; i++) {
-      if (i === this.dragIndex) continue
-      const other = this.cards[i]
-      if (other.matched || other.linked) continue
-      if (other.id !== card.id) continue
-      if (this.cardsOverlap(card, other)) { newLink = i; break }
-    }
-
-    if (newLink !== prevLink) {
-      if (prevLink >= 0) {
-        this.cards[prevLink].linked = false
-        this.cards[prevLink].linkedWith = -1
-        this.cards[prevLink].scale = 1.0
-      }
-      card.linkedWith = newLink
-      if (newLink >= 0) {
-        this.cards[newLink].linked = true
-        this.cards[newLink].linkedWith = this.dragIndex
-        this.cards[newLink].scale = 1.12
+    for (const c of this.cards) {
+      if (c.pairId === second.pairId) {
+        c.matched  = true
+        c.selected = false
       }
     }
-  }
+    this.selectedCard = null
+    this.matchCount++
 
-  onPointerUp(_x: number, _y: number) {
-    if (this.isAnimating || this.dragIndex < 0) return
-
-    const card = this.cards[this.dragIndex]
-    card.dragging = false
-
-    if (card.linkedWith >= 0) {
-      this.triggerMatch(this.dragIndex, card.linkedWith)
+    if (prob.matchSound && this.sfxNames[shape]) {
+      playSound(this.sfxNames[shape])
+      setTimeout(() => playSound(this.sfxMatch), 700)
     } else {
-      card.scale = 1.0
-      card.anim = {
-        phase: 'snap', progress: 0, opacity: 1,
-        startX: card.x, startY: card.y,
-        targetX: card.homeX, targetY: card.homeY,
-      }
+      playSound(this.sfxMatch)
     }
-    this.dragIndex = -1
-  }
 
-  private triggerMatch(idxA: number, idxB: number) {
-    this.isAnimating = true
-    const a = this.cards[idxA]
-    const b = this.cards[idxB]
-    playSound(this.sfxMatch)
+    this.onProgressChange?.(this.matchCount, this.totalPairs)
 
-    a.matched = true; b.matched = true
-    a.linked = false;  b.linked = false
-    a.linkedWith = -1; b.linkedWith = -1
-
-    const cx = GAME_WIDTH / 2
-    const cy = GAME_HEIGHT / 2
-
-    a.anim = { phase: 'match_move', progress: 0, opacity: 1,
-               startX: a.x, startY: a.y, targetX: cx - CARD_W * 0.55, targetY: cy }
-    b.anim = { phase: 'match_move', progress: 0, opacity: 1,
-               startX: b.x, startY: b.y, targetX: cx + CARD_W * 0.55, targetY: cy }
-  }
-
-  update(_time: number, dt: number) {
-    const ANIM_SPEED = 3.5
-
-    for (const card of this.cards) {
-      if (!card.anim) continue
-      card.anim.progress = Math.min(1, card.anim.progress + dt * ANIM_SPEED)
-      const t = easeOut(card.anim.progress)
-
-      if (card.anim.phase === 'snap') {
-        card.x = lerp(card.anim.startX, card.anim.targetX, t)
-        card.y = lerp(card.anim.startY, card.anim.targetY, t)
-        if (card.anim.progress >= 1) card.anim = null
-
-      } else if (card.anim.phase === 'match_move') {
-        card.x = lerp(card.anim.startX, card.anim.targetX, t)
-        card.y = lerp(card.anim.startY, card.anim.targetY, t)
-        if (card.anim.progress >= 1) {
-          card.anim = { phase: 'match_fade', progress: 0, opacity: 1,
-                        startX: card.x, startY: card.y, targetX: card.x, targetY: card.y }
+    if (this.matchCount >= this.totalPairs) {
+      const hasNext = this.problemIndex + 1 < this.problems.length
+      this.transitioning = true
+      setTimeout(() => {
+        if (hasNext) {
+          this.problemIndex++
+          this.loadProblem()
+          this.transitioning = false
+        } else {
+          this.transitioning = false
+          this.gameState     = 'complete'
+          this.onComplete?.()
         }
-
-      } else if (card.anim.phase === 'match_fade') {
-        card.anim.opacity = 1 - t
-        if (card.anim.progress >= 1) card.anim = null
-      }
-    }
-
-    if (this.isAnimating) {
-      const busy = this.cards.some(c => c.matched && c.anim !== null)
-      if (!busy) {
-        this.isAnimating = false
-        this.matchCount++
-        this.onProgressChange?.(this.matchCount, this.totalPairs)
-        if (this.matchCount >= this.totalPairs) {
-          setTimeout(() => {
-            this.gameState = 'complete'
-            this.onComplete?.()
-          }, 500)
-        }
-      }
+      }, 1000)
     }
   }
+
+  // ── Game loop ──────────────────────────────────────────────────────────────
+  update(_time: number, _dt: number) { /* state-based, no animation */ }
 
   draw() {
     const { ctx } = this
@@ -305,121 +374,178 @@ export class ShapeMatchingEngine extends BaseEngine {
     const h = this.canvas.clientHeight
     ctx.clearRect(0, 0, w, h)
 
-    const offsetX = (w - GAME_WIDTH * this.gameScale) / 2
+    const offsetX = (w - GAME_WIDTH  * this.gameScale) / 2
     const offsetY = (h - GAME_HEIGHT * this.gameScale) / 2
 
     ctx.save()
     ctx.translate(offsetX, offsetY)
     ctx.scale(this.gameScale, this.gameScale)
 
-    // Background — same green as original C++ game
-    ctx.fillStyle = '#8CBD33'
+    // Background
+    ctx.fillStyle = '#7DB832'
     ctx.fillRect(0, 0, GAME_WIDTH, GAME_HEIGHT)
 
     if (!this.loaded) {
-      ctx.fillStyle = 'rgba(255,255,255,0.8)'
-      ctx.font = 'bold 80px sans-serif'
-      ctx.textAlign = 'center'
-      ctx.textBaseline = 'middle'
-      ctx.fillText('Loading...', GAME_WIDTH / 2, GAME_HEIGHT / 2)
+      this.drawCenteredText(ctx, 'Loading…', 80, '#fff')
       ctx.restore()
       return
     }
 
-    // Draw non-dragging cards first, dragging card on top
-    for (const card of this.cards) {
-      if (card.dragging) continue
-      if (card.matched && card.anim === null) continue
-      this.drawCard(ctx, card)
+    if (this.transitioning) {
+      this.drawCenteredText(ctx, '✓  Great!', 100, '#fff')
+      ctx.restore()
+      return
     }
-    if (this.dragIndex >= 0) {
-      this.drawCard(ctx, this.cards[this.dragIndex])
+
+    // Divider
+    ctx.save()
+    ctx.strokeStyle = 'rgba(255,255,255,0.45)'
+    ctx.lineWidth   = 8
+    ctx.setLineDash([36, 24])
+    ctx.beginPath()
+    ctx.moveTo(DIVIDER_X, 170)
+    ctx.lineTo(DIVIDER_X, GAME_HEIGHT - 80)
+    ctx.stroke()
+    ctx.setLineDash([])
+    ctx.restore()
+
+    // Header: problem index
+    this.drawHeader(ctx)
+
+    // Cards
+    for (const card of this.cards) {
+      if (!card.matched) this.drawCard(ctx, card)
     }
 
     ctx.restore()
   }
 
-  private drawCard(ctx: CanvasRenderingContext2D, card: Card) {
-    const opacity = card.anim ? card.anim.opacity : 1
-    if (opacity <= 0) return
-
+  // ── Drawing ────────────────────────────────────────────────────────────────
+  private drawHeader(ctx: CanvasRenderingContext2D) {
     ctx.save()
-    ctx.globalAlpha = opacity
+    ctx.fillStyle    = 'rgba(0,0,0,0.28)'
+    ctx.beginPath()
+    roundRect(ctx, GAME_WIDTH / 2 - 300, 28, 600, 110, 22)
+    ctx.fill()
+    ctx.fillStyle    = '#FFFFFF'
+    ctx.font         = 'bold 62px sans-serif'
+    ctx.textAlign    = 'center'
+    ctx.textBaseline = 'middle'
+    ctx.fillText(
+      `${this.problemIndex + 1}  /  ${this.problems.length}`,
+      GAME_WIDTH / 2, 83
+    )
+    ctx.restore()
+  }
+
+  private drawCard(ctx: CanvasRenderingContext2D, card: GameCard) {
+    ctx.save()
     ctx.translate(card.x, card.y)
-    ctx.scale(card.scale, card.scale)
 
     const hw = CARD_W / 2
     const hh = CARD_H / 2
 
     // Shadow
-    ctx.shadowColor = 'rgba(0,0,0,0.3)'
-    ctx.shadowBlur = 24
+    ctx.shadowColor   = 'rgba(0,0,0,0.32)'
+    ctx.shadowBlur    = 22
     ctx.shadowOffsetY = 10
 
     // Card background
-    ctx.fillStyle = card.linked ? '#FFF9C4' : '#FFFFFF'
     ctx.beginPath()
-    this.roundRect(ctx, -hw, -hh, CARD_W, CARD_H, 28)
-    ctx.fill()
+    roundRect(ctx, -hw, -hh, CARD_W, CARD_H, 30)
+    if (this.cardBg.complete && this.cardBg.naturalWidth > 0) {
+      ctx.save()
+      ctx.clip()
+      ctx.drawImage(this.cardBg, -hw, -hh, CARD_W, CARD_H)
+      ctx.restore()
+    } else {
+      ctx.fillStyle = '#FFFFFF'
+      ctx.fill()
+    }
 
-    if (card.linked) {
-      ctx.shadowColor = 'transparent'
-      ctx.shadowBlur = 0
-      ctx.shadowOffsetY = 0
-      ctx.strokeStyle = '#FFC107'
-      ctx.lineWidth = 8
+    ctx.shadowColor   = 'transparent'
+    ctx.shadowBlur    = 0
+    ctx.shadowOffsetY = 0
+
+    // Selection glow
+    if (card.selected) {
+      ctx.beginPath()
+      roundRect(ctx, -hw, -hh, CARD_W, CARD_H, 30)
+      ctx.strokeStyle = '#FFD600'
+      ctx.lineWidth   = 14
+      ctx.stroke()
+      ctx.beginPath()
+      roundRect(ctx, -hw + 7, -hh + 7, CARD_W - 14, CARD_H - 14, 24)
+      ctx.strokeStyle = 'rgba(255,214,0,0.4)'
+      ctx.lineWidth   = 10
       ctx.stroke()
     }
 
-    ctx.shadowColor = 'transparent'
-    ctx.shadowBlur = 0
-    ctx.shadowOffsetY = 0
-
-    // Shape image
-    const imgY = -hh + (CARD_H - 100) / 2 - IMG_SIZE / 2
-    if (card.image.complete && card.image.naturalWidth > 0) {
-      ctx.drawImage(card.image, -IMG_SIZE / 2, imgY, IMG_SIZE, IMG_SIZE)
-    } else {
-      ctx.fillStyle = '#EEEEEE'
-      ctx.fillRect(-IMG_SIZE / 2, imgY, IMG_SIZE, IMG_SIZE)
+    // Content
+    if (card.type === 'Image' || card.type === 'Object' || card.type === 'Attribute') {
+      this.drawImageContent(ctx, card)
+    } else if (card.type === 'Name') {
+      this.drawNameContent(ctx, card)
     }
-
-    // Label
-    ctx.fillStyle = '#5D4037'
-    ctx.font = 'bold 52px sans-serif'
-    ctx.textAlign = 'center'
-    ctx.textBaseline = 'middle'
-    ctx.fillText(card.label, 0, hh - 55)
 
     ctx.restore()
   }
 
-  private roundRect(
-    ctx: CanvasRenderingContext2D,
-    x: number, y: number, w: number, h: number, r: number
-  ) {
-    ctx.moveTo(x + r, y)
-    ctx.lineTo(x + w - r, y)
-    ctx.quadraticCurveTo(x + w, y, x + w, y + r)
-    ctx.lineTo(x + w, y + h - r)
-    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h)
-    ctx.lineTo(x + r, y + h)
-    ctx.quadraticCurveTo(x, y + h, x, y + h - r)
-    ctx.lineTo(x, y + r)
-    ctx.quadraticCurveTo(x, y, x + r, y)
-    ctx.closePath()
+  private drawImageContent(ctx: CanvasRenderingContext2D, card: GameCard) {
+    if (!card.image) return
+    const s = IMG_SIZE
+
+    ctx.save()
+    if (card.rotationDeg !== 0) {
+      ctx.rotate((card.rotationDeg * Math.PI) / 180)
+    }
+    if (card.image.complete && card.image.naturalWidth > 0) {
+      ctx.drawImage(card.image, -s / 2, -s / 2, s, s)
+    } else {
+      // Placeholder while image loads
+      ctx.fillStyle   = 'rgba(180,180,180,0.4)'
+      ctx.strokeStyle = 'rgba(150,150,150,0.6)'
+      ctx.lineWidth   = 4
+      ctx.beginPath()
+      roundRect(ctx, -s / 2, -s / 2, s, s, 14)
+      ctx.fill()
+      ctx.stroke()
+    }
+    ctx.restore()
   }
 
-  private hitTest(x: number, y: number, card: Card) {
+  private drawNameContent(ctx: CanvasRenderingContext2D, card: GameCard) {
+    // Shape name as text – wrap underscored names to two lines
+    const parts  = card.shape.split('_')
+    const lines  = parts.length > 1
+      ? [parts[0], parts.slice(1).join(' ')]
+      : [card.shape]
+    const lineH  = 82
+    const totalH = lines.length * lineH
+
+    ctx.fillStyle    = '#3E2723'
+    ctx.font         = `bold ${lines.length > 1 ? 64 : 72}px sans-serif`
+    ctx.textAlign    = 'center'
+    ctx.textBaseline = 'middle'
+
+    lines.forEach((line, i) => {
+      ctx.fillText(line, 0, -totalH / 2 + lineH * i + lineH / 2)
+    })
+  }
+
+  // ── Utilities ──────────────────────────────────────────────────────────────
+  private drawCenteredText(ctx: CanvasRenderingContext2D, text: string, size: number, color: string) {
+    ctx.fillStyle    = color
+    ctx.font         = `bold ${size}px sans-serif`
+    ctx.textAlign    = 'center'
+    ctx.textBaseline = 'middle'
+    ctx.fillText(text, GAME_WIDTH / 2, GAME_HEIGHT / 2)
+  }
+
+  private hitTest(x: number, y: number, card: GameCard) {
     return (
-      x >= card.x - CARD_W / 2 &&
-      x <= card.x + CARD_W / 2 &&
-      y >= card.y - CARD_H / 2 &&
-      y <= card.y + CARD_H / 2
+      x >= card.x - CARD_W / 2 && x <= card.x + CARD_W / 2 &&
+      y >= card.y - CARD_H / 2 && y <= card.y + CARD_H / 2
     )
-  }
-
-  private cardsOverlap(a: Card, b: Card) {
-    return Math.abs(a.x - b.x) < CARD_W * 0.65 && Math.abs(a.y - b.y) < CARD_H * 0.65
   }
 }

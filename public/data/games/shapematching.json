@@ -1,54 +1,191 @@
 {
+  "shapeGroups": {
+    "Basic_2D":    ["circle","square","triangle","rectangle","star","rhombus"],
+    "Advanced_2D": ["hexagon","pentagon","trapezoid","parallelogram","octagon"],
+    "Basic_3D":    ["cone","sphere","cylinder","cube"],
+    "Advanced_3D": ["rectangular_prism","triangular_prism","pyramid"],
+    "Advanced_ALL":["hexagon","pentagon","trapezoid","parallelogram","octagon",
+                    "rectangular_prism","triangular_prism","pyramid"],
+    "ALL_2D":      ["circle","square","triangle","rectangle","star","rhombus",
+                    "hexagon","pentagon","trapezoid","parallelogram","octagon"],
+    "ALL_3D":      ["cone","sphere","cylinder","cube",
+                    "rectangular_prism","triangular_prism","pyramid"]
+  },
+  "shapeInfo": {
+    "circle":           { "is3D": false, "sides": 0 },
+    "square":           { "is3D": false, "sides": 4 },
+    "triangle":         { "is3D": false, "sides": 3 },
+    "rectangle":        { "is3D": false, "sides": 4 },
+    "star":             { "is3D": false, "sides": 10 },
+    "rhombus":          { "is3D": false, "sides": 4 },
+    "hexagon":          { "is3D": false, "sides": 6 },
+    "pentagon":         { "is3D": false, "sides": 5 },
+    "trapezoid":        { "is3D": false, "sides": 4 },
+    "parallelogram":    { "is3D": false, "sides": 4 },
+    "octagon":          { "is3D": false, "sides": 8 },
+    "cone":             { "is3D": true,  "faces": 1 },
+    "sphere":           { "is3D": true,  "faces": 0 },
+    "cylinder":         { "is3D": true,  "faces": 2 },
+    "cube":             { "is3D": true,  "faces": 6 },
+    "rectangular_prism":{ "is3D": true,  "faces": 6 },
+    "triangular_prism": { "is3D": true,  "faces": 5 },
+    "pyramid":          { "is3D": true,  "faces": 5 }
+  },
   "levels": [
     {
       "level": 1,
-      "pairs": [
-        { "id": 0, "imageA": "triangle_blue.png",  "imageB": "triangle_orange.png", "label": "Triangle" },
-        { "id": 1, "imageA": "square_blue.png",    "imageB": "square_orange.png",   "label": "Square" },
-        { "id": 2, "imageA": "heart_blue.png",     "imageB": "heart_purple.png",    "label": "Heart" }
+      "problems": [
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "level1",  "size": "Random",  "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "level1",  "size": "Random",  "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "level1",  "size": "Random",  "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "level1",  "size": "Random",  "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "level1",  "size": "Random",  "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "level1",  "size": "Random",  "rotation": 0 } }
       ]
     },
     {
       "level": 2,
-      "pairs": [
-        { "id": 0, "imageA": "triangle_blue.png",  "imageB": "triangle_orange.png", "label": "Triangle" },
-        { "id": 1, "imageA": "square_blue.png",    "imageB": "square_orange.png",   "label": "Square" },
-        { "id": 2, "imageA": "heart_blue.png",     "imageB": "heart_purple.png",    "label": "Heart" },
-        { "id": 3, "imageA": "star_blue.png",      "imageB": "star_purple.png",     "label": "Star" }
+      "problems": [
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 } }
+      ]
+    },
+    {
+      "level": 3,
+      "problems": [
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Object", "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Object", "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Object", "color": "N/A",     "size": "N/A",     "rotation": 0 } }
       ]
     },
     {
       "level": 4,
-      "pairs": [
-        { "id": 0, "imageA": "pentagon_blue.png",   "imageB": "pentagon_orange.png",  "label": "Pentagon" },
-        { "id": 1, "imageA": "hexagon_blue.png",    "imageB": "hexagon_orange.png",   "label": "Hexagon" },
-        { "id": 2, "imageA": "arrow_blue.png",      "imageB": "arrow_purple.png",     "label": "Arrow" },
-        { "id": 3, "imageA": "butterfly_blue.png",  "imageB": "butterfly_purple.png", "label": "Butterfly" },
-        { "id": 4, "imageA": "snowman_blue.png",    "imageB": "snowman_purple.png",   "label": "Snowman" }
+      "problems": [
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Name",   "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Name",   "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_2D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Name",   "color": "N/A",     "size": "N/A",     "rotation": 0 } }
       ]
     },
     {
       "level": 5,
-      "pairs": [
-        { "id": 0, "imageA": "triangle_blue.png",   "imageB": "triangle_orange.png",  "label": "Triangle" },
-        { "id": 1, "imageA": "pentagon_blue.png",   "imageB": "pentagon_orange.png",  "label": "Pentagon" },
-        { "id": 2, "imageA": "heart_blue.png",      "imageB": "heart_purple.png",     "label": "Heart" },
-        { "id": 3, "imageA": "star_blue.png",       "imageB": "star_purple.png",      "label": "Star" },
-        { "id": 4, "imageA": "arrow_blue.png",      "imageB": "arrow_purple.png",     "label": "Arrow" },
-        { "id": 5, "imageA": "addition_blue.png",   "imageB": "addition_purple.png",  "label": "Cross" }
+      "problems": [
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Name",   "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Name",   "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Name",   "color": "N/A",     "size": "N/A",     "rotation": 0 } }
+      ]
+    },
+    {
+      "level": 6,
+      "problems": [
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "Random",  "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "N/A",     "size": "Random",  "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "Random",  "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "N/A",     "size": "Random",  "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "Random",  "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "N/A",     "size": "Random",  "rotation": 0 } }
+      ]
+    },
+    {
+      "level": 7,
+      "problems": [
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 90 } },
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 90 } },
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 90 } }
+      ]
+    },
+    {
+      "level": 8,
+      "problems": [
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Object", "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Object", "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Basic_3D",    "matchSound": true,
+          "cardA": { "type": "Image",  "color": "N/A",     "size": "N/A",     "rotation": 0 },
+          "cardB": { "type": "Object", "color": "N/A",     "size": "N/A",     "rotation": 0 } }
       ]
     },
     {
       "level": 9,
-      "pairs": [
-        { "id": 0, "imageA": "triangle_blue.png",   "imageB": "triangle_orange.png",  "label": "Triangle" },
-        { "id": 1, "imageA": "square_blue.png",     "imageB": "square_orange.png",    "label": "Square" },
-        { "id": 2, "imageA": "pentagon_blue.png",   "imageB": "pentagon_orange.png",  "label": "Pentagon" },
-        { "id": 3, "imageA": "hexagon_blue.png",    "imageB": "hexagon_orange.png",   "label": "Hexagon" },
-        { "id": 4, "imageA": "heart_blue.png",      "imageB": "heart_purple.png",     "label": "Heart" },
-        { "id": 5, "imageA": "star_blue.png",       "imageB": "star_purple.png",      "label": "Star" },
-        { "id": 6, "imageA": "butterfly_blue.png",  "imageB": "butterfly_purple.png", "label": "Butterfly" },
-        { "id": 7, "imageA": "snowman_blue.png",    "imageB": "snowman_purple.png",   "label": "Snowman" }
+      "problems": [
+        { "numPairs": 4, "group": "Advanced_ALL","matchSound": false,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Name",   "color": "N/A",     "size": "N/A",     "rotation": 0 } },
+        { "numPairs": 4, "group": "Advanced_ALL","matchSound": false,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": 0 },
+          "cardB": { "type": "Name",   "color": "N/A",     "size": "N/A",     "rotation": 0 } }
+      ]
+    },
+    {
+      "level": 10,
+      "problems": [
+        { "numPairs": 4, "group": "Advanced_ALL","matchSound": false,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": "Random" },
+          "cardB": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": "Random" } },
+        { "numPairs": 4, "group": "Advanced_ALL","matchSound": false,
+          "cardA": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": "Random" },
+          "cardB": { "type": "Image",  "color": "Random",  "size": "large",   "rotation": "Random" } }
+      ]
+    },
+    {
+      "level": 11,
+      "problems": [
+        { "numPairs": 4, "group": "ALL_2D",      "matchSound": false,
+          "cardA": { "type": "Image",     "color": "Random", "size": "large",  "rotation": 0 },
+          "cardB": { "type": "Attribute", "color": "N/A",    "size": "N/A",    "rotation": 0 } },
+        { "numPairs": 4, "group": "ALL_2D",      "matchSound": false,
+          "cardA": { "type": "Image",     "color": "Random", "size": "large",  "rotation": 0 },
+          "cardB": { "type": "Attribute", "color": "N/A",    "size": "N/A",    "rotation": 0 } }
+      ]
+    },
+    {
+      "level": 12,
+      "problems": [
+        { "numPairs": 4, "group": "ALL_3D",      "matchSound": false,
+          "cardA": { "type": "Image",     "color": "N/A",    "size": "N/A",    "rotation": 0 },
+          "cardB": { "type": "Attribute", "color": "N/A",    "size": "N/A",    "rotation": 0 } },
+        { "numPairs": 4, "group": "ALL_3D",      "matchSound": false,
+          "cardA": { "type": "Image",     "color": "N/A",    "size": "N/A",    "rotation": 0 },
+          "cardB": { "type": "Attribute", "color": "N/A",    "size": "N/A",    "rotation": 0 } }
       ]
     }
   ]

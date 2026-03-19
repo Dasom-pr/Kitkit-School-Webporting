@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { assetUrl } from '../utils/assetPath'
 import { useCurriculum } from '../context/CurriculumContext'
@@ -31,26 +31,29 @@ export default function CoopScenePage() {
   const [searchParams] = useSearchParams()
   const catFilter = searchParams.get('cat') // 'L' | 'M' | null
   const { getLevels, isLevelOpen, ratioDayCleared, loading } = useCurriculum()
-  const [page, setPage] = useState(0)
+  const [page] = useState(0)
 
-  if (loading) {
+  // 카테고리 없이 접근하면 카테고리 선택 화면으로 리다이렉트
+  useEffect(() => {
+    if (!catFilter) {
+      navigate('/category', { replace: true })
+    }
+  }, [catFilter, navigate])
+
+  if (loading || !catFilter) {
     return <div className="coop-loading">Loading...</div>
   }
 
   const allLevels = getLevels('en-US')
-  const filteredByCategory = catFilter
-    ? allLevels.filter(l => l.category === catFilter)
-    : allLevels
+  const filteredByCategory = allLevels.filter(l => l.category === catFilter)
 
-  // 카테고리 선택 시: 전체 12개 한 화면 / 미선택 시: 페이지 나누기
-  const singleCat = !!catFilter
-  const totalPages = singleCat ? 1 : 2
-  const levels = singleCat
-    ? filteredByCategory
-    : filteredByCategory.filter(l => Math.floor(l.categoryLevel / 6) === page)
+  // 단일 카테고리: 전체 12개 한 화면 (4열×3행)
+  const singleCat = true
+  const totalPages = 1
+  const levels = filteredByCategory
 
-  // 단일 카테고리 모드 사이즈 축소 비율 (4열로 넓게 배치)
-  const scale = singleCat ? 0.72 : 1.0
+  // 4열 배치를 위한 사이즈 축소 비율
+  const scale = 0.72
 
   return (
     <div className="coop-root">
@@ -61,30 +64,7 @@ export default function CoopScenePage() {
           ← Back
         </button>
 
-        {/* 페이지 이동 화살표 — 단일 카테고리 모드에서는 숨김 */}
-        {!singleCat && page > 0 && (
-          <button className="coop-nav-btn coop-nav-btn--left" onClick={() => setPage(p => p - 1)}>
-            ‹
-          </button>
-        )}
-        {!singleCat && page < totalPages - 1 && (
-          <button className="coop-nav-btn coop-nav-btn--right" onClick={() => setPage(p => p + 1)}>
-            ›
-          </button>
-        )}
-
-        {/* 페이지 점 — 단일 카테고리 모드에서는 숨김 */}
-        {!singleCat && (
-          <div className="coop-page-dots">
-            {Array.from({ length: totalPages }).map((_, i) => (
-              <span
-                key={i}
-                className={`coop-page-dot ${i === page ? 'coop-page-dot--active' : ''}`}
-                onClick={() => setPage(i)}
-              />
-            ))}
-          </div>
-        )}
+        {/* 페이지 이동 / 점 UI 불필요 (단일 카테고리 한 화면 표시) */}
 
         {levels.map(level => {
           if (level.numDays === 0) return null
