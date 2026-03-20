@@ -210,3 +210,4 @@ npm run test:coverage
 | 2026-03-19 | 2차 버그 수정: WordNote 사운드 55개 복사(9개 원본 없음), BirdPhonics onerror 핸들러 추가, 전체 51개 Page 셸통합 검수 완료, TypeScript 오류 0개 확인 |
 | 2026-03-19 | TDD 환경 구축: Vitest 설치, 테스트 4개 파일 작성 (80개 전부 통과), docs/ 폴더 문서 5개 작성, GitHub push 완료 |
 | 2026-03-20 | 전체 51개 게임 에셋 전수 검증 (이미지 누락 0개 확인), 7개 Engine audio.onerror 추가 (WordNote, WordMatrix, SoundTrain, WordKicker, WordWindow, LRComprehension, Labeling), 테스트 87개 통과 |
+| 2026-03-20 | WordNote 엔진 전면 재작성 (Mode A 드래그&드롭 + Mode B 알파벳 키보드), MainScenePage 아이콘 썸네일 day별 표시 수정 |
