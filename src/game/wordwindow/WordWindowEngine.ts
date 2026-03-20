@@ -46,6 +46,7 @@ export class WordWindowEngine extends BaseEngine {
     this.voiceAudio = audio
     this.isPlayingVoice = true
     audio.onended = () => { this.isPlayingVoice = false; this.voiceAudio = null; onEnd?.() }
+    audio.onerror = () => { this.isPlayingVoice = false; this.voiceAudio = null; onEnd?.() }
     audio.play().catch(() => { this.isPlayingVoice = false; onEnd?.() })
   }
 

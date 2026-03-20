@@ -74,6 +74,11 @@ export class LRComprehensionEngine extends BaseEngine {
       this.storyAudio = null
       onEnd?.()
     }
+    audio.onerror = () => {
+      this.isPlayingStory = false
+      this.storyAudio = null
+      onEnd?.()
+    }
     audio.play().catch(() => {
       this.isPlayingStory = false
       onEnd?.()

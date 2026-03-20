@@ -162,7 +162,7 @@ Vitest 기반 테스트 환경 구축 완료 (2026-03-19).
 
 ```bash
 npm run test        # watch 모드
-npm run test:run    # 1회 실행 (80개 전부 통과)
+npm run test:run    # 1회 실행 (87개 전부 통과)
 npm run test:coverage
 ```
 
@@ -209,3 +209,4 @@ npm run test:coverage
 | 2026-03-19 | 버그 수정: WordWindow answer 오류, MultiplicationBoard 이미지, 7개 게임 셸 통합, ReadingBird 이미지+사운드+오디오 로직 전면 수정 |
 | 2026-03-19 | 2차 버그 수정: WordNote 사운드 55개 복사(9개 원본 없음), BirdPhonics onerror 핸들러 추가, 전체 51개 Page 셸통합 검수 완료, TypeScript 오류 0개 확인 |
 | 2026-03-19 | TDD 환경 구축: Vitest 설치, 테스트 4개 파일 작성 (80개 전부 통과), docs/ 폴더 문서 5개 작성, GitHub push 완료 |
+| 2026-03-20 | 전체 51개 게임 에셋 전수 검증 (이미지 누락 0개 확인), 7개 Engine audio.onerror 추가 (WordNote, WordMatrix, SoundTrain, WordKicker, WordWindow, LRComprehension, Labeling), 테스트 87개 통과 |

@@ -140,6 +140,7 @@ export class WordKickerEngine extends BaseEngine {
     const url = assetUrl(`/assets/games/wordkicker/sound/${filename}`)
     const audio = new Audio(url)
     this.currentAudio = audio
+    audio.onerror = () => {}
     audio.play().catch(() => {})
   }
 

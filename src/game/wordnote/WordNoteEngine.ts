@@ -69,6 +69,7 @@ export class WordNoteEngine extends BaseEngine {
   private playWordSound(filename: string) {
     const url = assetUrl(`/assets/games/readingbird/sound/${filename}`)
     const audio = new Audio(url)
+    audio.onerror = () => {}
     audio.play().catch(() => {})
   }
 

@@ -75,6 +75,7 @@ export class LabelingEngine extends BaseEngine {
   private playWordSound(filename: string) {
     const url = assetUrl(`/assets/localized/en-us/games/labeling/sound/${filename}`)
     const audio = new Audio(url)
+    audio.onerror = () => {}
     audio.play().catch(() => {})
   }
 

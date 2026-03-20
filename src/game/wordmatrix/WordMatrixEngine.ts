@@ -76,6 +76,7 @@ export class WordMatrixEngine extends BaseEngine {
 
   private playWordSound(text: string) {
     const audio = new Audio(assetUrl(`${A}/sound/${text}.m4a`))
+    audio.onerror = () => {}
     audio.play().catch(() => {})
   }
 

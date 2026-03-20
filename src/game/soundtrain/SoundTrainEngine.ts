@@ -78,6 +78,7 @@ export class SoundTrainEngine extends BaseEngine {
     const audio = new Audio(url)
     this.isPlaying = true
     audio.onended = () => { this.isPlaying = false }
+    audio.onerror = () => { this.isPlaying = false }
     audio.play().catch(() => { this.isPlaying = false })
   }
 
