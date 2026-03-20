@@ -40,8 +40,15 @@ export default function MainScenePage() {
   if (level.categoryLevel === 0) panelImg = 'panel_prek.png'
 
   // Resolve game icon filename
-  function getGameIconSrc(gameName: string): string {
-    // Try the standard naming: game_icon_{lowercase}.png
+  function getGameIconSrc(gameName: string, gameParam?: string): string {
+    // Video: use per-content thumbnail from library folder
+    if (gameName === 'Video' && gameParam) {
+      return assetUrl(`/assets/library/${gameParam}.png`)
+    }
+    // Book / BookWithQuiz: use per-book thumbnail from library folder
+    if ((gameName === 'Book' || gameName === 'BookWithQuiz') && gameParam) {
+      return assetUrl(`/assets/library/book_${gameParam}_thumbnail.png`)
+    }
     const lower = gameName.toLowerCase()
     return assetUrl(`/assets/icons/game_icon_${lower}.png`)
   }
@@ -178,13 +185,17 @@ export default function MainScenePage() {
 
               {/* Game icon */}
               <img
-                src={getGameIconSrc(game.gameName)}
+                src={getGameIconSrc(game.gameName, game.gameParam)}
                 alt={game.gameName}
                 className="main-icon-img"
                 draggable={false}
                 onError={(e) => {
-                  // Fallback: show the frame shadow as placeholder
-                  e.currentTarget.src = assetUrl('/assets/icons/game_icon_frame_shadow.png')
+                  const el = e.currentTarget
+                  // 1단계 폴백: 게임 기본 아이콘
+                  const fallback1 = assetUrl(`/assets/icons/game_icon_${game.gameName.toLowerCase()}.png`)
+                  if (el.src !== fallback1) { el.src = fallback1; return }
+                  // 2단계 폴백: 프레임 그림자
+                  el.src = assetUrl('/assets/icons/game_icon_frame_shadow.png')
                 }}
               />
 
