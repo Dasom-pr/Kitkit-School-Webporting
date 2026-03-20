@@ -3,46 +3,50 @@ import { assetUrl } from '../../utils/assetPath'
 
 const A = '/assets/games/wordnote'
 
-// ─── Layout ──────────────────────────────────────────────────────────────────
+// ─── Constants ───────────────────────────────────────────────────────────────
 const CX = GAME_WIDTH / 2
 const CY = GAME_HEIGHT / 2
 
-// Image display (center-left)
-const IMG_W = 400, IMG_H = 340
-const IMG_X = 240
-const IMG_Y = CY - IMG_H / 2 - 80
+// ── Mode A (syllable, cards ≤ 10) ──
+const IMG_X = 160, IMG_Y = 200, IMG_W = 520, IMG_H = 440
+const SPEAK_CX = IMG_X + IMG_W / 2
+const SPEAK_CY = IMG_Y + IMG_H + 75
 
-// Syllable card slots (where the word is assembled - right side)
-const SLOT_Y = CY - 100
-const SLOT_W = 280, SLOT_H = 160
-const SLOT_GAP = 20
+const SLOT_W = 290, SLOT_H = 165, SLOT_GAP = 28
+const SLOT_Y = 540
 
-// Available cards (bottom)
-const AVAIL_Y = CY + 300
+const AVAIL_W = 290, AVAIL_H = 165, AVAIL_GAP = 28
+const AVAIL_Y = 1340
+
+// ── Mode B (phonics keyboard, cards > 10) ──
+const KB_WORD_Y   = 150
+const LSLOT_H     = 150, LSLOT_GAP = 18, LSLOT_Y = 380
+const SPEAK_B_CX  = CX
+const SPEAK_B_CY  = 620
+
+const KB_COLS = 7
+const KB_CW   = 310, KB_CH  = 140, KB_GAP = 16
+const KB_Y    = 760
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface Problem {
   word: string
-  cards: string[]   // syllable parts
+  cards: string[]
   sound: string
   image: string
 }
 
 interface Slot {
-  text: string      // expected syllable
+  text: string
   filled: boolean
-  x: number
-  y: number
-  w: number
-  h: number
+  filledWith: string
+  x: number; y: number; w: number; h: number
 }
 
-interface AvailCard {
+interface Card {
   text: string
-  x: number
-  y: number
-  w: number
-  h: number
+  origX: number; origY: number
+  x: number; y: number; w: number; h: number
   used: boolean
   state: 'normal' | 'correct' | 'wrong'
 }
@@ -56,22 +60,25 @@ export class WordNoteEngine extends BaseEngine {
   private locked = false
 
   private currentProblem: Problem | null = null
+  private isModeB = false
+
+  // Mode A
   private slots: Slot[] = []
-  private availCards: AvailCard[] = []
+  private availCards: Card[] = []
   private wordImage: HTMLImageElement | null = null
 
-  // Sounds only – no specific UI images needed for WordNote
+  // Drag (Mode A)
+  private dragCard: Card | null = null
+  private dragX = 0
+  private dragY = 0
 
-  // Sounds
+  // Mode B
+  private wordSlots: Slot[] = []
+  private kbCards: Card[] = []
+  private letterPos = 0
+
   private sfxCorrect   = loadAudio(assetUrl('/assets/games/feedingtime/sfx/sfx_feedingtime_correct.m4a'))
   private sfxIncorrect = loadAudio(assetUrl('/assets/games/feedingtime/sfx/sfx_feedingtime_incorrect.m4a'))
-
-  private playWordSound(filename: string) {
-    const url = assetUrl(`/assets/games/readingbird/sound/${filename}`)
-    const audio = new Audio(url)
-    audio.onerror = () => {}
-    audio.play().catch(() => {})
-  }
 
   onProgressChange?: (current: number, max: number) => void
 
@@ -97,11 +104,9 @@ export class WordNoteEngine extends BaseEngine {
     const data = await res.json()
     const ld   = (data.levels as Array<{level:number; problems:Problem[]}>)
       .find(l => l.level === this.levelNum) ?? data.levels[0]
-
     const shuffled = [...ld.problems].sort(() => Math.random() - 0.5)
     this.problems = shuffled.slice(0, 6)
     this.problemIndex = 0
-    this.locked = false
     this.onProgressChange?.(0, this.problems.length)
     this.setupProblem()
     this.loaded = true
@@ -112,89 +117,207 @@ export class WordNoteEngine extends BaseEngine {
     const prob = this.problems[this.problemIndex]
     this.currentProblem = prob
     this.locked = false
+    this.dragCard = null
+    this.isModeB = prob.cards.length > 10
 
-    // Build slots (one per syllable card)
-    const totalSlotW = prob.cards.length * SLOT_W + (prob.cards.length - 1) * SLOT_GAP
-    const slotStartX = CX + 80
+    if (this.isModeB) {
+      this.setupModeB(prob)
+    } else {
+      this.setupModeA(prob)
+    }
 
-    this.slots = prob.cards.map((card, i) => ({
-      text: card,
+    if (prob.sound) setTimeout(() => this.playWordSound(prob.sound), 300)
+  }
+
+  // ── Mode A setup ────────────────────────────────────────────────────────────
+  private setupModeA(prob: Problem) {
+    const n = prob.cards.length
+    const totalSlotW = n * SLOT_W + (n - 1) * SLOT_GAP
+
+    // Center slots in the right portion (to the right of the image)
+    const rightStart = IMG_X + IMG_W + 60
+    const rightWidth = GAME_WIDTH - rightStart - 60
+    const slotStartX = rightStart + (rightWidth - totalSlotW) / 2
+
+    this.slots = prob.cards.map((text, i) => ({
+      text,
       filled: false,
+      filledWith: '',
       x: slotStartX + i * (SLOT_W + SLOT_GAP),
       y: SLOT_Y,
       w: SLOT_W,
       h: SLOT_H,
     }))
 
-    // Shuffle available cards
+    // Shuffle available cards and lay them out centered at bottom
     const shuffled = [...prob.cards].sort(() => Math.random() - 0.5)
-    const totalAvailW = shuffled.length * (SLOT_W + SLOT_GAP) - SLOT_GAP
+    const totalAvailW = shuffled.length * (AVAIL_W + AVAIL_GAP) - AVAIL_GAP
     const availStartX = CX - totalAvailW / 2
 
-    this.availCards = shuffled.map((text, i) => ({
-      text,
-      x: availStartX + i * (SLOT_W + SLOT_GAP),
-      y: AVAIL_Y,
-      w: SLOT_W,
-      h: SLOT_H,
-      used: false,
-      state: 'normal' as const,
-    }))
+    this.availCards = shuffled.map((text, i) => {
+      const x = availStartX + i * (AVAIL_W + AVAIL_GAP)
+      return { text, origX: x, origY: AVAIL_Y, x, y: AVAIL_Y, w: AVAIL_W, h: AVAIL_H, used: false, state: 'normal' as const }
+    })
 
-    // Load word image
-    if (prob.image) {
-      this.wordImage = loadImage(assetUrl(`${A}/images/${prob.image}`))
-    } else {
-      this.wordImage = null
-    }
-
-    // Play the word sound
-    if (prob.sound) setTimeout(() => this.playWordSound(prob.sound), 300)
+    this.wordImage = prob.image ? loadImage(assetUrl(`${A}/images/${prob.image}`)) : null
   }
 
-  // ── Input ──────────────────────────────────────────────────────────────────
+  // ── Mode B setup ────────────────────────────────────────────────────────────
+  private setupModeB(prob: Problem) {
+    const word = prob.word
+    const n = word.length
+
+    // Word slots: one per letter, centered, max width 260
+    const slotW = Math.min(260, Math.floor((GAME_WIDTH - 200) / n) - LSLOT_GAP)
+    const totalW = n * slotW + (n - 1) * LSLOT_GAP
+    const startX = CX - totalW / 2
+
+    this.wordSlots = word.split('').map((ch, i) => ({
+      text: ch,
+      filled: false,
+      filledWith: '',
+      x: startX + i * (slotW + LSLOT_GAP),
+      y: LSLOT_Y,
+      w: slotW,
+      h: LSLOT_H,
+    }))
+
+    this.letterPos = 0
+
+    // Keyboard grid
+    const totalKbW = KB_COLS * KB_CW + (KB_COLS - 1) * KB_GAP
+    const kbStartX = CX - totalKbW / 2
+
+    this.kbCards = prob.cards.map((text, i) => {
+      const col = i % KB_COLS
+      const row = Math.floor(i / KB_COLS)
+      const x = kbStartX + col * (KB_CW + KB_GAP)
+      const y = KB_Y + row * (KB_CH + KB_GAP)
+      return { text, origX: x, origY: y, x, y, w: KB_CW, h: KB_CH, used: false, state: 'normal' as const }
+    })
+  }
+
+  // ── Input ───────────────────────────────────────────────────────────────────
   onPointerDown(x: number, y: number) {
     if (!this.loaded || this.locked) return
+    if (this.isModeB) {
+      this.handleModeBTap(x, y)
+    } else {
+      this.handleModeADown(x, y)
+    }
+  }
 
-    // Speaker button
-    if (x >= CX - 60 && x <= CX + 60 && y >= IMG_Y + IMG_H + 20 && y <= IMG_Y + IMG_H + 130) {
+  onPointerMove(x: number, y: number) {
+    if (this.dragCard) {
+      this.dragX = x
+      this.dragY = y
+    }
+  }
+
+  onPointerUp(x: number, y: number) {
+    if (!this.dragCard) return
+    const card = this.dragCard
+    this.dragCard = null
+
+    // Check drop target
+    for (const slot of this.slots) {
+      if (slot.filled) continue
+      if (x >= slot.x && x <= slot.x + slot.w && y >= slot.y && y <= slot.y + slot.h) {
+        if (card.text === slot.text) {
+          card.used = true
+          card.state = 'correct'
+          slot.filled = true
+          slot.filledWith = card.text
+          playSound(this.sfxCorrect)
+          if (this.slots.every(s => s.filled)) {
+            this.locked = true
+            if (this.currentProblem?.sound)
+              setTimeout(() => this.playWordSound(this.currentProblem!.sound), 200)
+            setTimeout(() => this.nextProblem(), 1200)
+          }
+        } else {
+          card.state = 'wrong'
+          playSound(this.sfxIncorrect)
+          setTimeout(() => { card.state = 'normal' }, 700)
+        }
+        return
+      }
+    }
+    // Dropped outside — card snaps back
+    // (card.x/y are still origX/origY; no update needed)
+  }
+
+  private handleModeADown(x: number, y: number) {
+    // Speaker
+    const sr = 55
+    if (Math.hypot(x - SPEAK_CX, y - SPEAK_CY) < sr) {
       if (this.currentProblem?.sound) this.playWordSound(this.currentProblem.sound)
       return
     }
-
-    // Available card tap
-    for (const card of this.availCards) {
+    // Pick up available card
+    for (const card of [...this.availCards].reverse()) {
       if (card.used) continue
-      if (x >= card.x && x <= card.x + card.w && y >= card.y && y <= card.y + card.h) {
-        this.handleCardTap(card)
+      if (x >= card.origX && x <= card.origX + card.w &&
+          y >= card.origY && y <= card.origY + card.h) {
+        this.dragCard = card
+        this.dragX = x
+        this.dragY = y
         return
       }
     }
   }
-  onPointerMove(_x: number, _y: number) {}
-  onPointerUp(_x: number, _y: number) {}
 
-  private handleCardTap(card: AvailCard) {
-    // Find the next unfilled slot
-    const nextSlot = this.slots.find(s => !s.filled)
-    if (!nextSlot) return
+  private handleModeBTap(x: number, y: number) {
+    if (!this.currentProblem) return
 
-    if (card.text === nextSlot.text) {
-      card.state = 'correct'
-      card.used = true
-      nextSlot.filled = true
-      playSound(this.sfxCorrect)
+    // Speaker
+    const sr = 55
+    if (Math.hypot(x - SPEAK_B_CX, y - SPEAK_B_CY) < sr) {
+      if (this.currentProblem.sound) this.playWordSound(this.currentProblem.sound)
+      return
+    }
 
-      // Check if all slots filled
-      if (this.slots.every(s => s.filled)) {
-        this.locked = true
-        if (this.currentProblem?.sound) setTimeout(() => this.playWordSound(this.currentProblem!.sound), 200)
-        setTimeout(() => this.nextProblem(), 1200)
+    const word = this.currentProblem.word.toLowerCase()
+
+    for (const card of this.kbCards) {
+      if (x < card.x || x > card.x + card.w || y < card.y || y > card.y + card.h) continue
+
+      // Match check: try all variants (e.g. "m/n" → "m" or "n")
+      let matchLen = 0
+      for (const v of card.text.split('/')) {
+        const vl = v.toLowerCase()
+        if (word.slice(this.letterPos, this.letterPos + vl.length) === vl) {
+          matchLen = vl.length
+          break
+        }
       }
-    } else {
-      card.state = 'wrong'
-      playSound(this.sfxIncorrect)
-      setTimeout(() => { card.state = 'normal' }, 700)
+
+      if (matchLen > 0) {
+        // Fill the matched letter slots
+        for (let k = 0; k < matchLen; k++) {
+          const si = this.letterPos + k
+          if (si < this.wordSlots.length) {
+            this.wordSlots[si].filled = true
+            this.wordSlots[si].filledWith = word[si]
+          }
+        }
+        card.state = 'correct'
+        setTimeout(() => { card.state = 'normal' }, 500)
+        this.letterPos += matchLen
+        playSound(this.sfxCorrect)
+
+        if (this.letterPos >= word.length) {
+          this.locked = true
+          if (this.currentProblem.sound)
+            setTimeout(() => this.playWordSound(this.currentProblem!.sound), 200)
+          setTimeout(() => this.nextProblem(), 1200)
+        }
+      } else {
+        card.state = 'wrong'
+        playSound(this.sfxIncorrect)
+        setTimeout(() => { card.state = 'normal' }, 600)
+      }
+      return
     }
   }
 
@@ -209,15 +332,22 @@ export class WordNoteEngine extends BaseEngine {
     this.setupProblem()
   }
 
-  // ── Render ─────────────────────────────────────────────────────────────────
+  private playWordSound(filename: string) {
+    const url = assetUrl(`/assets/games/readingbird/sound/${filename}`)
+    const audio = new Audio(url)
+    audio.onerror = () => {}
+    audio.play().catch(() => {})
+  }
+
+  // ── Render ──────────────────────────────────────────────────────────────────
   update(_t: number, _dt: number) {}
 
   draw() {
     const { ctx } = this
+    ctx.clearRect(0, 0, this.canvas.clientWidth, this.canvas.clientHeight)
+
     const w = this.canvas.clientWidth
     const h = this.canvas.clientHeight
-    ctx.clearRect(0, 0, w, h)
-
     const ox = (w - GAME_WIDTH  * this.gameScale) / 2
     const oy = (h - GAME_HEIGHT * this.gameScale) / 2
     ctx.save()
@@ -229,87 +359,147 @@ export class WordNoteEngine extends BaseEngine {
     ctx.fillRect(0, 0, GAME_WIDTH, GAME_HEIGHT)
 
     if (!this.loaded || !this.currentProblem) {
-      this.txt(ctx, 'Loading…', GAME_WIDTH / 2, GAME_HEIGHT / 2, 80, '#333')
+      this.txt(ctx, 'Loading…', CX, CY, 80, '#888')
       ctx.restore(); return
     }
 
-    const prob = this.currentProblem
-
-    // Word image (left side)
-    if (this.wordImage) {
-      this.drawImg(ctx, this.wordImage, IMG_X, IMG_Y, IMG_W, IMG_H)
+    if (this.isModeB) {
+      this.drawModeB(ctx)
     } else {
-      ctx.save()
-      ctx.fillStyle = 'rgba(255,255,255,0.6)'
-      ctx.beginPath(); this.rr(ctx, IMG_X, IMG_Y, IMG_W, IMG_H, 20); ctx.fill()
-      ctx.restore()
-      this.txt(ctx, prob.word, IMG_X + IMG_W / 2, IMG_Y + IMG_H / 2, 90, '#2E4057')
+      this.drawModeA(ctx)
     }
 
-    // Speaker button (drawn as circle)
+    ctx.restore()
+  }
+
+  private drawModeA(ctx: CanvasRenderingContext2D) {
+    const prob = this.currentProblem!
+
+    // Left: word image or word text
+    ctx.save()
+    ctx.fillStyle = 'rgba(255,255,255,0.75)'
+    ctx.beginPath(); this.rr(ctx, IMG_X, IMG_Y, IMG_W, IMG_H, 24); ctx.fill()
+    ctx.restore()
+
+    if (this.wordImage?.complete && this.wordImage.naturalWidth > 0) {
+      ctx.drawImage(this.wordImage, IMG_X, IMG_Y, IMG_W, IMG_H)
+    } else {
+      this.txt(ctx, prob.word, IMG_X + IMG_W / 2, IMG_Y + IMG_H / 2, 100, '#2E4057')
+    }
+
+    // Speaker
     ctx.save()
     ctx.fillStyle = '#FF8A65'
     ctx.shadowColor = 'rgba(0,0,0,0.2)'; ctx.shadowBlur = 10
-    ctx.beginPath(); ctx.arc(CX, IMG_Y + IMG_H + 70, 55, 0, Math.PI * 2); ctx.fill()
+    ctx.beginPath(); ctx.arc(SPEAK_CX, SPEAK_CY, 55, 0, Math.PI * 2); ctx.fill()
     ctx.shadowBlur = 0; ctx.restore()
-    this.txt(ctx, '🔊', CX, IMG_Y + IMG_H + 70, 60, '#fff')
+    this.txt(ctx, '🔊', SPEAK_CX, SPEAK_CY, 60, '#fff')
 
-    // Assembly slots (right-ish)
+    // Assembly slots
     for (const slot of this.slots) {
       ctx.save()
-      ctx.fillStyle = slot.filled ? 'rgba(76,175,80,0.8)' : 'rgba(255,255,255,0.85)'
-      ctx.strokeStyle = slot.filled ? '#2E7D32' : '#BDBDBD'
-      ctx.lineWidth = 4
-      ctx.shadowColor = 'rgba(0,0,0,0.15)'; ctx.shadowBlur = 8
-      ctx.beginPath(); this.rr(ctx, slot.x, slot.y, slot.w, slot.h, 16)
+      ctx.fillStyle = slot.filled ? 'rgba(76,175,80,0.85)' : 'rgba(255,255,255,0.85)'
+      ctx.strokeStyle = slot.filled ? '#2E7D32' : '#90CAF9'
+      ctx.lineWidth = 5
+      ctx.shadowColor = 'rgba(0,0,0,0.12)'; ctx.shadowBlur = 8
+      ctx.beginPath(); this.rr(ctx, slot.x, slot.y, slot.w, slot.h, 18)
       ctx.fill(); ctx.stroke(); ctx.restore()
-      if (slot.filled) {
-        this.txt(ctx, slot.text, slot.x + slot.w / 2, slot.y + slot.h / 2, 72, '#fff')
-      } else {
-        this.txt(ctx, '_', slot.x + slot.w / 2, slot.y + slot.h / 2, 72, '#BDBDBD')
-      }
+      const label = slot.filled ? slot.filledWith : '_'
+      this.txt(ctx, label, slot.x + slot.w / 2, slot.y + slot.h / 2, 76,
+        slot.filled ? '#fff' : '#90CAF9')
     }
 
     // Instruction
-    this.txt(ctx, `Tap the parts in order to spell: ${prob.word}`, CX, SLOT_Y - 80, 50, '#5D4037')
+    this.txt(ctx, `Spell: ${prob.word}`, CX, SLOT_Y - 90, 52, '#5D4037')
 
-    // Available cards
+    // Available cards (not dragging)
     for (const card of this.availCards) {
       if (card.used) continue
-      ctx.save()
-      ctx.fillStyle = card.state === 'wrong' ? 'rgba(220,50,50,0.85)' : 'rgba(255,183,77,0.9)'
-      ctx.strokeStyle = card.state === 'wrong' ? '#B71C1C' : '#E65100'
-      ctx.lineWidth = 4
-      ctx.shadowColor = 'rgba(0,0,0,0.2)'; ctx.shadowBlur = 10
-      ctx.beginPath(); this.rr(ctx, card.x, card.y, card.w, card.h, 16)
-      ctx.fill(); ctx.stroke(); ctx.restore()
+      if (card === this.dragCard) continue  // drawn separately below
+      this.drawCard(ctx, card, card.origX, card.origY)
+    }
 
-      this.txt(ctx, card.text, card.x + card.w / 2, card.y + card.h / 2, 72,
-        card.state === 'wrong' ? '#fff' : '#2E4057')
+    // Drag ghost
+    if (this.dragCard) {
+      ctx.save(); ctx.globalAlpha = 0.85
+      this.drawCard(ctx, this.dragCard,
+        this.dragX - this.dragCard.w / 2,
+        this.dragY - this.dragCard.h / 2)
+      ctx.restore()
     }
 
     // Progress
-    this.txt(ctx, `${this.problemIndex + 1} / ${this.problems.length}`,
-      GAME_WIDTH / 2, 80, 60, '#5D4037')
-
-    ctx.restore()
+    this.txt(ctx, `${this.problemIndex + 1} / ${this.problems.length}`, GAME_WIDTH - 140, 80, 55, '#5D4037')
   }
 
-  // ── Helpers ────────────────────────────────────────────────────────────────
-  private drawImg(ctx: CanvasRenderingContext2D, img: HTMLImageElement,
-                  x: number, y: number, w: number, h: number) {
-    if (img.complete && img.naturalWidth > 0) ctx.drawImage(img, x, y, w, h)
-  }
+  private drawModeB(ctx: CanvasRenderingContext2D) {
+    const prob = this.currentProblem!
 
-  private txt(ctx: CanvasRenderingContext2D, s: string, x: number, y: number,
-              size: number, color: string) {
+    // Word title
+    this.txt(ctx, prob.word.toUpperCase(), CX, KB_WORD_Y, 88, '#2E4057')
+
+    // Letter slots
+    for (const slot of this.wordSlots) {
+      ctx.save()
+      ctx.fillStyle = slot.filled ? 'rgba(76,175,80,0.85)' : 'rgba(255,255,255,0.85)'
+      ctx.strokeStyle = slot.filled ? '#2E7D32' : '#90CAF9'
+      ctx.lineWidth = 5
+      ctx.shadowColor = 'rgba(0,0,0,0.1)'; ctx.shadowBlur = 6
+      ctx.beginPath(); this.rr(ctx, slot.x, slot.y, slot.w, slot.h, 14)
+      ctx.fill(); ctx.stroke(); ctx.restore()
+      const label = slot.filled ? slot.filledWith : '_'
+      this.txt(ctx, label, slot.x + slot.w / 2, slot.y + slot.h / 2, 68,
+        slot.filled ? '#fff' : '#90CAF9')
+    }
+
+    // Speaker
     ctx.save()
-    ctx.fillStyle    = color
-    ctx.font         = `bold ${size}px sans-serif`
-    ctx.textAlign    = 'center'
-    ctx.textBaseline = 'middle'
-    ctx.fillText(s, x, y)
-    ctx.restore()
+    ctx.fillStyle = '#FF8A65'
+    ctx.shadowColor = 'rgba(0,0,0,0.2)'; ctx.shadowBlur = 10
+    ctx.beginPath(); ctx.arc(SPEAK_B_CX, SPEAK_B_CY, 55, 0, Math.PI * 2); ctx.fill()
+    ctx.shadowBlur = 0; ctx.restore()
+    this.txt(ctx, '🔊', SPEAK_B_CX, SPEAK_B_CY, 60, '#fff')
+
+    // Keyboard divider
+    ctx.save()
+    ctx.strokeStyle = '#D7CCC8'; ctx.lineWidth = 3
+    ctx.beginPath(); ctx.moveTo(100, KB_Y - 24); ctx.lineTo(GAME_WIDTH - 100, KB_Y - 24)
+    ctx.stroke(); ctx.restore()
+
+    // Keyboard cards
+    for (const card of this.kbCards) {
+      this.drawCard(ctx, card, card.x, card.y)
+    }
+
+    // Progress
+    this.txt(ctx, `${this.problemIndex + 1} / ${this.problems.length}`, GAME_WIDTH - 140, 80, 55, '#5D4037')
+  }
+
+  private drawCard(ctx: CanvasRenderingContext2D, card: Card, x: number, y: number) {
+    const isWrong   = card.state === 'wrong'
+    const isCorrect = card.state === 'correct'
+    ctx.save()
+    ctx.fillStyle   = isWrong   ? 'rgba(220,50,50,0.88)'
+                    : isCorrect ? 'rgba(76,175,80,0.88)'
+                    :             'rgba(255,183,77,0.92)'
+    ctx.strokeStyle = isWrong   ? '#B71C1C'
+                    : isCorrect ? '#2E7D32'
+                    :             '#E65100'
+    ctx.lineWidth = 4
+    ctx.shadowColor = 'rgba(0,0,0,0.2)'; ctx.shadowBlur = 8
+    ctx.beginPath(); this.rr(ctx, x, y, card.w, card.h, 16)
+    ctx.fill(); ctx.stroke(); ctx.restore()
+    this.txt(ctx, card.text, x + card.w / 2, y + card.h / 2, 64,
+      isWrong ? '#fff' : '#2E4057')
+  }
+
+  // ── Helpers ─────────────────────────────────────────────────────────────────
+  private txt(ctx: CanvasRenderingContext2D, s: string,
+              x: number, y: number, size: number, color: string) {
+    ctx.save()
+    ctx.fillStyle = color; ctx.font = `bold ${size}px sans-serif`
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle'
+    ctx.fillText(s, x, y); ctx.restore()
   }
 
   private rr(ctx: CanvasRenderingContext2D, x: number, y: number,
