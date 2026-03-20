@@ -19,9 +19,9 @@ const BIRD_X = CX
 const BIRD_Y = CY - 280
 const BIRD_W = 320, BIRD_H = 320
 
-// 스피커 버튼
+// 스피커 버튼 — 텍스트 박스 아래에 위치
 const SPEAKER_X = CX
-const SPEAKER_Y = CY - 10
+const SPEAKER_Y = CY + 170   // CY-10 이면 단어 텍스트와 겹침 → 박스 아래로
 const SPEAKER_R = 70
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -313,7 +313,7 @@ export class ReadingBirdEngine extends BaseEngine {
       const fontSize = prob.word.length > 20 ? 64 : prob.word.length > 12 ? 80 : 100
       this.txt(ctx, prob.word, CX, CY - 10, fontSize, '#1B5E20')
 
-      this.txt(ctx, '🔊 Listen carefully!', CX, CY + 160, 58, 'rgba(56,142,60,0.9)')
+      this.txt(ctx, '🔊 Listen carefully!', CX, CY + 270, 58, 'rgba(56,142,60,0.9)')
 
     } else {
       // ── ANSWER 페이즈 ──

@@ -3,49 +3,31 @@ import { assetUrl } from '../../utils/assetPath'
 
 const A = '/assets/games/wordmatrix'
 
-// ─── Layout ──────────────────────────────────────────────────────────────────
+// ─── Constants ───────────────────────────────────────────────────────────────
 const CX = GAME_WIDTH / 2
 const CY = GAME_HEIGHT / 2
 
-// Letter block (center)
-const LETTER_W = 220, LETTER_H = 220
-const LETTER_X = CX - LETTER_W / 2
-const LETTER_Y = CY - LETTER_H / 2 - 120
+const CELL_W   = 300   // 슬롯/버튼 너비
+const CELL_H   = 160   // 슬롯/버튼 높이
+const CELL_GAP = 18    // 셀 간격
+const CORNER   = 14    // 모서리 반지름
 
-// Ending blocks (4 options arranged in 2×2 grid below)
-const END_W = 280, END_H = 160
-const END_GAP_X = 100, END_GAP_Y = 60
-const END_COLS = 2
-const TOTAL_END_W = END_COLS * END_W + (END_COLS - 1) * END_GAP_X
-const END_START_X = CX - TOTAL_END_W / 2
-const END_START_Y = CY + 140
-
-// Words display (completed words shown below)
-const WORDS_Y = GAME_HEIGHT - 220
+const BOARD_PAD_X = 80
+const BOARD_PAD_Y = 60
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface Problem {
-  letter: string
-  endings: string[]
+  letter: string     // "d" or "d,l,ch"
+  endings: string[]  // ["ot","amp","ean"]
 }
 
-interface Block {
-  text: string
-  x: number
-  y: number
-  w: number
-  h: number
-  isCorrect: boolean
-  state: 'normal' | 'selected' | 'correct' | 'wrong'
+interface SlotCell {
+  row: number     // index into letters[]
+  col: number     // index into endings[]
+  word: string    // letter + ending
+  filled: boolean
+  animT: number   // 0→1 fill animation progress
 }
-
-// Pool of common endings for generating distractors
-const DISTRACTOR_POOL = [
-  'it','at','an','in','un','og','eg','ig','ug','ot',
-  'op','ox','ob','od','am','ap','ag','ab','ed','en',
-  'et','em','el','ep','ow','ew','aw','ay','ee','oo',
-  'ank','ing','ong','ung','ink','ack','eck','ick','ock','uck',
-]
 
 // ─── Engine ──────────────────────────────────────────────────────────────────
 export class WordMatrixEngine extends BaseEngine {
@@ -55,30 +37,32 @@ export class WordMatrixEngine extends BaseEngine {
   private loaded = false
   private locked = false
 
-  private currentProblem: Problem | null = null
-  private blocks: Block[] = []
-  private selectedCount = 0
-  private correctCount = 0
+  // current problem state
+  private letters:  string[]    = []   // split from problem.letter
+  private endings:  string[]    = []   // problem.endings
+  private slots:    SlotCell[]  = []
+  private filledCount = 0
+
+  // layout (recalculated per problem)
+  private gridX = 0   // x of first ending-header cell
+  private gridY = 0   // y of first letter-header cell
+  private cols  = 0
+  private rows  = 0
 
   // Images
-  private imgBg        = loadImage(assetUrl(`${A}/bg.png`))
-  private imgBoard     = loadImage(assetUrl(`${A}/board.png`))
-  private imgBlockTop  = [1,2,3,4,5].map(n => loadImage(assetUrl(`${A}/block_top_0${n}.png`)))
-  private imgBlockSlot = loadImage(assetUrl(`${A}/block_top_slot.png`))
-  private imgSlotArea  = loadImage(assetUrl(`${A}/slot_area.png`))
-  private imgSlotAreaSel = loadImage(assetUrl(`${A}/slot_area_selected.png`))
-  private imgBtnH      = loadImage(assetUrl(`${A}/btn_horizontal.png`))
-  private imgBtnV      = loadImage(assetUrl(`${A}/btn_vertical.png`))
+  private imgBg       = loadImage(assetUrl(`${A}/bg.png`))
+  private imgBoard    = loadImage(assetUrl(`${A}/board.png`))
+  private imgBtnH     = loadImage(assetUrl(`${A}/btn_horizontal.png`))
+  private imgBtnHSel  = loadImage(assetUrl(`${A}/btn_horizontal_selected.png`))
+  private imgBtnV     = loadImage(assetUrl(`${A}/btn_vertical.png`))
+  private imgBtnVSel  = loadImage(assetUrl(`${A}/btn_vertical_selected.png`))
+  private imgSlot     = loadImage(assetUrl(`${A}/slot_area.png`))
+  private imgSlotSel  = loadImage(assetUrl(`${A}/slot_area_selected.png`))
+  private imgBlockTop = [1,2,3,4,5].map(n => loadImage(assetUrl(`${A}/block_top_0${n}.png`)))
 
   // Sounds
   private sfxCorrect   = loadAudio(assetUrl('/assets/games/feedingtime/sfx/sfx_feedingtime_correct.m4a'))
   private sfxIncorrect = loadAudio(assetUrl('/assets/games/feedingtime/sfx/sfx_feedingtime_incorrect.m4a'))
-
-  private playWordSound(text: string) {
-    const audio = new Audio(assetUrl(`${A}/sound/${text}.m4a`))
-    audio.onerror = () => {}
-    audio.play().catch(() => {})
-  }
 
   onProgressChange?: (current: number, max: number) => void
 
@@ -87,12 +71,11 @@ export class WordMatrixEngine extends BaseEngine {
     this.levelNum = level
   }
 
+  // ── Lifecycle ────────────────────────────────────────────────────────────
   start() {
     this.resize()
     this.gameState = 'playing'
     this.canvas.addEventListener('pointerdown', this.handlePointerDown)
-    this.canvas.addEventListener('pointermove', this.handlePointerMove)
-    this.canvas.addEventListener('pointerup',   this.handlePointerUp)
     window.addEventListener('resize', this.resize)
     this.lastTime = performance.now() / 1000
     this.loop()
@@ -106,9 +89,8 @@ export class WordMatrixEngine extends BaseEngine {
       .find(l => l.level === this.levelNum) ?? data.levels[0]
 
     const shuffled = [...ld.problems].sort(() => Math.random() - 0.5)
-    this.problems = shuffled.slice(0, 5)
+    this.problems  = shuffled   // 3 problems per level
     this.problemIndex = 0
-    this.locked = false
     this.onProgressChange?.(0, this.problems.length)
     this.setupProblem()
     this.loaded = true
@@ -117,55 +99,69 @@ export class WordMatrixEngine extends BaseEngine {
   private setupProblem() {
     if (this.problemIndex >= this.problems.length) return
     const prob = this.problems[this.problemIndex]
-    this.currentProblem = prob
-    this.selectedCount = 0
-    this.correctCount = 0
+
+    this.letters = prob.letter.split(',').map(s => s.trim())
+    this.endings = [...prob.endings]
+    this.rows = this.letters.length
+    this.cols = this.endings.length
+    this.filledCount = 0
     this.locked = false
 
-    // Generate distractors: pick endings from pool that aren't already in the problem
-    const correctEndings = new Set(prob.endings)
-    const distractors = DISTRACTOR_POOL
-      .filter(e => !correctEndings.has(e))
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 4 - prob.endings.length)
-
-    // All options: correct endings + distractors, shuffled
-    const allOptions = [...prob.endings, ...distractors].sort(() => Math.random() - 0.5)
-
-    this.blocks = allOptions.map((text, i) => {
-      const col = i % END_COLS
-      const row = Math.floor(i / END_COLS)
-      return {
-        text,
-        x: END_START_X + col * (END_W + END_GAP_X),
-        y: END_START_Y + row * (END_H + END_GAP_Y),
-        w: END_W,
-        h: END_H,
-        isCorrect: correctEndings.has(text),
-        state: 'normal' as const,
+    // Build slot cells
+    this.slots = []
+    for (let r = 0; r < this.rows; r++) {
+      for (let c = 0; c < this.cols; c++) {
+        this.slots.push({
+          row: r, col: c,
+          word: this.letters[r] + this.endings[c],
+          filled: false,
+          animT: 0,
+        })
       }
-    })
+    }
 
-    // Play the center letter sound
-    this.playWordSound(prob.letter)
+    // Compute grid layout (centered)
+    // Total grid = (cols+1) cells wide × (rows+1) cells tall
+    const totalW = (this.cols + 1) * CELL_W + this.cols * CELL_GAP
+    const totalH = (this.rows + 1) * CELL_H + this.rows * CELL_GAP
+    this.gridX = CX - totalW / 2
+    this.gridY = CY - totalH / 2 - 80
+
+    // Play first ending sound to introduce
+    this.playSound(this.endings[0])
   }
 
-  // ── Input ──────────────────────────────────────────────────────────────────
+  // ── Input ────────────────────────────────────────────────────────────────
   onPointerDown(x: number, y: number) {
     if (!this.loaded || this.locked) return
 
-    // Center letter block: replay sound
-    if (this.currentProblem &&
-        x >= LETTER_X && x <= LETTER_X + LETTER_W &&
-        y >= LETTER_Y && y <= LETTER_Y + LETTER_H) {
-      this.playWordSound(this.currentProblem.letter)
-      return
+    // Tap on an ending header → play its sound
+    for (let c = 0; c < this.cols; c++) {
+      const bx = this.gridX + (c + 1) * (CELL_W + CELL_GAP)
+      const by = this.gridY
+      if (this.hit(x, y, bx, by)) {
+        this.playSound(this.endings[c])
+        return
+      }
     }
 
-    for (const block of this.blocks) {
-      if (block.state === 'correct') continue  // already matched
-      if (x >= block.x && x <= block.x + block.w && y >= block.y && y <= block.y + block.h) {
-        this.handleBlockTap(block)
+    // Tap on a letter header → play its sound
+    for (let r = 0; r < this.rows; r++) {
+      const bx = this.gridX
+      const by = this.gridY + (r + 1) * (CELL_H + CELL_GAP)
+      if (this.hit(x, y, bx, by)) {
+        this.playSound(this.letters[r])
+        return
+      }
+    }
+
+    // Tap on a slot → fill it
+    for (const slot of this.slots) {
+      if (slot.filled) continue
+      const sx = this.gridX + (slot.col + 1) * (CELL_W + CELL_GAP)
+      const sy = this.gridY + (slot.row + 1) * (CELL_H + CELL_GAP)
+      if (this.hit(x, y, sx, sy)) {
+        this.fillSlot(slot)
         return
       }
     }
@@ -173,22 +169,28 @@ export class WordMatrixEngine extends BaseEngine {
   onPointerMove(_x: number, _y: number) {}
   onPointerUp(_x: number, _y: number) {}
 
-  private handleBlockTap(block: Block) {
-    if (block.isCorrect) {
-      block.state = 'correct'
-      this.correctCount++
-      this.playWordSound(block.text)
-      playSound(this.sfxCorrect)
+  private hit(x: number, y: number, bx: number, by: number) {
+    return x >= bx && x <= bx + CELL_W && y >= by && y <= by + CELL_H
+  }
 
-      if (this.correctCount >= (this.currentProblem?.endings.length ?? 2)) {
-        this.locked = true
-        setTimeout(() => this.nextProblem(), 1200)
-      }
-    } else {
-      block.state = 'wrong'
-      playSound(this.sfxIncorrect)
-      setTimeout(() => { block.state = 'normal' }, 700)
+  private fillSlot(slot: SlotCell) {
+    slot.filled = true
+    slot.animT  = 0
+    this.filledCount++
+    this.playSound(this.endings[slot.col])
+    playSound(this.sfxCorrect)
+
+    if (this.filledCount >= this.slots.length) {
+      this.locked = true
+      setTimeout(() => this.nextProblem(), 1200)
     }
+  }
+
+  private playSound(text: string) {
+    const url   = assetUrl(`${A}/sound/${text}.m4a`)
+    const audio = new Audio(url)
+    audio.onerror = () => {}
+    audio.play().catch(() => {})
   }
 
   private nextProblem() {
@@ -202,9 +204,16 @@ export class WordMatrixEngine extends BaseEngine {
     this.setupProblem()
   }
 
-  // ── Render ─────────────────────────────────────────────────────────────────
-  update(_t: number, _dt: number) {}
+  // ── Update ───────────────────────────────────────────────────────────────
+  update(_t: number, dt: number) {
+    for (const slot of this.slots) {
+      if (slot.filled && slot.animT < 1) {
+        slot.animT = Math.min(1, slot.animT + dt * 3)
+      }
+    }
+  }
 
+  // ── Draw ─────────────────────────────────────────────────────────────────
   draw() {
     const { ctx } = this
     const w = this.canvas.clientWidth
@@ -218,49 +227,64 @@ export class WordMatrixEngine extends BaseEngine {
     ctx.scale(this.gameScale, this.gameScale)
 
     // Background
-    this.drawImg(ctx, this.imgBg, 0, 0, GAME_WIDTH, GAME_HEIGHT)
-    this.drawImg(ctx, this.imgBoard, CX - 700, 100, 1400, GAME_HEIGHT - 200)
+    this.di(ctx, this.imgBg, 0, 0, GAME_WIDTH, GAME_HEIGHT)
 
-    if (!this.loaded || !this.currentProblem) {
-      this.txt(ctx, 'Loading…', GAME_WIDTH / 2, GAME_HEIGHT / 2, 80, '#fff')
+    if (!this.loaded) {
+      this.txt(ctx, 'Loading…', CX, CY, 80, '#fff')
       ctx.restore(); return
     }
 
-    const prob = this.currentProblem
-
-    // Center letter block (clickable)
-    const blockImg = this.imgBlockTop[0]
-    this.drawImg(ctx, blockImg, LETTER_X, LETTER_Y, LETTER_W, LETTER_H)
-    this.txt(ctx, prob.letter, LETTER_X + LETTER_W / 2, LETTER_Y + LETTER_H / 2, 100, '#fff')
+    // Board
+    const boardW = (this.cols + 1) * (CELL_W + CELL_GAP) + BOARD_PAD_X * 2
+    const boardH = (this.rows + 1) * (CELL_H + CELL_GAP) + BOARD_PAD_Y * 2
+    const boardX = this.gridX - BOARD_PAD_X
+    const boardY = this.gridY - BOARD_PAD_Y
+    this.di(ctx, this.imgBoard, boardX, boardY, boardW, boardH)
 
     // Instruction
-    this.txt(ctx, 'Tap the correct word endings!', CX, LETTER_Y + LETTER_H + 60, 52, '#5D4037')
+    const instrY = this.gridY - BOARD_PAD_Y - 60
+    this.txt(ctx, 'Tap the squares to build words!', CX, instrY, 52, '#5D4037')
 
-    // Ending blocks
-    const colors = ['#FF8A65','#FFB74D','#66BB6A','#42A5F5']
-    for (let i = 0; i < this.blocks.length; i++) {
-      const block = this.blocks[i]
-      const slotImg = block.state === 'correct' ? this.imgBlockTop[1] :
-                      block.state === 'wrong'   ? this.imgBlockTop[4] : this.imgBlockTop[2]
-      this.drawImg(ctx, slotImg, block.x, block.y, block.w, block.h)
-
-      if (block.state === 'correct') {
-        ctx.save(); ctx.fillStyle = 'rgba(76,175,80,0.3)'
-        ctx.beginPath(); this.rr(ctx, block.x, block.y, block.w, block.h, 14); ctx.fill(); ctx.restore()
-      } else if (block.state === 'wrong') {
-        ctx.save(); ctx.fillStyle = 'rgba(220,50,50,0.3)'
-        ctx.beginPath(); this.rr(ctx, block.x, block.y, block.w, block.h, 14); ctx.fill(); ctx.restore()
-      }
-
-      this.txt(ctx, block.text, block.x + block.w / 2, block.y + block.h / 2, 72,
-        block.state === 'correct' ? '#1B5E20' : block.state === 'wrong' ? '#B71C1C' : '#2E4057')
+    // Ending header row (top)
+    for (let c = 0; c < this.cols; c++) {
+      const bx = this.gridX + (c + 1) * (CELL_W + CELL_GAP)
+      const by = this.gridY
+      this.di(ctx, this.imgBtnH, bx, by, CELL_W, CELL_H)
+      this.txt(ctx, this.endings[c], bx + CELL_W / 2, by + CELL_H / 2, 80, '#1A237E')
     }
 
-    // Show formed words at bottom
-    const formed = this.blocks.filter(b => b.state === 'correct')
-    if (formed.length > 0) {
-      const words = formed.map(b => prob.letter + b.text).join('  ')
-      this.txt(ctx, words, CX, WORDS_Y, 80, '#FF6F00')
+    // Letter header column (left)
+    const letterColors = ['#E53935','#0288D1','#388E3C','#F57C00']
+    for (let r = 0; r < this.rows; r++) {
+      const bx = this.gridX
+      const by = this.gridY + (r + 1) * (CELL_H + CELL_GAP)
+      this.di(ctx, this.imgBlockTop[r % 5], bx, by, CELL_W, CELL_H)
+      this.txt(ctx, this.letters[r], bx + CELL_W / 2, by + CELL_H / 2, 84, letterColors[r] ?? '#fff')
+    }
+
+    // Slot grid
+    for (const slot of this.slots) {
+      const sx = this.gridX + (slot.col + 1) * (CELL_W + CELL_GAP)
+      const sy = this.gridY + (slot.row + 1) * (CELL_H + CELL_GAP)
+
+      if (slot.filled) {
+        // Scale-in animation
+        const s = slot.animT
+        ctx.save()
+        ctx.translate(sx + CELL_W / 2, sy + CELL_H / 2)
+        ctx.scale(s, s)
+        this.di(ctx, this.imgSlotSel, -CELL_W / 2, -CELL_H / 2, CELL_W, CELL_H)
+        // Highlight tint
+        ctx.fillStyle = `rgba(76,175,80,${0.25 * s})`
+        this.roundRect(ctx, -CELL_W / 2, -CELL_H / 2, CELL_W, CELL_H, CORNER)
+        ctx.fill()
+        this.txt(ctx, slot.word, 0, 0, 68, '#1B5E20')
+        ctx.restore()
+      } else {
+        this.di(ctx, this.imgSlot, sx, sy, CELL_W, CELL_H)
+        // hint: letter in small grey
+        this.txt(ctx, '?', sx + CELL_W / 2, sy + CELL_H / 2, 72, 'rgba(0,0,0,0.15)')
+      }
     }
 
     // Progress
@@ -270,9 +294,9 @@ export class WordMatrixEngine extends BaseEngine {
     ctx.restore()
   }
 
-  // ── Helpers ────────────────────────────────────────────────────────────────
-  private drawImg(ctx: CanvasRenderingContext2D, img: HTMLImageElement,
-                  x: number, y: number, w: number, h: number) {
+  // ── Helpers ──────────────────────────────────────────────────────────────
+  private di(ctx: CanvasRenderingContext2D, img: HTMLImageElement,
+             x: number, y: number, w: number, h: number) {
     if (img.complete && img.naturalWidth > 0) ctx.drawImage(img, x, y, w, h)
   }
 
@@ -287,8 +311,9 @@ export class WordMatrixEngine extends BaseEngine {
     ctx.restore()
   }
 
-  private rr(ctx: CanvasRenderingContext2D, x: number, y: number,
-             w: number, h: number, r: number) {
+  private roundRect(ctx: CanvasRenderingContext2D, x: number, y: number,
+                    w: number, h: number, r: number) {
+    ctx.beginPath()
     ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y)
     ctx.quadraticCurveTo(x + w, y, x + w, y + r)
     ctx.lineTo(x + w, y + h - r); ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h)
@@ -296,4 +321,6 @@ export class WordMatrixEngine extends BaseEngine {
     ctx.lineTo(x, y + r); ctx.quadraticCurveTo(x, y, x + r, y)
     ctx.closePath()
   }
+
+  stop() { super.stop() }
 }

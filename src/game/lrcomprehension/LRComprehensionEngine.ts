@@ -248,10 +248,8 @@ export class LRComprehensionEngine extends BaseEngine {
 
     // Story text / playing indicator
     if (prob.script) {
-      const storyLabel = this.isPlayingStory ? '🔊 Listening to story...' : '📖 Story played!'
-      this.txt(ctx, storyLabel, CX, STORY_BOX_Y + 80, 60, '#1565C0')
-      this.txt(ctx, `"${prob.script.replace('.m4a','').replace(/_/g,' ')}"`,
-        CX, STORY_BOX_Y + STORY_BOX_H / 2 + 30, 46, '#5C6BC0')
+      const storyLabel = this.isPlayingStory ? '🔊 Listening to story...' : '📖 Tap 🔊 to replay'
+      this.txt(ctx, storyLabel, CX, STORY_BOX_Y + STORY_BOX_H / 2, 64, '#1565C0')
     }
 
     // Replay button
