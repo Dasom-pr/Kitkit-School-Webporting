@@ -146,6 +146,40 @@ git push
 
 ---
 
+---
+
+## 📅 2026-03-20 (오후) 게임 전수 검증 결과
+
+### 브라우저 직접 테스트로 확인한 게임 목록
+
+| 게임 | 상태 | 비고 |
+|------|------|------|
+| WordMatrix (Lv.25) | ✅ 수정 완료 | 매트릭스 레이아웃 전면 재작성 |
+| WordNote Lv.1 | ✅ 정상 | 드래그&드롭 작동 |
+| WordNote Lv.18 | ✅ 정상 | 알파벳 키보드 KITCHEN→FOOTBALL 전환 |
+| BirdPhonics | ✅ 정상 | 두 마리 새 + 단어 카드 |
+| ReadingBird | ✅ 수정 완료 | 스피커 버튼 텍스트 겹침 해결 |
+| SoundTrain | ✅ 정상 | 기차+사자 이미지, 글자 카드 |
+| WordWindow | ✅ 정상 | 9(7+2) 정답 → 다음 문제 전환 |
+| LRComprehension | ✅ 수정 완료 | 파일명 노출 제거 |
+| QuickFacts | ✅ 정상 | 떨어지는 숫자 카드 |
+| MangoShop | ✅ 정상 | 망고 트레이 + 답 선택 |
+| NumberTrain | ✅ 정상 | 가장 작은 수 1 탭 → 2번 문제 전환 |
+| PlaceValue | ✅ 정상 | 백/십/일 자리 +/- 버튼 |
+| ThirtyPuzzle | ✅ 정상 | 숫자 격자, 미리 선택 표시 |
+| MultiplicationBoard | ✅ 정상 | 전구 애니메이션 + 답 카드 |
+| NumberTracingExt | ✅ 정상 | 숫자 트레이싱 캔버스 |
+
+### 오늘 수정한 버그 3개
+
+| # | 게임 | 버그 | 원인 | 수정 |
+|---|------|------|------|------|
+| 1 | WordMatrix | 멀티 자음 레벨(Lv.21+)에서 게임 동작 불가 | `"d,l"` 단일 블록으로 표시, 매트릭스 구조 없음 | 행렬 레이아웃 전면 재작성 |
+| 2 | ReadingBird | 스피커 버튼이 텍스트 "Look **at** me." 위에 겹침 | `SPEAKER_Y = CY-10` = 텍스트 Y와 동일 | `SPEAKER_Y = CY+170`으로 이동 |
+| 3 | LRComprehension | `"en uk lc 1 3 story"` 파일명이 화면에 노출 | `prob.script` 파일명을 그대로 렌더링 | 해당 라인 제거, 상태 메시지만 표시 |
+
+---
+
 ## ⏭️ 다음 작업 재개 시 할 것
 
 > "note.md, CLAUDE.md 읽고 파악한 뒤, 나머지 게임들도 제대로 동작하는지 검증하고 버그 있으면 수정해줘"
