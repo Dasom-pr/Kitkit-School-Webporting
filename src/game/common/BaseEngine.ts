@@ -86,7 +86,7 @@ export abstract class BaseEngine {
   handlePointerDown = (e: PointerEvent) => {
     if (this.gameState !== 'playing') return
     e.preventDefault()
-    this.canvas.setPointerCapture(e.pointerId)
+    try { this.canvas.setPointerCapture(e.pointerId) } catch { /* synthetic events have no active pointer */ }
     const pos = this.toGameCoords(e)
     this.onPointerDown(pos.x, pos.y)
   }

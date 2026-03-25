@@ -3,6 +3,7 @@ import { assetUrl } from '../utils/assetPath'
 import { useParams, useNavigate } from 'react-router-dom'
 import type { Book, Sentence, Word, Credit } from '../book/types'
 import { parseBookInfoCSV, parseCreditTxt } from '../book/BookReader'
+import { useShellParams } from '../hooks/useShellParams'
 
 // C++ constants from BookPageSpace
 const TEXT_COLOR = '#4F3D18' // Color3B(79, 61, 24)
@@ -17,6 +18,7 @@ const POST_TURN_AUDIO_DELAY = 500 // ms - C++ _timePage starts at -0.5
 export default function BookViewerPage() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
+  const { isFromShell, onGameComplete, shellBack } = useShellParams()
   const [book, setBook] = useState<Book | null>(null)
   const [credit, setCredit] = useState<Credit | null>(null)
   const [currentPage, setCurrentPage] = useState(0)
@@ -380,7 +382,7 @@ export default function BookViewerPage() {
 
       {/* Back Button */}
       <button
-        onClick={() => { stopAudio(); navigate(-1) }}
+        onClick={() => { stopAudio(); isFromShell ? shellBack() : navigate(-1) }}
         style={{
           position: 'absolute',
           top: 20, left: 20, zIndex: 100,
@@ -461,30 +463,49 @@ export default function BookViewerPage() {
           </button>
 
           {/* Next arrow - overlaid on right edge */}
-          <button
-            onClick={goNext}
-            disabled={currentPage >= totalPages - 1 || turnAnim !== 'none'}
-            style={{
-              position: 'absolute',
-              right: -4, top: '50%', transform: 'translateY(-50%)',
-              width: 40, height: 160,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              zIndex: 20,
-              opacity: currentPage < totalPages - 1 ? 0.8 : 0,
-              transition: 'opacity 0.2s',
-            }}
-          >
-            <img
-              src={assetUrl('/assets/books/common/book_arrow_right_normal.png')}
-              alt="Next"
-              style={{ width: 20, objectFit: 'contain' }}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-                const parent = e.currentTarget.parentElement!
-                parent.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="rgba(120,80,40,0.6)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+          {currentPage < totalPages - 1 ? (
+            <button
+              onClick={goNext}
+              disabled={turnAnim !== 'none'}
+              style={{
+                position: 'absolute',
+                right: -4, top: '50%', transform: 'translateY(-50%)',
+                width: 40, height: 160,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                zIndex: 20, opacity: 0.8,
               }}
-            />
-          </button>
+            >
+              <img
+                src={assetUrl('/assets/books/common/book_arrow_right_normal.png')}
+                alt="Next"
+                style={{ width: 20, objectFit: 'contain' }}
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none'
+                  const parent = e.currentTarget.parentElement!
+                  parent.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="rgba(120,80,40,0.6)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+                }}
+              />
+            </button>
+          ) : isFromShell ? (
+            /* 마지막 페이지 + 셸에서 왔을 때 → 완료 버튼 */
+            <button
+              onClick={() => { stopAudio(); onGameComplete() }}
+              style={{
+                position: 'absolute',
+                right: 16, bottom: 16,
+                padding: '12px 28px',
+                background: '#4CAF50',
+                color: '#fff',
+                fontSize: 18,
+                fontWeight: 'bold',
+                borderRadius: 30,
+                boxShadow: '0 4px 12px rgba(0,0,0,0.25)',
+                zIndex: 20,
+              }}
+            >
+              Done ✓
+            </button>
+          ) : null}
           {isCreditPage ? (
             <CreditPage credit={credit!} title={book.title} />
           ) : isTitle ? (
